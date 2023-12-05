@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+	font-family: "Mulish", sans-serif;
+	font-weight: 600;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: #056ac4;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
