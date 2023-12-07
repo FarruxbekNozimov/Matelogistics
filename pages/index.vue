@@ -7,6 +7,7 @@
 		<CarShipping />
 		<CarShippingTime />
 		<CarShippingMethod />
+		<CountViewers />
 	</div>
 </template>
 

@@ -3,11 +3,11 @@
 <template>
 	<div
 		class="bg-[url('@/assets/img/back-road.png')] bg-no-repeat bg-cover bg-fixed bg-right">
-		<div class="bg-white/70">
+		<div class="bg-white/80">
 			<!-- HEADER -->
 			<Header />
 			<div class="">
-				<Container :px="`lg:px-10 p-2`" class="pt-36">
+				<Container :px="`lg:px-10 p-2`">
 					<slot class="bg-gray-500 font-['Mulish']" />
 				</Container>
 			</div>
