@@ -15,7 +15,7 @@ const navLinks = [
 </script>
 
 <template>
-	<div
+	<div	
 		class="absolute w-24 hover:w-72 lg:left-0 h-screen -left-72 bg-slate-900 duration-300 bg-gray-900 border-r border-cyan-500"
 		:class="openedNav ? 'lg:left-0' : 'w-72'">
 		<button

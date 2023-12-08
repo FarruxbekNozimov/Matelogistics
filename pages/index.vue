@@ -2,12 +2,13 @@
 
 <template>
 	<div>
-		<Banner />
-		<CustomerComments />
-		<CarShipping />
-		<CarShippingTime />
-		<CarShippingMethod />
-		<CountViewers />
+		<SectionsBanner />
+		<SectionsCustomerComments />
+		<SectionsCarShipping />
+		<SectionsCarShippingTime />
+		<SectionsCarShippingMethod />
+		<SectionsCountViewers />
+		<SectionsExperience />
 	</div>
 </template>
 
