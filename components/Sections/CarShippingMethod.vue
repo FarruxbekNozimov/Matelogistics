@@ -37,7 +37,7 @@ const methods = ref([
 		<div class="mb-10">
 			<TitleBar title="Explore car shipping methods: " no="1" />
 			<TitleBar title="A guide to common auto transportation options" />
-			<div class="grid lg:grid-cols-4 mt-10 gap-5">
+			<div class="grid lg:grid-cols-4 md:grid-cols-2 mt-10 gap-5">
 				<CardsMethodCard
 					v-for="el in methods"
 					:img="importImage(el.img)"

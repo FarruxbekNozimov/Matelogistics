@@ -7,7 +7,7 @@ import { navbar } from "@/data/navbar.js";
 		<!-- TOP GRAY HEADER -->
 		<HeaderTop />
 		<Container>
-			<nav class="flex items-center justify-between p-4 md:px-5">
+			<nav class="flex items-center justify-between p-4 lg:px-0">
 				<div class="flex items-center justify-center md:gap-5">
 					<button class="lg:hidden text-[#008AFF]">
 						<Icon name="game-icons:hamburger-menu" class="text-xl" />

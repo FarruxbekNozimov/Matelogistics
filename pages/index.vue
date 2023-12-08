@@ -10,6 +10,7 @@
 		<SectionsCountViewers />
 		<SectionsExperience />
 		<SectionsFormulaInfo />
+		<SectionsFAQ />
 	</div>
 </template>
 
