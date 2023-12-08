@@ -12,8 +12,9 @@ defineProps(["img", "title", "text"]);
 			<h2 class="lg:text-[30px] text-[20px] text-white mb-3 font-bold">
 				{{ title }}
 			</h2>
-			<p class="text-[16px] text-white mb-2">{{ text }}</p>
-			<button class="text-md text-white flex items-center justify-center gap-2">
+			<p class="lg:text-lg text-[14px] text-white mb-2">{{ text }}</p>
+			<button
+				class="lg:text-lg text-[14px] text-white flex items-center justify-center gap-2">
 				Learn more
 				<Icon class="text-xl" name="material-symbols:chevron-right" />
 			</button>

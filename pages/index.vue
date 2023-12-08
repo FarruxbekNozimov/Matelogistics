@@ -9,6 +9,7 @@
 		<SectionsCarShippingMethod />
 		<SectionsCountViewers />
 		<SectionsExperience />
+		<SectionsFormulaInfo />
 	</div>
 </template>
 

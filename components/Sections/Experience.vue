@@ -10,17 +10,19 @@ const importImage = (imageName) => {
 </script>
 
 <template>
-	<div class="mb-10">
-		<TitleBar title="Experience the excellence:" no="1" />
-		<TitleBar title="What you get when you choose to work with us" />
-		<div class="grid lg:grid-cols-3 mt-14 gap-12">
-			<CardsExperienceCard
-				v-for="el in experience"
-				:img="importImage(el.img)"
-				:title="el.title"
-				:text="el.text" />
+	<Container :px="`p-2`">
+		<div class="mb-10">
+			<TitleBar title="Experience the excellence:" no="1" />
+			<TitleBar title="What you get when you choose to work with us" />
+			<div class="grid lg:grid-cols-3 mt-10 gap-5">
+				<CardsExperienceCard
+					v-for="el in experience"
+					:img="importImage(el.img)"
+					:title="el.title"
+					:text="el.text" />
+			</div>
 		</div>
-	</div>
+	</Container>
 </template>
 
 <style scoped></style>

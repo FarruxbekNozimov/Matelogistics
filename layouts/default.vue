@@ -7,9 +7,7 @@
 			<!-- HEADER -->
 			<Header />
 			<div class="">
-				<Container :px="`lg:px-10 p-2`">
-					<slot class="bg-gray-500 font-['Mulish']" />
-				</Container>
+				<slot class="bg-gray-500 font-['Mulish']" />
 			</div>
 			<!-- HEADER -->
 			<Footer />
