@@ -7,6 +7,7 @@
 		<CarShipping />
 		<CarShippingTime />
 		<CarShippingMethod />
+		<LastNews/>
 	</div>
 </template>
 
