@@ -28,32 +28,34 @@ const services = ref([
 </script>
 
 <template>
-	<div class="mb-10 mt-5">
-		<TitleBar title="Effortless car shipping: " no="1" />
-		<TitleBar title="A 3-step process" class="mb-5" />
-		<div class="w-full text-start lg:flex items-center justify-between">
-			<img src="@/assets/img/car-shipping.png" class="" />
-			<div class="space-y-14">
-				<div
-					v-for="el in services"
-					:key="el.title"
-					class="flex items-center justify-center gap-5">
-					<img
-						:src="importImage(el.img)"
-						:alt="el.title"
-						class="lg:h-[64px] h-[38px]" />
-					<div class="">
-						<h2 class="lg:text-[30px] text-[18px] text-[#024E90]">
-							{{ el.title }}
-						</h2>
-						<p class="lg:text-[16px] text-[12px] text-[#5D5D5F]">
-							{{ el.text }}
-						</p>
+	<Container :px="`p-2`">
+		<div class="mb-10 mt-5">
+			<TitleBar title="Effortless car shipping: " no="1" />
+			<TitleBar title="A 3-step process" class="mb-5" />
+			<div class="w-full text-start lg:flex items-center justify-between">
+				<img src="@/assets/img/car-shipping.png" class="" />
+				<div class="space-y-14">
+					<div
+						v-for="el in services"
+						:key="el.title"
+						class="flex items-center justify-center gap-5">
+						<img
+							:src="importImage(el.img)"
+							:alt="el.title"
+							class="lg:h-[64px] h-[38px]" />
+						<div class="">
+							<h2 class="lg:text-[30px] text-[18px] text-[#024E90]">
+								{{ el.title }}
+							</h2>
+							<p class="lg:text-[16px] text-[12px] text-[#5D5D5F]">
+								{{ el.text }}
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</Container>
 </template>
 
 <style scoped></style>

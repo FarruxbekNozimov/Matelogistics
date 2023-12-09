@@ -23,39 +23,41 @@ const services = ref([
 </script>
 
 <template>
-	<div class="mb-10">
-		<TitleBar title="Timely transportation: " no="1" />
-		<TitleBar title="How long does car shipping take?" />
-		<div class="w-full lg:flex items-start lg:gap-24 mt-10">
-			<div class="lg:w-2/5 w-full space-y-14 mb-5">
-				<div
-					v-for="el in services"
-					:key="el.title"
-					class="flex items-start justify-center gap-5">
-					<img
-						:src="importImage(el.img)"
-						:alt="el.title"
-						class="lg:h-[64px] h-[30px]" />
-					<div class="">
-						<h2 class="lg:text-[30px] text-[18px] text-[#024E90]">
-							{{ el.title }}
-						</h2>
-						<p class="lg:text-[16px] text-sm text-[#5D5D5F]">{{ el.text }}</p>
+	<Container :px="`p-2`">
+		<div class="mb-10">
+			<TitleBar title="Timely transportation: " no="1" />
+			<TitleBar title="How long does car shipping take?" />
+			<div class="w-full lg:flex items-start lg:gap-24 mt-10">
+				<div class="lg:w-2/5 w-full space-y-14 mb-5">
+					<div
+						v-for="el in services"
+						:key="el.title"
+						class="flex items-start justify-center gap-5">
+						<img
+							:src="importImage(el.img)"
+							:alt="el.title"
+							class="lg:h-[64px] h-[30px]" />
+						<div class="">
+							<h2 class="lg:text-[30px] text-[18px] text-[#024E90]">
+								{{ el.title }}
+							</h2>
+							<p class="lg:text-[16px] text-sm text-[#5D5D5F]">{{ el.text }}</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="lg:w-auto w-full relative">
-				<img
-					src="@/assets/img/car-shipping-time-car.png"
-					class="lg:h-[480px]" />
-				<RedButton
-					to="/calculator"
-					class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 w-[95%] bottom-3 left-3">
-					Use live cost calculator
-				</RedButton>
+				<div class="lg:w-auto w-full relative">
+					<img
+						src="@/assets/img/car-shipping-time-car.png"
+						class="lg:h-[480px]" />
+					<RedButton
+						to="/calculator"
+						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 w-[95%] bottom-3 left-3">
+						Use live cost calculator
+					</RedButton>
+				</div>
 			</div>
 		</div>
-	</div>
+	</Container>
 </template>
 
 <style scoped></style>

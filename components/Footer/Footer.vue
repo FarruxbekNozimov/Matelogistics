@@ -4,7 +4,7 @@ import { footerLinks } from "@/data/footerLinks";
 
 <template>
 	<div class="pt-10 lg:pb-0 bg-[#214690]">
-		<Container class="grid grid-cols-5 gap-10 pb-5 lg:px-10">
+		<Container class="grid grid-cols-5 gap-10 pb-5">
 			<div class="lg:text-[18px] text-[16px]">
 				<img src="@/assets/img/matelogo-footer.png" class="w-full mb-3" />
 				<div class="text-white font-[400] p-2">
@@ -52,11 +52,10 @@ import { footerLinks } from "@/data/footerLinks";
 				</button>
 			</div>
 		</Container>
-		<Container class="lg:px-12">
+		<Container>
 			<div class="w-full border-b"></div>
 		</Container>
-		<Container
-			class="flex items-center justify-between lg:p-10 lg:px-12 pt-5 text-white">
+		<Container class="flex items-center justify-between py-5 text-white">
 			<span class="text-[18px] lg:block hidden">
 				Mate Logistics 2023. All rights reserved
 			</span>

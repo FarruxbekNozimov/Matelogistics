@@ -2,12 +2,15 @@
 
 <template>
 	<div>
-		<Banner />
-		<CustomerComments />
-		<CarShipping />
-		<CarShippingTime />
-		<CarShippingMethod />
-		<LastNews/>
+		<SectionsBanner />
+		<SectionsCustomerComments />
+		<SectionsCarShipping />
+		<SectionsCarShippingTime />
+		<SectionsCarShippingMethod />
+		<SectionsCountViewers />
+		<SectionsExperience />
+		<SectionsFormulaInfo />
+		<SectionsFAQ />
 	</div>
 </template>
 

@@ -33,17 +33,19 @@ const methods = ref([
 </script>
 
 <template>
-	<div class="mb-10">
-		<TitleBar title="Explore car shipping methods: " no="1" />
-		<TitleBar title="A guide to common auto transportation options" />
-		<div class="grid lg:grid-cols-4 mt-14 gap-12">
-			<MethodCard
-				v-for="el in methods"
-				:img="importImage(el.img)"
-				:title="el.title"
-				:text="el.text" />
+	<Container :px="`p-2`">
+		<div class="mb-10">
+			<TitleBar title="Explore car shipping methods: " no="1" />
+			<TitleBar title="A guide to common auto transportation options" />
+			<div class="grid lg:grid-cols-4 md:grid-cols-2 mt-10 gap-5">
+				<CardsMethodCard
+					v-for="el in methods"
+					:img="importImage(el.img)"
+					:title="el.title"
+					:text="el.text" />
+			</div>
 		</div>
-	</div>
+	</Container>
 </template>
 
 <style scoped></style>
