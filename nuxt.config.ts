@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "nuxt-swiper"	],
+	modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "nuxt-swiper"],
 	app: {
 		head: {
 			link: [
