@@ -11,6 +11,7 @@
 		<SectionsExperience />
 		<SectionsFormulaInfo />
 		<SectionsFAQ />
+		<SectionsReviews />
 	</div>
 </template>
 
