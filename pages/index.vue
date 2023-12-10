@@ -12,6 +12,7 @@
 		<SectionsFormulaInfo />
 		<SectionsFAQ />
 		<SectionsReviews />
+		<SectionsLatestStories/>
 	</div>
 </template>
 

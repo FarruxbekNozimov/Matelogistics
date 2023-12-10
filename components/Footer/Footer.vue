@@ -4,10 +4,10 @@ import { footerLinks } from "@/data/footerLinks";
 
 <template>
 	<div class="pt-10 lg:pb-0 bg-[#214690]">
-		<Container class="grid grid-cols-5 gap-10 pb-5">
+		<Container class="grid grid-cols-5 gap-10 pb-5 px-2">
 			<div class="lg:text-[18px] text-[16px]">
 				<img src="@/assets/img/matelogo-footer.png" class="w-full mb-3" />
-				<div class="text-white font-[400] p-2">
+				<div class="text-white font-[400]">
 					<div class="flex items-center justify-between gap-5 mb-2">
 						<a href="">
 							<Icon name="bi:instagram" class="text-2xl text-white" />
@@ -52,10 +52,10 @@ import { footerLinks } from "@/data/footerLinks";
 				</button>
 			</div>
 		</Container>
-		<Container>
+		<Container px="px-2">
 			<div class="w-full border-b"></div>
 		</Container>
-		<Container class="flex items-center justify-between py-5 text-white">
+		<Container class="flex items-center justify-between py-5 text-white p-2">
 			<span class="text-[18px] lg:block hidden">
 				Mate Logistics 2023. All rights reserved
 			</span>
