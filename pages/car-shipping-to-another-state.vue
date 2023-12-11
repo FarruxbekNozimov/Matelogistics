@@ -13,10 +13,7 @@ We'll delve into different shipping options, costs, insurance, and essential tip
 			topTitle="The Ultimate Guide to Car Shipping: "
 			mainTitle="How to Transport Your Vehicle to Another State"
 			:text="guideText" />
-		<SectionsExperience />
-		<SectionsFAQ />
-		<SectionsCarShipping />
-		<SectionsReviews />
+		<SectionsCarShippingMethod />
 		<SectionsLetWorkTransport />
 	</div>
 </template>

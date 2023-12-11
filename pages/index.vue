@@ -1,11 +1,5 @@
 <script setup>
-useSeoMeta({
-	title: "MateLogistics",
-	ogTitle: "My Amazing Site",
-	description: "This is my amazing site, let me tell you all about it.",
-	ogDescription: "This is my amazing site, let me tell you all about it.",
-	twitterCard: "summary_large_image",
-});
+useSeoMeta({ title: "MateLogistics" });
 </script>
 
 <template>
