@@ -1,11 +1,13 @@
-<script setup></script>
+<script setup>
+defineProps(["title", "text"]);
+</script>
 
 <template>
 	<!-- MAIN BANNER -->
 	<Container :px="`p-2`">
 		<div
-			class="lg:bg-[url('@/assets/img/banner-car.png')] bg-[url('@/assets/img/banner-sm.png')] bg-no-repeat bg-cover relative rounded-3xl md:h-[380px] h-[550px] lg:flex items-center rounded-xl justify-center lg:px-10 p-4 pt-10">
-			<div class="z-1 lg:w-[70%] w-full pr-10">
+			class="lg:bg-[url('@/assets/img/banner-car.png')] bg-[url('@/assets/img/banner-sm.png')] bg-no-repeat bg-cover relative rounded-[50px] lg:flex items-center rounded-xl justify-between lg:px-10 p-4 pt-10">
+			<div class="z-1 lg:w-[60%] w-full">
 				<h3 class="lg:text-[50px] text-[28px] text-white font-semibold">
 					Transparent Pricing with No Hidden Fees for Your Auto Transportation
 					Needs

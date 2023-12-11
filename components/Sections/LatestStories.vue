@@ -35,11 +35,25 @@ console.log(data.value);
 				</div>
 			</div>
 			<div class="w-full block">
-				<SwiperModule>
-					<SwiperSlide v-for="el in data.results" :key="slide">
+				<Swiper
+					:modules="[SwiperAutoplay, SwiperPagination]"
+					:loop="true"
+					:effect="'creative'"
+					:autoplay="{ delay: 1000, disableOnInteraction: true }"
+					:spaceBetween="10"
+					:breakpoints="{
+						400: { slidesPerView: 1 },
+						600: { slidesPerView: 2 },
+						900: { slidesPerView: 3 },
+					}"
+					:creative-effect="{
+						prev: { shadow: false, translate: ['-20%', 0, -1] },
+						next: { translate: ['100%', 0, 0] },
+					}">
+					<SwiperSlide v-for="el in data.results">
 						<CardsBlogCard :data="el" />
 					</SwiperSlide>
-				</SwiperModule>
+				</Swiper>
 			</div>
 		</div>
 	</Container>
