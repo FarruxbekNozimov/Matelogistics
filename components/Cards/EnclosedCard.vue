@@ -4,7 +4,7 @@ defineProps(["num", "title", "text"]);
 
 <template>
 	<div
-		class="rounded-xl lg:p-7 p-4 shadow hover:shadow-2xl lg:hover:scale-105 duration-100 bg-white">
+		class="round ed-xl lg:p-7 p-4 shadow hover:shadow-2xl lg:hover:scale-105 duration-100 bg-white">
 		<div class=" w-full flex items-center gap-5">
 			<div class="mb-[120px] bg-[#E8F0FF] p-8 rounded-3xl md:text-3xl text-[20px] font-[1000] text-[#024E90]">
 				{{num}}

@@ -3,8 +3,11 @@
 
 <template>
   <div class="">
-		<SectionsBanner />
+    <!-- <SectionsHeaderButton/> -->
+		<SectionsEnclosedBanner />
+		<SectionsCustomerComments />
     <SectionsEnclosedfourTypes/>
+    <SectionsInfoRow/>
   </div>
 </template>
 
