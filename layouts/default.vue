@@ -3,7 +3,7 @@
 <template>
 	<div
 		class="bg-[url('@/assets/img/back-road.png')] bg-no-repeat bg-cover bg-fixed bg-right">
-		<div class="bg-white/80">
+		<div class="bg-white/90">
 			<!-- HEADER -->
 			<Header />
 			<div class="">
