@@ -14,7 +14,7 @@ const cutter = (num, text) => {
 <template>
 	<router-link
 		:to="`/articles/${data.slug}`"
-		class="block bg-white rounded-xl mr-5 h-[420px] shadow hover:shadow-2xl duration-300">
+		class="block bg-white rounded-xl mr-5 h-[420px] hover:shadow-2xl duration-300">
 		<img
 			:src="`${data.image}`"
 			alt="image"
