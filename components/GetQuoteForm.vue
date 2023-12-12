@@ -2,7 +2,7 @@
 
 <template>
 	<div
-		class="w-[400px] font-[500] shadow-xl space-y-3 bg-white p-3 rounded-2xl">
+		class="w-[400px] font-[500] shadow-xl space-y-3 bg-white p-3 rounded-3xl">
 		<h2 class="lg:text-2xl font-[600] text-xl mb-3 pr-6">
 			Get an instant quote or call us now
 			<span class="text-[#008AFF]">(929) 592-3003</span>
@@ -49,7 +49,7 @@
 			type="button"
 			class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-3xl px-5 py-2.5 mb-2 text-[20px]">
 			Model of your cars
-			<Icon name="material-symbols:arrow-right-alt" class="text-lg" />
+			<Icon name="ic:outline-chevron-right" class="text-2xl" />
 		</button>
 	</div>
 </template>
