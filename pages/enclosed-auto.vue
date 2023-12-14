@@ -1,14 +1,14 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <div class="">
-    <!-- <SectionsHeaderButton/> -->
-		<SectionsEnclosedBanner />
+	<div class="">
+		<SectionsBanner
+			title="Enclosed Auto Transport"
+			text="Enclosed Auto Transport: Secure, Reliable Transport with Mate Logistics" />
 		<SectionsCustomerComments />
-    <SectionsEnclosedfourTypes/>
-    <SectionsInfoRow/>
-  </div>
+		<SectionsEnclosedfourTypes />
+		<!-- <SectionsInfoRow /> -->
+	</div>
 </template>
 
 <style scoped></style>
