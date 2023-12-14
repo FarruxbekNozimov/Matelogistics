@@ -6,8 +6,12 @@
     <!-- <SectionsHeaderButton/> -->
 		<SectionsEnclosedBanner />
 		<SectionsCustomerComments />
-    <SectionsEnclosedfourTypes/>
     <SectionsInfoRow/>
+    <SectionsEnclosedfourTypes/>
+		<SectionsExperience />
+		<SectionsFAQ />
+    <SectionsReviews/>
+    <SectionsLetWorkTransport/>
   </div>
 </template>
 
