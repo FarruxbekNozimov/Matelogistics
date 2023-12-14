@@ -6,7 +6,7 @@
     <div class="">
       <img
         class="lg:h-[250px] mt-8 w-[486px]"
-        src="@/assets/img/enclosed2.png"
+        src="@/assets/img/considerations.png"
       />
     </div>
     <div class="mx-auto mr-1 w-[600px] h-auto">

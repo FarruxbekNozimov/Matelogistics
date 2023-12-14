@@ -9,6 +9,8 @@
     <SectionsInfoRow/>
     <SectionsInfoRow2/>
     <SectionsEnclosedfourTypes/>
+    <SectionsInfoRow3/>
+    <SectionsConclusion/>
 		<SectionsExperience />
 		<SectionsFAQ />
     <SectionsReviews/>
