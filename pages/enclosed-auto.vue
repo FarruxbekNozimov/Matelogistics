@@ -7,6 +7,7 @@
 		<SectionsEnclosedBanner />
 		<SectionsCustomerComments />
     <SectionsInfoRow/>
+    <SectionsInfoRow2/>
     <SectionsEnclosedfourTypes/>
 		<SectionsExperience />
 		<SectionsFAQ />
