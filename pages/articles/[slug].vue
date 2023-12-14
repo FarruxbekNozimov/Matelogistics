@@ -17,6 +17,8 @@ onMounted(() => {
 			<div class="flex items-center gap-2 text-md text-[#5D5D5F] mb-10">
 				<Icon name="material-symbols:calendar-today-rounded" class="" />
 				<p>{{ data.created_date }}</p>
+			</div>
+			<div class="flex items-center gap-2 text-md text-[#5D5D5F] mb-10">
 				<Icon name="ic:sharp-circle" class="text-[10px]" />
 				<p>{{ data.subtitle }}</p>
 			</div>
