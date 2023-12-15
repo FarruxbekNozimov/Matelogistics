@@ -1,10 +1,5 @@
 <script setup>
-const route = useRoute();
-
-const { data, pending, error, refresh } = await useFetch(
-	`https://api.matelogisticss.com/api/articles`
-);
-console.log(data.value);
+const { data } = await useFetch(`https://api.matelogisticss.com/api/articles`);
 </script>
 
 <template>
@@ -17,7 +12,7 @@ console.log(data.value);
 						<Icon name="ic:baseline-sync" class="text-4xl text-[#024E90]" />
 					</button>
 					<p class="text-[#024E90] text-[17px]">
-						{{ data.results[0].created_date }}
+						{{ data?.results[0].created_date }}
 					</p>
 				</div>
 				<div class="flex items-center gap-5">

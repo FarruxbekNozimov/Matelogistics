@@ -1,22 +1,14 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <div class="">
-    <!-- <SectionsHeaderButton/> -->
-    <SectionsEnclosedBanner />
-    <SectionsCustomerComments />
-    <SectionsInfoRow />
-    <SectionsInfoRow2 />
-    <SectionsEnclosedfourTypes />
-    <SectionsTypesOfEnclosed />
-    <SectionsInfoRow3 />
-    <SectionsConclusion />
-    <SectionsExperience />
-    <SectionsFAQ />
-    <SectionsReviews />
-    <SectionsLetWorkTransport />
-  </div>
+	<div class="">
+		<SectionsBanner
+			title="Enclosed Auto Transport"
+			text="Enclosed Auto Transport: Secure, Reliable Transport with Mate Logistics" />
+		<SectionsCustomerComments />
+		<SectionsEnclosedfourTypes />
+		<!-- <SectionsInfoRow /> -->
+	</div>
 </template>
 
 <style scoped></style>
