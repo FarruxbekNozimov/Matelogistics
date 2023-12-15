@@ -8,7 +8,7 @@ const changeAcc = (num) => {
 	if (faqOne.value == num) faqOne.value = null;
 	else faqOne.value = num;
 };
-</script>
+</script>  
 
 <template>
 	<div class="bg-gradient-to-r from-[#008AFF] to-[#005BA8] mb-5 py-10">
