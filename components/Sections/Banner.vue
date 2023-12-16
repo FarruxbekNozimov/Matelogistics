@@ -6,7 +6,7 @@ defineProps(["title", "text"]);
 	<!-- MAIN BANNER -->
 	<Container :px="`p-2`">
 		<div
-			class="lg:bg-[url('@/assets/img/banner-car.png')] bg-[url('@/assets/img/banner-sm.png')] bg-no-repeat bg-cover relative rounded-[30px] md:flex items-center justify-between md:px-10 p-4 pt-10">
+			class="bg-[url('@/assets/img/banner-car.png')] bg-no-repeat bg-cover relative rounded-[30px] md:flex items-center justify-between lg:px-10 p-4 pt-5">
 			<div class="z-1 lg:w-[60%] w-full">
 				<h3 class="lg:text-[50px] text-[28px] text-white font-semibold">
 					{{ title }}
@@ -16,9 +16,7 @@ defineProps(["title", "text"]);
 					{{ text }}
 				</p>
 			</div>
-			<div class="z-1 lg:w-[30%]">
-				<GetQuoteForm />
-			</div>
+			<GetQuoteForm />
 		</div>
 	</Container>
 </template>

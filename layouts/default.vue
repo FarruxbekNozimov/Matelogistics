@@ -10,7 +10,8 @@
 				<slot class="bg-gray-500 font-['Mulish']" />
 			</div>
 			<!-- HEADER -->
-			<Footer />
+			<Footer class="md:block hidden" />
+			<FooterMini class="lg:hidden block" />
 		</div>
 	</div>
 </template>

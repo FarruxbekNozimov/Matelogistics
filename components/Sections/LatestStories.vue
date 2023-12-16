@@ -1,19 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
-
-const data = ref(null);
-
-const fetchData = async () => {
-	try {
-		const response = await fetch("https://api.matelogisticss.com/api/articles");
-		const jsonData = await response.json();
-		data.value = jsonData;
-	} catch (error) {
-		console.error("Error fetching data:", error);
-	}
-};
-
-onMounted(fetchData);
+const { data } = await useFetch("https://api.matelogisticss.com/api/articles");
 </script>
 
 <template>
@@ -26,7 +12,7 @@ onMounted(fetchData);
 						<Icon name="ic:baseline-sync" class="text-4xl text-[#024E90]" />
 					</button>
 					<p class="text-[#024E90] text-[17px]">
-						{{ data?.results[0].created_date }}
+						{{ data?.results[0]?.created_date }}
 					</p>
 				</div>
 				<div class="flex items-center gap-5">

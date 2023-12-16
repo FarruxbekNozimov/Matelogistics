@@ -10,7 +10,7 @@ const importImage = (imageName) => {
 <template>
 	<div>
 		<Container :px="`p-2`">
-			<div class="flex items-center justify-evenly mb-10">
+			<div class="md:flex space-y-5 items-center justify-evenly mb-10">
 				<CardsReviewCard
 					title="Google"
 					reviews="170"

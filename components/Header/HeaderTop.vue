@@ -7,7 +7,7 @@
 			Ware open now! Try our first real time car shipping cost calculator. Mate
 			Logistics has shipped over 720 vehicles to all 50 states last 12 months.
 		</p>
-		<div class="flex items-center gap-3">
+		<div class="lg:flex hidden items-center gap-3">
 			<router-link to="/contact" class="text-sm text-gray-500"
 				>Contact us</router-link
 			>
