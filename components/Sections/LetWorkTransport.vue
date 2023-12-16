@@ -14,11 +14,11 @@
 				</p>
 				<div class="flex items-center gap-5">
 					<button
-						class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-medium rounded-2xl px-5 py-2.5 mb-2">
+						class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-medium duration-300 rounded-2xl px-5 py-2.5 mb-2">
 						Use live cost calculator
 					</button>
 					<button
-						class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-medium rounded-2xl px-5 py-2.5 mb-2">
+						class="w-full outline-none text-[#008AFF] bg-white hover:bg-white/80 duration-300 font-medium rounded-2xl px-5 py-2.5 mb-2">
 						Call now (929) 592-3003
 					</button>
 				</div>

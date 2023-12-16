@@ -12,7 +12,7 @@ defineProps(["title", "text"]);
 					{{ title }}
 				</h3>
 				<p
-					class="lg:text-[24px] text-[17px] my-3 text-white lg:font-bold font-thin">
+					class="lg:text-[24px] text-[17px] my-3 text-white lg:font-[600] font-thin">
 					{{ text }}
 				</p>
 			</div>
