@@ -1,5 +1,19 @@
 <script setup>
-const { data } = await useFetch(`https://api.matelogisticss.com/api/articles`);
+import { ref, onMounted } from "vue";
+
+const data = ref(null);
+
+const fetchData = async () => {
+	try {
+		const response = await fetch("https://api.matelogisticss.com/api/articles");
+		const jsonData = await response.json();
+		data.value = jsonData;
+	} catch (error) {
+		console.error("Error fetching data:", error);
+	}
+};
+
+onMounted(fetchData);
 </script>
 
 <template>
@@ -45,7 +59,7 @@ const { data } = await useFetch(`https://api.matelogisticss.com/api/articles`);
 						prev: { shadow: false, translate: ['-20%', 0, -1] },
 						next: { translate: ['100%', 0, 0] },
 					}">
-					<SwiperSlide v-for="el in data.results">
+					<SwiperSlide v-for="el in data?.results">
 						<CardsBlogCard :data="el" />
 					</SwiperSlide>
 				</Swiper>

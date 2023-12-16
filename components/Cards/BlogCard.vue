@@ -13,7 +13,7 @@ const cutter = (num, text) => {
 
 <template>
 	<router-link
-		:to="`/articles/${data.slug}`"
+		:to="`/blog/${data.slug}`"
 		class="block bg-white rounded-xl mr-5 h-[420px] hover:shadow-2xl duration-300">
 		<img
 			:src="`${data.image}`"
@@ -31,7 +31,7 @@ const cutter = (num, text) => {
 				{{ cutter(70, data.subtitle) }}
 			</p>
 			<router-link
-				:to="`/articles/${data.slug}`"
+				:to="`/blog/${data.slug}`"
 				class="flex items-center text-[#024E90] text-[15px]">
 				Read more <Icon name="ic:baseline-chevron-right" />
 			</router-link>
