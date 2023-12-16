@@ -2,10 +2,10 @@
 </script>
 
 <template>
-  <div>
-    <div>
-      <!-- <TitleBar title="Understanding Enclosed Auto Transport" /> -->
-      <p class="text-sm h-[100px] text-[#5D5D5F] font-[400]">
+  <div class="mx-auto mt-11 min-w-[300px] max-w-[1366px] h-full. p-2 flex">
+    <div class="mx-auto ml-1 w-[600px] h-auto">
+      <h2 class="lg:text-[24px] text-[18px] text-[#024E90]">Understanding Enclosed Auto Transport</h2>
+      <p class="mt-7 md:text-[16px] font-[400] text-[14px] text-[#5D5D5F]">
         Enclosed auto transport offers a superior level of security and
         protection compared to open-air transportation. By placing your vehicle
         in an enclosed trailer, it is shielded from the elements and potential
@@ -18,8 +18,8 @@
         small scratches or dents can significantly reduce their value.
       </p>
     </div>
-    <div class="rounded-xl shadow-xl h-[200px] p-3">
-        <img src="@/assets/img/lastnewsimg1.png" class="" />
+    <div class="">
+        <img class="lg:h-[250px] mt-5 w-[486px]" src="@/assets/img/enclosed1.png" />
     </div>
   </div>
 </template>
