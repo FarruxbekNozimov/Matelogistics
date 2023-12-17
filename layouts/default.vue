@@ -6,8 +6,9 @@
 		<div class="bg-white/90">
 			<!-- HEADER -->
 			<Header />
-			<div class="">
-				<slot class="bg-gray-500 font-['Mulish']" />
+			<div class="min-h-screen">
+				<NuxtLoadingIndicator color="#214690" height="3" duration="5000" />
+				<NuxtPage />
 			</div>
 			<!-- HEADER -->
 			<Footer class="md:block hidden" />
