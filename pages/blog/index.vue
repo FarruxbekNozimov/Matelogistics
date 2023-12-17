@@ -1,61 +1,31 @@
 <script setup>
-const route = useRoute();
-
-const { data, pending, error, refresh } = await useFetch(
-	`https://api.matelogisticss.com/api/articles`
-);
-console.log(data.value);
+const categories = [
+	"All",
+	"Tips-Tricks",
+	"Industry news",
+	"Company news",
+	"Maintenance",
+	"Spotlights",
+	"Usefull",
+];
 </script>
 
 <template>
-	<Container :px="`p-2`">
-		<div class="mb-10">
-			<TitleBar title="The latest stories for you" class="mb-10" />
-			<div class="flex items-center justify-between mb-5">
-				<div class="flex items-center gap-3">
-					<button class="bg-[#D0E4FF] rounded-full p-1">
-						<Icon name="ic:baseline-sync" class="text-4xl text-[#024E90]" />
-					</button>
-					<p class="text-[#024E90] text-[17px]">
-						{{ data.results[0].created_date }}
-					</p>
-				</div>
-				<div class="flex items-center gap-5">
-					<button class="bg-[#2C7BF2] border border-[#2C7BF2] rounded-full p-1">
-						<Icon
-							name="material-symbols:arrow-left-alt-rounded"
-							class="text-4xl text-white" />
-					</button>
-					<button
-						class="bg-white border border-[#2C7BF2] hover:bg-[#2C7BF2] rounded-full p-1">
-						<Icon
-							name="material-symbols:arrow-right-alt-rounded"
-							class="text-4xl text-[#2C7BF2] hover:text-white" />
-					</button>
-				</div>
-			</div>
-			<div class="w-full block">
-				<Swiper
-					:modules="[SwiperPagination]"
-					:loop="true"
-					:effect="'creative'"
-					:autoplay="{ delay: 1000, disableOnInteraction: true }"
-					:spaceBetween="10"
-					:breakpoints="{
-						400: { slidesPerView: 1 },
-						600: { slidesPerView: 2 },
-						900: { slidesPerView: 3 },
-					}"
-					:creative-effect="{
-						prev: { shadow: false, translate: ['-20%', 0, -1] },
-						next: { translate: ['100%', 0, 0] },
-					}">
-					<SwiperSlide v-for="el in data.results" :key="slide">
-						<CardsBlogCard :data="el" />
-					</SwiperSlide>
-				</Swiper>
+	<Container px="p-3">
+		<div class="px-20">
+			<h3 class="text-[#214690] text-[24px] font-[600]">Mate Logistics</h3>
+			<p class="text-[#5D5D5F] text-[14px] font-[400] mb-5">Select category</p>
+			<div
+				class="bg-gray-200/80 flex items-center justify-evenly rounded-full p-0.5">
+				<button
+					class="bg-white p-2 px-4 rounded-full text-[#9A999B]"
+					v-for="el in categories">
+					{{ el }}
+				</button>
 			</div>
 		</div>
+		<hr class="my-5" />
+		<HeaderTree :tree="[`Mate's blog`, 'Category']" />
 	</Container>
 </template>
 

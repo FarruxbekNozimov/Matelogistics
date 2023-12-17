@@ -1,5 +1,6 @@
 <script setup>
-const { data } = await useFetch("https://api.matelogisticss.com/api/articles");
+import { getArticles } from "@/store/articles";
+const { data } = await getArticles();
 </script>
 
 <template>
