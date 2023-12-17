@@ -1,4 +1,5 @@
 <script setup>
+defineProps(["title"]);
 import { getArticles } from "@/store/articles";
 const { data } = await getArticles();
 </script>
@@ -6,7 +7,7 @@ const { data } = await getArticles();
 <template>
 	<Container :px="`p-2`">
 		<div class="mb-10">
-			<TitleBar title="The latest stories for you" class="mb-10" />
+			<TitleBar :title="title" class="mb-10" />
 			<div class="flex items-center justify-between mb-5">
 				<div class="flex items-center gap-3">
 					<button class="bg-[#D0E4FF] rounded-full p-1">

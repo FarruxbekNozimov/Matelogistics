@@ -11,7 +11,7 @@ const categories = [
 </script>
 
 <template>
-	<Container px="p-3">
+	<Container px="p-2">
 		<div class="px-20">
 			<h3 class="text-[#214690] text-[24px] font-[600]">Mate Logistics</h3>
 			<p class="text-[#5D5D5F] text-[14px] font-[400] mb-5">Select category</p>
@@ -26,6 +26,7 @@ const categories = [
 		</div>
 		<hr class="my-5" />
 		<HeaderTree :tree="[`Mate's blog`, 'Category']" />
+		<SectionsLatestStories title="Here are top 3 articles for you" />
 	</Container>
 </template>
 

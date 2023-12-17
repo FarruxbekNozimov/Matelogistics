@@ -16,7 +16,7 @@ useSeoMeta({ title: "MateLogistics" });
 		<SectionsFormulaInfo />
 		<SectionsFAQ />
 		<SectionsReviews />
-		<SectionsLatestStories />
+		<SectionsLatestStories title="The latest stories for you" />
 	</div>
 </template>
 
