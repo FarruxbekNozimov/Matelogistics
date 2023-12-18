@@ -1,14 +1,9 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { base } from "@/store/mainURL";
 const route = useRoute();
-const isLoading = ref(true);
 const { pending, data } = await useLazyFetch(
-	`https://api.matelogisticss.com/api/articles/${route.params.slug}`
+	`${base}/articles/${route.params.slug}`
 );
-
-onMounted(() => {
-	isLoading.value = false;
-});
 </script>
 
 <template>

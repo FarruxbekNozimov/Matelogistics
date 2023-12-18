@@ -1,6 +1,4 @@
-<script setup>
-useSeoMeta({ title: "MateLogistics" });
-</script>
+<script setup></script>
 
 <template>
 	<div>
