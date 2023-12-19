@@ -9,7 +9,7 @@
 		</h2>
 		<div class="text-[20px]">
 			<label class="font-[500]">Transport car FROM</label>
-			<input
+			<inputa
 				type="text"
 				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-2xl font-[400] text-[20px] outline-none ring-1"
 				placeholder="Zip or city" />

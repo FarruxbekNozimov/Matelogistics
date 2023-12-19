@@ -9,7 +9,7 @@ definePageMeta({ layout: "quote" });
 			<img src="@/assets/img/logo.png" alt="" />
 		</div>
 		<div class="flex items-center justify-center w-full md:px-20 py-20">
-			<GetQuoteForm />
+			<QuoteGetQuoteForm />
 		</div>
 	</div>
 </template>

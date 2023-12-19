@@ -16,7 +16,7 @@ defineProps(["title", "text"]);
 					{{ text }}
 				</p>
 			</div>
-			<GetQuoteForm />
+			<QuoteGetQuoteForm />
 		</div>
 	</Container>
 </template>
