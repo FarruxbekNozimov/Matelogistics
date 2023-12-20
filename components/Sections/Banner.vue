@@ -16,7 +16,7 @@ defineProps(["title", "text", "noForm"]);
 					{{ text }}
 				</p>
 			</div>
-			<QuoteGetQuoteForm v-if="noForm" />
+			<QuoteGetQuoteForm v-if="!noForm" />
 		</div>
 	</Container>
 </template>
