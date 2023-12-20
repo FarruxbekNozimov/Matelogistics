@@ -16,8 +16,8 @@ const data = reactive({
 </script>
 
 <template>
-	<!-- <QuoteWait /> -->
-	<QuoteForm-1 v-if="!(data.ship_from && data.ship_to)" />
+	<QuoteWait />
+	<!-- <QuoteForm-1 v-if="!(data.ship_from && data.ship_to)" /> -->
 	<!-- <QuoteForm-2 v-if="!(data.car_year && data.ship_to && data.vehicle_runs)" /> -->
 	<!-- <QuoteForm-3 v-if="!(data.email && data.date && data.ship_to)" /> -->
 </template>
