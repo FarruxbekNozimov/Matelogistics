@@ -16,7 +16,6 @@
 		<SectionsFAQ/>
 		<SectionsReviews/>
 		<SectionsLetWorkTransport/>
-		<!-- <SectionsInfoRow /> -->
 	</div>
 </template>
 
