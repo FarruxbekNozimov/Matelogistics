@@ -8,7 +8,7 @@ const { data } = await getArticles();
 	<Container :px="`p-2`">
 		<div class="mb-10">
 			<TitleBar :title="title" class="mb-10" />
-			<div class="flex items-center justify-between mb-5">
+			<!-- <div class="flex items-center justify-between mb-5">
 				<div class="flex items-center gap-3">
 					<button class="bg-[#D0E4FF] rounded-full p-1">
 						<Icon name="ic:baseline-sync" class="text-4xl text-[#024E90]" />
@@ -30,7 +30,7 @@ const { data } = await getArticles();
 							class="text-4xl text-[#2C7BF2] hover:text-white" />
 					</button>
 				</div>
-			</div>
+			</div> -->
 			<div class="w-full block">
 				<Swiper
 					:modules="[SwiperAutoplay, SwiperPagination]"

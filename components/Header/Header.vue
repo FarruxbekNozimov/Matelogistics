@@ -14,21 +14,21 @@ import { navbar } from "@/data/navbar.js";
 					</button>
 					<!-- LOGO-->
 					<div class="flex lg:flex-1">
-						<a href="/">
+						<NuxtLink href="/">
 							<img class="h-12 w-auto" src="@/assets/img/logo.png" alt="" />
-						</a>
+						</NuxtLink>
 					</div>
 					<!-- NAVBAR-->
 					<div class="hidden lg:flex gap-7">
 						<div class="relative group" v-for="(el, i) in navbar">
-							<router-link
+							<NuxtLink
 								:to="typeof el === 'object' ? '' : el"
 								class="relative flex items-center gap-x-1 text-[#214690] group-hover:text-[#008AFF]">
 								{{ i }}
 								<Icon name="ph:caret-down-bold" v-if="typeof el === 'object'" />
 								<span
 									class="absolute w-0 group-hover:w-full bg-[#008AFF] h-[4px] rounded-full -bottom-1 duration-300"></span>
-							</router-link>
+							</NuxtLink>
 							<div class="">
 								<div
 									v-if="typeof el === 'object'"
@@ -80,22 +80,22 @@ import { navbar } from "@/data/navbar.js";
 					</div>
 				</div>
 				<!-- NAVBAR RIGHT BUTTONS-->
-				<router-link
+				<NuxtLink
 					to="/quote"
 					class="text-xs border border-red-500 border-r-0 p-2 text-red-500 rounded-2xl hover:bg-red-500 hover:text-white duration-300 font-bold md:mr-10 block lg:hidden">
 					Get a quote
-				</router-link>
+				</NuxtLink>
 				<div class="hidden lg:flex gap-5 lg:justify-end px-2">
-					<router-link
+					<NuxtLink
 						to="/quote"
 						class="lg:text-sm text-xs border border-red-500 border-r-0 p-2 lg:px-4 text-red-500 rounded-2xl hover:bg-red-500 hover:text-white duration-300 font-bold">
 						Get an instant quote
-					</router-link>
-					<router-link
+					</NuxtLink>
+					<NuxtLink
 						to="/quote"
 						class="text-sm border border-blue-500 text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-bold">
 						+1 (929) 592-3003
-					</router-link>
+					</NuxtLink>
 				</div>
 			</nav>
 		</Container>
