@@ -1,27 +1,94 @@
-<script setup></script>
+<script setup>
+import { actions } from "@/store/locations";
+import { ref } from "vue";
+
+const cities = ref();
+const form = reactive({
+	from: "",
+	to: "",
+	type: "",
+});
+const data = reactive({
+	ship_from: "",
+	ship_to: "",
+	vehicle: "",
+});
+
+const searchCities = async (val) => {
+	console.log(val);
+	if (!val) {
+		cities.value = [];
+	} else {
+		cities.value = await actions.getSearchCities(val);
+		console.log(cities.value);
+	}
+};
+</script>
 
 <template>
 	<div
-		class="md:w-[400px] font-[500] shadow-xl space-y-3 bg-white p-4 rounded-3xl">
+		class="md:w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
 		<h2 class="lg:text-2xl font-[600] text-xl mb-3 pr-6">
 			Get an instant quote or call us now
 			<span class="text-[#008AFF]">(929) 592-3003</span>
 		</h2>
-		<div class="text-[20px]">
+		<div class="text-[20px] relative">
 			<label class="font-[500]">Transport car FROM</label>
 			<input
 				type="text"
-				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[20px] outline-none border border-gray-200"
-				placeholder="Zip or city" />
+				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
+				placeholder="Zip or city"
+				v-model="form.from"
+				@input="(e) => searchCities(e.target.value)" />
+			<div
+				v-if="cities?.data?.results.length"
+				class="absolute top-20 rounded-xl w-full max-h-52 overflow-y-auto bg-white border border-gray-300 shadow-lg">
+				<div v-if="cities?.pending" class="text-center">
+					<Icon
+						name="eos-icons:bubble-loading"
+						class="text-2xl text-[#005BA8]" />
+				</div>
+				<div v-else v-for="el in cities.data.results">
+					<p
+						@click="
+							() => (
+								(data.ship_from = el.id), (form.from = `${el.name} ${el.zip}`)
+							)
+						"
+						class="w-full px-3 pt-2 hover:bg-gray-200 duration-300 cursor-pointer text-[15px] text-[#024E90]">
+						{{ el.name }} {{ el.zip }}
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="text-[20px]">
-			<label class="font-[500]">Transport car TO</label>
+		<div class="text-[20px] relative">
+			<label class="font-[500]">Transport car FROM</label>
 			<input
 				type="text"
-				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[20px] outline-none border border-gray-200"
-				placeholder="Zip or city" />
+				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
+				placeholder="Zip or city"
+				v-model="form.to"
+				@input="(e) => searchCities(e.target.value)" />
+			<div
+				v-if="cities?.data?.results.length"
+				class="absolute top-20 rounded-xl w-full max-h-52 overflow-y-auto bg-white border border-gray-300 shadow-lg">
+				<div v-if="cities?.pending" class="text-center">
+					<Icon
+						name="eos-icons:bubble-loading"
+						class="text-2xl text-[#005BA8]" />
+				</div>
+				<div v-else v-for="el in cities.data.results">
+					<p
+						@click="
+							() => ((data.ship_to = el.id), (form.to = `${el.name} ${el.zip}`))
+						"
+						class="w-full px-3 pt-2 hover:bg-gray-200 duration-300 cursor-pointer text-[15px] text-[#024E90]">
+						{{ el.name }} {{ el.zip }}
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="text-[20px] flex items-center gap-2">
+		<div class="text-[20px] flex items-center gap-2 mb-5">
 			<label class="font-[500] mr-2">Transport type</label>
 			<div class="flex items-center">
 				<input
