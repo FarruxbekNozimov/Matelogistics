@@ -40,53 +40,17 @@ const searchCities = async (val) => {
 				placeholder="Zip or city"
 				v-model="form.from"
 				@input="(e) => searchCities(e.target.value)" />
-			<div
-				v-if="cities?.data?.results.length"
-				class="absolute top-20 rounded-xl w-full max-h-52 overflow-y-auto bg-white border border-gray-300 shadow-lg">
-				<div v-if="cities?.pending" class="text-center">
-					<Icon
-						name="eos-icons:bubble-loading"
-						class="text-2xl text-[#005BA8]" />
-				</div>
-				<div v-else v-for="el in cities.data.results">
-					<p
-						@click="
-							() => (
-								(data.ship_from = el.id), (form.from = `${el.name} ${el.zip}`)
-							)
-						"
-						class="w-full px-3 pt-2 hover:bg-gray-200 duration-300 cursor-pointer text-[15px] text-[#024E90]">
-						{{ el.name }} {{ el.zip }}
-					</p>
-				</div>
-			</div>
+			<QuoteCitiesSelect :cities="cities" :data="data" :form="form" />
 		</div>
 		<div class="text-[20px] relative">
-			<label class="font-[500]">Transport car FROM</label>
+			<label class="font-[500]">Transport car TO</label>
 			<input
 				type="text"
 				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
 				placeholder="Zip or city"
 				v-model="form.to"
 				@input="(e) => searchCities(e.target.value)" />
-			<div
-				v-if="cities?.data?.results.length"
-				class="absolute top-20 rounded-xl w-full max-h-52 overflow-y-auto bg-white border border-gray-300 shadow-lg">
-				<div v-if="cities?.pending" class="text-center">
-					<Icon
-						name="eos-icons:bubble-loading"
-						class="text-2xl text-[#005BA8]" />
-				</div>
-				<div v-else v-for="el in cities.data.results">
-					<p
-						@click="
-							() => ((data.ship_to = el.id), (form.to = `${el.name} ${el.zip}`))
-						"
-						class="w-full px-3 pt-2 hover:bg-gray-200 duration-300 cursor-pointer text-[15px] text-[#024E90]">
-						{{ el.name }} {{ el.zip }}
-					</p>
-				</div>
-			</div>
+			<QuoteCitiesSelect :cities="cities" :data="data" :form="form" />
 		</div>
 		<div class="text-[20px] flex items-center gap-2 mb-5">
 			<label class="font-[500] mr-2">Transport type</label>
