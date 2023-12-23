@@ -1,27 +1,58 @@
-<script setup></script>
+<script setup>
+import { actions } from "@/store/locations";
+import { ref } from "vue";
+
+const cities = ref();
+const form = reactive({
+	from: "",
+	to: "",
+	type: "",
+});
+const data = reactive({
+	ship_from: "",
+	ship_to: "",
+	vehicle: "",
+});
+
+const searchCities = async (val) => {
+	console.log(val);
+	if (!val) {
+		cities.value = [];
+	} else {
+		cities.value = await actions.getSearchCities(val);
+		console.log(cities.value);
+	}
+};
+</script>
 
 <template>
 	<div
-		class="md:w-[400px] font-[500] shadow-xl space-y-3 bg-white p-4 rounded-3xl">
+		class="md:w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
 		<h2 class="lg:text-2xl font-[600] text-xl mb-3 pr-6">
 			Get an instant quote or call us now
 			<span class="text-[#008AFF]">(929) 592-3003</span>
 		</h2>
-		<div class="text-[20px]">
+		<div class="text-[20px] relative">
 			<label class="font-[500]">Transport car FROM</label>
 			<input
 				type="text"
-				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[20px] outline-none border border-gray-200"
-				placeholder="Zip or city" />
+				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
+				placeholder="Zip or city"
+				v-model="form.from"
+				@input="(e) => searchCities(e.target.value)" />
+			<QuoteCitiesSelect :cities="cities" :data="data" :form="form" />
 		</div>
-		<div class="text-[20px]">
+		<div class="text-[20px] relative">
 			<label class="font-[500]">Transport car TO</label>
 			<input
 				type="text"
-				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[20px] outline-none border border-gray-200"
-				placeholder="Zip or city" />
+				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
+				placeholder="Zip or city"
+				v-model="form.to"
+				@input="(e) => searchCities(e.target.value)" />
+			<QuoteCitiesSelect :cities="cities" :data="data" :form="form" />
 		</div>
-		<div class="text-[20px] flex items-center gap-2">
+		<div class="text-[20px] flex items-center gap-2 mb-5">
 			<label class="font-[500] mr-2">Transport type</label>
 			<div class="flex items-center">
 				<input

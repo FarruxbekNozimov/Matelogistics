@@ -6,7 +6,9 @@ definePageMeta({ layout: "quote" });
 	<div class="w-full h-screen bg-white">
 		<HeaderTop />
 		<div class="w-full flex item-center justify-center p-5">
-			<img src="@/assets/img/logo.png" alt="" />
+			<router-link to="/">
+				<img src="@/assets/img/logo.png" alt="" />
+			</router-link>
 		</div>
 		<div class="flex items-center justify-center w-full md:px-20 py-10">
 			<QuoteGetQuoteForm

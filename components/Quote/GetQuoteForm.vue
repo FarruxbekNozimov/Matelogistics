@@ -13,11 +13,16 @@ const data = reactive({
 	ship_from: null,
 	ship_to: null,
 });
+const steps = ref({
+	first: data.ship_from && data.ship_to && data.vehicle_runs,
+	second: data.car_year && data,
+	third: data.email && data.date && data,
+});
 </script>
 
 <template>
 	<!-- <QuoteWait /> -->
-	<!-- <QuoteForm-1 v-if="!(data.ship_from && data.ship_to)" /> -->
+	<QuoteForm-1 v-if="!steps.first" />
 	<!-- <QuoteForm-2 v-if="!(data.car_year && data.ship_to && data.vehicle_runs)" /> -->
 	<!-- <QuoteForm-3 v-if="!(data.email && data.date && data.ship_to)" /> -->
 </template>
