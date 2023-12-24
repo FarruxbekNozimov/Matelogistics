@@ -9,7 +9,7 @@ const simple = {
 </script>
 
 <template>
-	<Container px="p-2 m-5">
+	<UContainer>
 		<div class="bg-white border border-gray-100 rounded-xl shadow-xl p-5">
 			<div class="flex justify-between gap-10">
 				<div class="w-[70%]">
@@ -158,7 +158,7 @@ const simple = {
 				</div>
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

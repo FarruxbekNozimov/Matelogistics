@@ -15,18 +15,39 @@ const data = reactive({
 });
 const steps = ref({ first: true, second: false, third: false });
 const firstStepFunc = (ship_from, ship_to, ship_via_id) => {
+	console.log(ship_from, steps.value);
 	data.ship_from = ship_from;
 	data.ship_to = ship_to;
 	data.ship_via_id = ship_via_id;
+	steps.value.first = false;
+	steps.value.second = true;
+};
+const secondStepFunc = (date, vehicle) => {
+	console.log(ship_from, steps.value);
+	data.ship_from = ship_from;
+	data.ship_to = ship_to;
+	data.ship_via_id = ship_via_id;
+	steps.value.first = false;
+	steps.value.second = true;
+};
+const thirdStepFunc = (ship_from, ship_to, ship_via_id) => {
+	console.log(ship_from, steps.value);
+	data.ship_from = ship_from;
+	data.ship_to = ship_to;
+	data.ship_via_id = ship_via_id;
+	steps.value.first = false;
+	steps.value.second = true;
 };
 </script>
 
 <template>
 	<!-- <QuoteWait /> -->
-	<QuoteForm-1 :func="firstStepFunc" v-if="steps.first" />
-	<QuoteForm-2 :func="firstStepFunc" v-if="steps.second" />
-	<QuoteForm-3 :func="firstStepFunc" v-if="steps.third" />
+	<div
+		class="md:w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
+		<!-- <QuoteForm-1 :func="firstStepFunc" v-if="steps.first" /> -->
+		<QuoteForm-2 :func="secondStepFunc" />
+		<QuoteForm-3 :func="thirdStepFunc" v-if="steps.third" />
+	</div>
 </template>
-/
 
 <style scoped></style>

@@ -32,7 +32,12 @@ const links = [
 				:src="data.image"
 				class="w-full mb-5 rounded-2xl shadow-lg"
 				loading="lazy" />
-			<div class="text-[#5D5D5F] mb-10" v-html="data?.body"></div>
+			<div class="flex">
+				<div class="">
+					
+				</div>
+				<div class="text-[#5D5D5F] mb-10" v-html="data?.body"></div>
+			</div>
 		</div>
 	</UContainer>
 </template>

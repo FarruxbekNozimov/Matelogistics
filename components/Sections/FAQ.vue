@@ -51,7 +51,7 @@ const changeAcc = (num) => {
 					</p>
 					<router-link
 						to="/contact"
-						class="text-[24px] font-[400] bg-[#E52E2E] px-4 p-2 rounded-xl text-white font-[700] lg:inline block lg:text-start text-center">
+						class="text-[24px] bg-[#E52E2E] px-4 p-2 rounded-xl text-white font-[700] lg:inline block lg:text-start text-center">
 						Contact us!
 					</router-link>
 				</div>
