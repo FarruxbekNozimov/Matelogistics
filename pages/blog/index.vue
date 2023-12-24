@@ -18,7 +18,7 @@ const categories = [
 			<div
 				class="bg-gray-200/80 flex items-center justify-evenly rounded-full p-0.5">
 				<button
-					class="bg-white p-2 px-4 rounded-full text-[#9A999B]"
+					class="bg-white p-2 px-4 rounded-2xl text-[#9A999B]"
 					v-for="el in categories">
 					{{ el }}
 				</button>
