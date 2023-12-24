@@ -10,7 +10,7 @@ const importImage = (imageName) => {
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="mb-10 md:flex items-start gap-10">
 			<div class="md:w-1/2 w-full">
 				<TitleBar title="Unveiling the formula: " no="1" />
@@ -43,7 +43,7 @@ const importImage = (imageName) => {
 					:text="el.text" />
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

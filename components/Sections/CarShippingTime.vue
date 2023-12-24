@@ -23,7 +23,7 @@ const services = ref([
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="mb-10">
 			<TitleBar title="Timely transportation: " no="1" />
 			<TitleBar title="How long does car shipping take?" />
@@ -57,7 +57,7 @@ const services = ref([
 				</div>
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

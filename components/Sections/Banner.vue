@@ -4,7 +4,7 @@ defineProps(["title", "text", "noForm"]);
 
 <template>
 	<!-- MAIN BANNER -->
-	<Container :px="`p-2`">
+	<UContainer>
 		<div
 			class="bg-[url('@/assets/img/banner-car.png')] bg-no-repeat bg-cover rounded-[30px] md:flex items-center justify-between lg:px-10 p-4 pt-5 min-h-[355px]">
 			<div class="z-1 lg:w-[60%] w-full">
@@ -18,7 +18,7 @@ defineProps(["title", "text", "noForm"]);
 			</div>
 			<QuoteGetQuoteForm v-if="!noForm" />
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

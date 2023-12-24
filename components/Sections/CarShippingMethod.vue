@@ -33,7 +33,7 @@ const methods = ref([
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="mb-10">
 			<TitleBar title="Explore car shipping methods: " no="1" />
 			<TitleBar title="A guide to common auto transportation options" />
@@ -45,7 +45,7 @@ const methods = ref([
 					:text="el.text" />
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

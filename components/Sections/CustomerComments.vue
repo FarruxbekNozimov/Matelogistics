@@ -3,7 +3,7 @@ import { comments } from "@/data/comments";
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="lg:block hidden w-full p-2">
 			<h2 class="text-[#214690] lg:text-[24px] text-xl lg:px-4 font-bold">
 				Read what our customers have to say about their experience with Mate
@@ -41,7 +41,7 @@ import { comments } from "@/data/comments";
 				</SwiperSlide>
 			</Swiper>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

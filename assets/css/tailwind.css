@@ -9,6 +9,9 @@
 	font-family: "Mulish", sans-serif;
 	font-weight: 600;
 	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {

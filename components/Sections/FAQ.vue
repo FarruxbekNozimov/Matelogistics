@@ -12,7 +12,7 @@ const changeAcc = (num) => {
 
 <template>
 	<div class="bg-gradient-to-r from-[#008AFF] to-[#005BA8] mb-5 py-10">
-		<Container :px="`p-2`">
+		<UContainer>
 			<div class="mb-10">
 				<h2 class="text-white md:text-[48px] text-[24px] font-bold">
 					Frequently asked questions
@@ -56,7 +56,7 @@ const changeAcc = (num) => {
 					</router-link>
 				</div>
 			</div>
-		</Container>
+		</UContainer>
 	</div>
 </template>
 

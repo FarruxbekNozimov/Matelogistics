@@ -7,7 +7,7 @@ const counters = {
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="md:flex items-center justify-around text-center md:pr-32 mb-5">
 			<div class="relative" v-for="(el, i) in counters">
 				<img src="@/assets/img/back-pattern.png" class="md:h-[145px]" alt="" />
@@ -24,7 +24,7 @@ const counters = {
 				</div>
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

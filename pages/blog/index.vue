@@ -15,14 +15,14 @@ const categories = [
 </script>
 
 <template>
-	<Container px="p-2">
+	<UContainer>
 		<div class="p-2">
 			<UTabs :items="categories" @change="onChange" />
 		</div>
 		<hr class="my-5" />
 		<UBreadcrumb divider=">" :links="links" />
 		<SectionsLatestStories title="Here are top 3 articles for you" />
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>
