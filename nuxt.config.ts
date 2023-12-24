@@ -1,12 +1,10 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: [
-		"@nuxtjs/tailwindcss",
-		"nuxt-icon",
-		"nuxt-swiper",
-		"@nuxt/image",
-		"@nuxt/ui",
-	],
+	modules: ["@nuxt/ui", "nuxt-icon", "nuxt-swiper", "@nuxt/image"],
+	colorMode: {
+		preference: "light",
+	},
+	ui: {},
 	app: {
 		head: {
 			charset: "utf-8",

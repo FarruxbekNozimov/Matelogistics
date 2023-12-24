@@ -8,13 +8,13 @@ const changeAcc = (num) => {
 	if (faqOne.value == num) faqOne.value = null;
 	else faqOne.value = num;
 };
-</script>  
+</script>
 
 <template>
 	<div class="bg-gradient-to-r from-[#008AFF] to-[#005BA8] mb-5 py-10">
 		<Container :px="`p-2`">
 			<div class="mb-10">
-				<h2 class="font-[500] text-white md:text-[48px] text-[24px] font-bold">
+				<h2 class="text-white md:text-[48px] text-[24px] font-bold">
 					Frequently asked questions
 				</h2>
 				<div v-if="!no" class="w-56 h-1 bg-white rounded-full"></div>
@@ -27,12 +27,12 @@ const changeAcc = (num) => {
 						@click="changeAcc(i)">
 						<div class="w-[97%]">
 							<h3 class="text-[20px] text-[#024E90] font-[700]">
-								{{ el.title }}
+								{{ el.label }}
 							</h3>
 							<p
 								:class="faqOne == i ? 'text-[16px]' : 'text-[0px]'"
 								class="text-[#5D5D5F] duration-150 ease-in-out">
-								{{ el.text }}
+								{{ el.content }}
 							</p>
 						</div>
 						<Icon

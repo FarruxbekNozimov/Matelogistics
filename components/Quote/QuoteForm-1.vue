@@ -32,12 +32,12 @@ const searchCities = async (val) => {
 <template>
 	<div
 		class="md:w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
-		<h2 class="lg:text-2xl font-[600] text-xl mb-3 pr-6">
+		<h2 class="text-[#012A44] lg:text-2xl font-[600] text-xl mb-3 pr-6">
 			Get an instant quote or call us now
 			<span class="text-[#008AFF]">(929) 592-3003</span>
 		</h2>
 		<div class="text-[20px] relative">
-			<label class="font-[500]">Transport car FROM</label>
+			<label class="text-[#012A44] font-[500]">Transport car FROM</label>
 			<input
 				type="text"
 				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
@@ -70,7 +70,7 @@ const searchCities = async (val) => {
 		</div>
 
 		<div class="text-[20px] relative">
-			<label class="font-[500]">Transport car TO</label>
+			<label class="text-[#012A44] font-[500]">Transport car TO</label>
 			<input
 				type="text"
 				class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
@@ -102,7 +102,7 @@ const searchCities = async (val) => {
 			</div>
 		</div>
 		<div class="text-[20px] flex items-center gap-2 mb-5">
-			<label class="font-[500] mr-2">Transport type</label>
+			<label class="text-[#012A44] font-[500] mr-2">Transport type</label>
 			<div class="flex items-center">
 				<input
 					name="radio"

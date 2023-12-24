@@ -2,6 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer utilities {
+}
+
 * {
 	font-family: "Mulish", sans-serif;
 	font-weight: 600;
