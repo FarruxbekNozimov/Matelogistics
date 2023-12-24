@@ -4,6 +4,18 @@ const options = [
 	{ value: "yes", label: "YES" },
 	{ value: "no", label: "NO" },
 ];
+const form = reactive({
+	from: "",
+	from_active: false,
+	to: "",
+	to_active: false,
+	type: "",
+});
+const data = reactive({
+	ship_from: "",
+	ship_to: "",
+	ship_via_id: 1,
+});
 </script>
 
 <template>
@@ -29,25 +41,11 @@ const options = [
 			placeholder="Camry" />
 	</div>
 	<div class="text-[20px] flex items-center gap-2">
-		<URadioGroup
-			v-model="selected"
-			:options="options"
-			:ui="{
-				wrapper: 'relative flex items-start',
-				container: 'flex items-center h-5',
-			}"
-			model-value="yes">
-			<template #legend>
-				<label class="text-[#012A44] text-[20px] font-[500]">
-					Is it operable?
-				</label>
-			</template>
-		</URadioGroup>
-		<!-- <label class="text-[#012A44] text-[20px] font-[500] mr-2"
-			>Is it operable?</label
-		>
+		<label class="text-[#012A44] text-[20px] font-[500] mr-2">
+			Is it operable?
+		</label>
 		<div class="flex items-center">
-			<UInput
+			<input
 				name="radio"
 				id="radio-1"
 				type="radio"
@@ -58,7 +56,7 @@ const options = [
 			</label>
 		</div>
 		<div class="flex items-center">
-			<UInput
+			<input
 				name="radio"
 				id="radio-2"
 				type="radio"
@@ -66,13 +64,11 @@ const options = [
 			<label for="radio-2" class="ms-2 text-[16px] font-medium text-[#9A999B]">
 				No
 			</label>
-		</div> -->
+		</div>
 	</div>
-	<button
-		class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl px-5 py-2.5 mb-2 text-[20px]">
-		Confirmation details
-		<Icon name="ic:outline-chevron-right" class="text-2xl" />
-	</button>
+	<RedButton
+		title="Confirmation details"
+		:func="() => func(data.ship_from, data.ship_to, data.ship_via_id)" />
 	<div class="">
 		<QuoteStepQuote num="2" />
 	</div>

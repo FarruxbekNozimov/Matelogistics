@@ -18,12 +18,10 @@ const data = reactive({
 });
 
 const searchCities = async (val) => {
-	console.log(val);
 	if (!val) {
 		cities.value = [];
 	} else {
 		cities.value = await actions.getSearchCities(val);
-		console.log(cities.value);
 	}
 	return cities.value;
 };
@@ -35,10 +33,10 @@ const searchCities = async (val) => {
 		<span class="text-[#008AFF]">(929) 592-3003</span>
 	</h2>
 	<div class="text-[20px] relative">
-		<label class="text-[#012A44] font-[500]">Transport car FROM</label>
-		<input
+		<label class="text-[#012A44] font-[500] lb">Transport car FROM</label>
+		<UInput
 			type="text"
-			class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"
 			v-model="form.from"
 			@input="(e) => searchCities(e.target.value)"
@@ -67,9 +65,9 @@ const searchCities = async (val) => {
 
 	<div class="text-[20px] relative">
 		<label class="text-[#012A44] font-[500]">Transport car TO</label>
-		<input
+		<UInput
 			type="text"
-			class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer border border-gray-200 text-gray-500"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"
 			v-model="form.to"
 			@input="(e) => searchCities(e.target.value)"
@@ -121,12 +119,9 @@ const searchCities = async (val) => {
 			</label>
 		</div>
 	</div>
-	<button
-		@click="() => func(data.ship_from, data.ship_to, data.ship_via_id)"
-		class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl px-5 py-2.5 mb-2 text-[20px]">
-		Model of your car
-		<Icon name="ic:outline-chevron-right" class="text-2xl" />
-	</button>
+	<RedButton
+		title="Model of your car"
+		:func="() => func(data.ship_from, data.ship_to, data.ship_via_id)" />
 </template>
 
 <style scoped></style>

@@ -1,6 +1,12 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ["@nuxt/ui", "nuxt-icon", "nuxt-swiper", "@nuxt/image"],
+	modules: [
+		"@nuxt/ui",
+		"nuxt-icon",
+		"nuxt-swiper",
+		"@nuxt/image",
+		"nuxt-primevue",
+	],
 	colorMode: { preference: "light" },
 	app: {
 		head: {
