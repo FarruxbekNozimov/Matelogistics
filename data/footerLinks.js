@@ -2,13 +2,13 @@
 export const footerLinks = {
 	SERVICES: {
 		Open: "/",
-		Enclosed: "/",
+		Enclosed: "/enclosed-auto",
 		Expedited: "/",
 		Hawaii: "/",
 		Alaska: "/",
 	},
 	COMPANY: {
-		"About us": "/",
+		"About us": "/about",
 		"Terms & conditions": "/",
 		"Privacy policy": "/",
 		Sitemap: "/",
