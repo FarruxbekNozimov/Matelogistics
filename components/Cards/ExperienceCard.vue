@@ -13,7 +13,7 @@ defineProps(["img", "title", "text"]);
 				{{ title }}
 			</h3>
 		</div>
-		<p class="text-[#5D5D5F] md:text-lg text-[14px]">{{ text }}</p>
+		<p class="text-[#5D5D5F] text-[20px]">{{ text }}</p>
 	</div>
 </template>
 

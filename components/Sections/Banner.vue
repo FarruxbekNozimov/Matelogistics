@@ -6,7 +6,7 @@ defineProps(["title", "text", "noForm"]);
 	<!-- MAIN BANNER -->
 	<UContainer>
 		<div
-			class="bg-[url('@/assets/img/banner-car.png')] bg-no-repeat bg-cover rounded-[30px] md:flex items-center justify-between lg:px-10 p-4 pt-5 min-h-[355px]">
+			class="bg-[url('@/assets/img/banner-car.png')] bg-no-repeat bg-cover rounded-[30px] md:flex items-center justify-between lg:px-10 p-4 pt-5 min-h-[355px] mb-5">
 			<div class="z-1 lg:w-[60%] w-full">
 				<h3 class="lg:text-[50px] text-[28px] text-white font-semibold">
 					{{ title }}
