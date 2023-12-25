@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<Container px="p-2 py-10">
+	<UContainer>
 		<div
 			class="bg-gradient-to-r from-[#008AFF] to-[#005BA8] p-7 rounded-2xl relative lg:flex items-center justify-between">
 			<div class="space-y-5 w-1/2">
@@ -29,7 +29,7 @@
 				alt="img"
 				class="absolute right-24 bottom-0" />
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>
