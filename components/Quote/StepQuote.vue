@@ -3,7 +3,7 @@ defineProps(["num"]);
 </script>
 
 <template>
-	<div class="flex items-center justify-between block px-3">
+	<div class="flex items-center justify-between px-3">
 		<div
 			class="w-14 h-14 flex items-center justify-center rounded-full border-8 border-[#0071ED]/30"
 			v-for="el in 3">

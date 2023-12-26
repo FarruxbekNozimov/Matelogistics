@@ -1,21 +1,37 @@
 <script setup>
-const selected = ref("sms");
-const options = [
-	{ value: "yes", label: "YES" },
-	{ value: "no", label: "NO" },
-];
+defineProps(["func"]);
+import { actions } from "@/store/car";
+import { reactive, ref } from "vue";
+
+const models = ref();
+const makes = ref();
+
+const options = [{ label: "YES" }, { label: "NO" }];
 const form = reactive({
-	from: "",
-	from_active: false,
-	to: "",
-	to_active: false,
-	type: "",
+	date: "",
+	makes: makes?.data?.results[0].name,
+	model: "",
+	runs: "yes",
 });
-const data = reactive({
-	ship_from: "",
-	ship_to: "",
-	ship_via_id: 1,
-});
+
+const getMakes = async (val) => {
+	makes.value = await actions.getMakes();
+};
+
+const searchModels = async () => {
+	models.value = await actions.getModels(form.makes);
+};
+
+const people = [
+	{ id: 1, name: "Wade Cooper" },
+	{ id: 2, name: "Arlene Mccoy" },
+	{ id: 3, name: "Devon Webb" },
+	{ id: 4, name: "Tom Cook" },
+];
+const selected = ref(people[0].name);
+
+getMakes();
+// await searchModels();
 </script>
 
 <template>
@@ -26,20 +42,29 @@ const data = reactive({
 			inputClass="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[17px] outline-none"
 			placeholder="2024" />
 	</div>
-	<div class="text-[20px]">
-		<label class="text-[#012A44] text-[20px] font-[500]">Vehicle make</label>
-		<UInput
-			type="text"
-			inputClass="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[17px] outline-none"
-			placeholder="Toyota" />
+	<div class="text-[20px] relative">
+		<QuoteLabel title="Vehicle make" />
+		{{ makes?.data?.results[0].name }}
+		<USelectMenu
+			v-model="form.makes"
+			selectClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500 "
+			:options="makes?.data?.results"
+			placeholder="Toyota"
+			value-attribute="name"
+			option-attribute="name" />
 	</div>
-	<div class="text-[20px]">
-		<label class="text-[#012A44] text-[20px] font-[500]">Vehicle model</label>
-		<UInput
-			type="text"
-			inputClass="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[17px] outline-none"
-			placeholder="Camry" />
+
+	<div class="text-[20px] relative">
+		<QuoteLabel title="Vehicle model" />
+		<USelectMenu
+			v-model="form.model"
+			selectClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500 "
+			:options="models?.data?.results"
+			placeholder="Camry"
+			value-attribute="name"
+			option-attribute="name" />
 	</div>
+
 	<div class="text-[20px] flex items-center gap-2">
 		<label class="text-[#012A44] text-[20px] font-[500] mr-2">
 			Is it operable?
@@ -68,7 +93,7 @@ const data = reactive({
 	</div>
 	<RedButton
 		title="Confirmation details"
-		:func="() => func(data.ship_from, data.ship_to, data.ship_via_id)" />
+		:func="() => func(form.name, `${form.makes} ${form.model}`)" />
 	<div class="">
 		<QuoteStepQuote num="2" />
 	</div>

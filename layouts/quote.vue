@@ -9,6 +9,7 @@ useSeoMeta({ title: "MateLogistics Quote" });
 			<NuxtLoadingIndicator color="#214690" height="3" duration="5000" />
 			<NuxtPage class="bg-gray-500 font-['Mulish']" />
 		</div>
+		<UNotifications />
 	</div>
 </template>
 

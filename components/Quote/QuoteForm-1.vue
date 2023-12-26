@@ -18,11 +18,7 @@ const data = reactive({
 });
 
 const searchCities = async (val) => {
-	if (!val) {
-		cities.value = [];
-	} else {
-		cities.value = await actions.getSearchCities(val);
-	}
+	cities.value = !val ? [] : await actions.getSearchCities(val);
 	return cities.value;
 };
 </script>
@@ -32,54 +28,54 @@ const searchCities = async (val) => {
 		Get an instant quote or call us now
 		<span class="text-[#008AFF]">(929) 592-3003</span>
 	</h2>
+
 	<div class="text-[20px] relative">
-		<label class="text-[#012A44] font-[500] lb">Transport car FROM</label>
+		<QuoteLabel title="Transport car FROM" />
 		<UInput
 			type="text"
 			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"
 			v-model="form.from"
 			@input="(e) => searchCities(e.target.value)"
-			@focus="(form.from_active = true), (form.to_active = false)" />
-		<div
-			v-if="cities?.data?.results.length && form.from_active"
-			class="z-10 absolute top-20 rounded-xl w-full max-h-52 overflow-y-auto bg-white border border-gray-300 shadow-lg">
-			<div v-if="cities?.pending" class="text-center">
-				<Icon name="eos-icons:bubble-loading" class="text-2xl text-[#005BA8]" />
-			</div>
-			<div v-else v-for="el in cities.data.results">
-				<p
+			@focus="(form.from_active = true), (form.to_active = false)">
+			<template #trailing>
+				<span class="text-blue-400 text-xs">True City</span>
+			</template>
+		</UInput>
+		<QuoteList v-if="cities?.data?.results.length && form.from_active">
+			<QuoteLoadingList v-if="cities?.pending" />
+			<div v-else v-for="el in cities?.data?.results">
+				<QuoteItem
 					@click="
 						() => {
 							form.from = `${el.name} ${el.zip}`;
 							data.ship_from = el.id;
 							form.from_active = false;
 						}
-					"
-					class="w-full px-3 pt-2 hover:bg-gray-200 duration-300 cursor-pointer text-[15px] text-[#024E90]">
+					">
 					{{ el.name }} {{ el.zip }}
-				</p>
+				</QuoteItem>
 			</div>
-		</div>
+		</QuoteList>
 	</div>
 
 	<div class="text-[20px] relative">
-		<label class="text-[#012A44] font-[500]">Transport car TO</label>
+		<QuoteLabel title="Transport car TO" />
 		<UInput
 			type="text"
 			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"
 			v-model="form.to"
 			@input="(e) => searchCities(e.target.value)"
-			@focus="(form.to_active = true), (form.from_active = false)" />
-		<div
-			v-if="cities?.data?.results.length && form.to_active"
-			class="z-10 absolute top-20 rounded-xl w-full max-h-52 overflow-y-auto bg-white border border-gray-300 shadow-lg">
-			<div v-if="cities?.pending" class="text-center">
-				<Icon name="eos-icons:bubble-loading" class="text-2xl text-[#005BA8]" />
-			</div>
+			@focus="(form.to_active = true), (form.from_active = false)">
+			<template #trailing>
+				<span class="text-blue-400 text-xs">True City</span>
+			</template>
+		</UInput>
+		<QuoteList v-if="cities?.data?.results.length && form.to_active">
+			<QuoteLoadingList v-if="cities?.pending" />
 			<div v-else v-for="el in cities.data.results">
-				<p
+				<QuoteItem
 					@click="
 						() => {
 							form.to = `${el.name} ${el.zip}`;
@@ -89,12 +85,12 @@ const searchCities = async (val) => {
 					"
 					class="w-full px-3 pt-2 hover:bg-gray-200 duration-300 cursor-pointer text-[15px] text-[#024E90]">
 					{{ el.name }} {{ el.zip }}
-				</p>
+				</QuoteItem>
 			</div>
-		</div>
+		</QuoteList>
 	</div>
 	<div class="text-[20px] flex items-center gap-2 mb-5">
-		<label class="text-[#012A44] font-[500] mr-2">Transport type</label>
+		<QuoteLabel title="Transport type" />
 		<div class="flex items-center">
 			<input
 				name="radio"
