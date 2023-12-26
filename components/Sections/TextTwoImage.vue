@@ -23,7 +23,7 @@ const importImage = (imageName) => {
 					class="text-[#5D5D5F] lg:text-[16px] text-[14px] font-[400]"></div>
 				<h2
 					v-if="!button"
-					class="lg:text-[24px] mt-6 text-[18px] text-[#012A44]">
+					class="lg:text-[24px] my-5 text-[18px] text-[#214690]">
 					Now it's time to take the next step. Let`s use our live cost
 					calculator for your shipment
 				</h2>
@@ -34,12 +34,12 @@ const importImage = (imageName) => {
 					title="Use live cost calculator">
 				</RedButton>
 			</div>
-			<div class="">
+			<div class="text-center">
 				<img
-					class="shadow-xl hover:rotate-6 duration-300 lg:h-full mt-5 ml-16 w-[486px] z-1"
+					class="shadow-xl hover:rotate-6 duration-300 lg:h-full mt-5 ml-16 lg:w-[486px] w-[85%] z-1"
 					:src="importImage(img1)" />
 				<img
-					class="shadow-xl hover:rotate-6 duration-300 lg:h-full mt-[-50px] w-[486px] z-0"
+					class="shadow-xl hover:rotate-6 duration-300 lg:h-full mt-[-50px] lg:w-[486px] w-[85%] z-0"
 					:src="importImage(img2)" />
 			</div>
 		</div>

@@ -7,7 +7,7 @@ defineProps(["num", "title", "text"]);
 		class="rounded-xl lg:p-7 p-4 shadow hover:shadow-2xl lg:hover:scale-105 duration-300 bg-white">
 		<div class="w-full flex items-start gap-5">
 			<div
-				class="bg-[#E8F0FF] p-5 px-7 rounded-full md:text-3xl text-[20px] font-[700] text-[#024E90]">
+				class="border-8 border-[#E8F0FF] p-5 px-7 rounded-full md:text-3xl text-[20px] font-[700] text-[#024E90]">
 				{{ num }}
 			</div>
 			<div>
