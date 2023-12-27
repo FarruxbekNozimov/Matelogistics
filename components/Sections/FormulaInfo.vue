@@ -15,7 +15,7 @@ const importImage = (imageName) => {
 			<div class="md:w-1/2 w-full">
 				<TitleBar title="Unveiling the formula: " no="1" />
 				<TitleBar title="How car shipping costs are calculated?" />
-				<p class="mt-7 md:text-[20px] font-[400] text-[14px] text-[#5D5D5F]">
+				<p class="mt-7 font-[400] md:text-[20px] text-[14px] text-[#5D5D5F]">
 					Shipping costs are calculated based on several factors, including the
 					distance between the pickup and delivery locations, the size and
 					weight of the vehicle, the chosen shipping method (open or enclosed
@@ -26,7 +26,7 @@ const importImage = (imageName) => {
 					specific details of your shipment.
 				</p>
 				<p
-					class="text-[#012A44] font-[400] my-2 mt-8 md:text-[24px] text-[18px]">
+					class="text-[#012A44] my-2 mt-8 md:text-[24px] text-[18px] font-[400]">
 					Now it's time to take the next step. Let`s use our live cost
 					calculator for your shipment
 				</p>
@@ -35,7 +35,7 @@ const importImage = (imageName) => {
 					Use live cost calculator
 				</button>
 			</div>
-			<div class="md:w-1/2 space-y-5">
+			<div class="md:w-1/2 space-y-5 py-5">
 				<CardsFormulaInfoCard
 					v-for="el in formulaInfo"
 					:img="importImage(el.img)"

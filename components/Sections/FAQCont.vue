@@ -11,8 +11,9 @@ const changeAcc = (num) => {
 </script>
 
 <template>
-	<div class="shadow-xl bg-gradient-to-r from-[#008AFF] to-[#005BA8] mb-5 py-5">
-		<UContainer>
+	<div class="m-2">
+		<UContainer
+			class="rounded-3xl bg-gradient-to-r from-[#008AFF] to-[#005BA8] mb-5 py-5">
 			<div class="">
 				<div class="mb-10">
 					<h2 class="text-white md:text-[48px] text-[24px] font-bold">
@@ -27,14 +28,11 @@ const changeAcc = (num) => {
 							class="flex items-center justify-center bg-white p-3 rounded-xl mb-3 cursor-pointer shadow"
 							@click="changeAcc(i)">
 							<div class="w-[97%]">
-								<h3
-									class="md:text-[20px] text-[16px] text-[#024E90] font-[700]">
+								<h3 class="text-[20px] text-[#024E90] font-[700]">
 									{{ el.label }}
 								</h3>
 								<p
-									:class="
-										faqOne == i ? 'md:text-[16px] text-[14px]' : 'text-[0px]'
-									"
+									:class="faqOne == i ? 'text-[16px]' : 'text-[0px]'"
 									class="text-[#5D5D5F] duration-150 ease-in-out">
 									{{ el.content }}
 								</p>
@@ -46,10 +44,10 @@ const changeAcc = (num) => {
 						</div>
 					</div>
 					<div class="md:w-1/2 py-4">
-						<h3 class="md:text-[40px] text-[24px] text-white font-[700]">
+						<h3 class="text-[40px] text-white font-[700]">
 							Still have a question?
 						</h3>
-						<p class="md:text-[24px] text-[18px] font-[400] text-white mb-5">
+						<p class="text-[24px] font-[400] text-white mb-5">
 							If you can not find answers to your questions, you can always
 							contact us. We are here to answer. Call (929) 592-3003
 						</p>

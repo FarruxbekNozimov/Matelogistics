@@ -9,7 +9,7 @@ useSeoMeta({ title: "MateLogistics" });
 			<!-- HEADER -->
 			<Header />
 			<div class="min-h-screen py-5">
-				<NuxtLoadingIndicator color="#214690" height="3" duration="5000" />
+				<NuxtLoadingIndicator color="#214690" :height="3" :duration="5000" />
 				<NuxtPage />
 			</div>
 			<!-- HEADER -->

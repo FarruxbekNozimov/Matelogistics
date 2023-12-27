@@ -10,7 +10,7 @@ const form = reactive({
 	car_year: "",
 	makes: "BMW",
 	model: "M5",
-	runs: "yes",
+	runs: true,
 	selected_makes: {},
 });
 
@@ -76,7 +76,7 @@ searchModels(4);
 			:ui="{ inactive: 'bg-gray-400', active: 'bg-blue-500' }"
 			v-model="form.runs" />
 		<span class="text-[#012A44] text-[17px] font-[500] mr-2">YES</span>
-	</div>	
+	</div>
 	<RedButton
 		title="Confirmation details"
 		:func="

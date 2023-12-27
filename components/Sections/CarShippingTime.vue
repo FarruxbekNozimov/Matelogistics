@@ -49,11 +49,11 @@ const services = ref([
 					<img
 						src="@/assets/img/car-shipping-time-car.png"
 						class="lg:h-[480px] w-full" />
-					<RedButton
+					<router-link
 						to="/calculator"
 						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 w-[95%] bottom-3 left-3">
 						Use live cost calculator
-					</RedButton>
+					</router-link>
 				</div>
 			</div>
 		</div>

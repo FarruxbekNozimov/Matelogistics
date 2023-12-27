@@ -92,7 +92,7 @@ import { navbar } from "@/data/navbar.js";
 						Get an instant quote
 					</NuxtLink>
 					<NuxtLink
-						to="/quote"
+						to="tel:+1929592-3003"
 						class="text-sm border border-blue-500 text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-bold">
 						+1 (929) 592-3003
 					</NuxtLink>

@@ -33,7 +33,7 @@ const searchCities = async (val) => {
 		<QuoteLabel title="Transport car FROM" />
 		<UInput
 			type="text"
-			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"
 			v-model="form.from"
 			@input="(e) => searchCities(e.target.value)"
@@ -63,7 +63,7 @@ const searchCities = async (val) => {
 		<QuoteLabel title="Transport car TO" />
 		<UInput
 			type="text"
-			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"
 			v-model="form.to"
 			@input="(e) => searchCities(e.target.value)"
@@ -99,7 +99,9 @@ const searchCities = async (val) => {
 				class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
 				checked
 				@change="() => (data.ship_via_id = 1)" />
-			<label for="radio-1" class="ms-2 text-[16px] font-medium text-[#9A999B]">
+			<label
+				for="radio-1"
+				class="ms-2 md:text-[16px] text-[12px] font-medium text-[#9A999B]">
 				Open
 			</label>
 		</div>
@@ -110,7 +112,9 @@ const searchCities = async (val) => {
 				type="radio"
 				class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
 				@change="() => (data.ship_via_id = 2)" />
-			<label for="radio-2" class="ms-2 text-[16px] font-medium text-[#9A999B]">
+			<label
+				for="radio-2"
+				class="ms-2 md:text-[16px] text-[12px] font-medium text-[#9A999B]">
 				Enclosed
 			</label>
 		</div>

@@ -51,7 +51,7 @@ const secondStepFunc = (car_year, vehicle, vehicle_runs) => {
 	if (car_year && vehicle && vehicle_runs) {
 		data.car_year = car_year;
 		data.vehicle = vehicle;
-		data.vehicle_runs = vehicle_runs;
+		data.vehicle_runs = vehicle_runs ? "Yes" : "No";
 		steps.value.second = false;
 		steps.value.third = true;
 	} else {
@@ -85,12 +85,13 @@ const createLead = async (body) => {
 		vehicle_runs: body.vehicle_runs,
 		ship_via_id: body.ship_via_id,
 		email: body.email,
-		nbm: body.nbm,
+		nbm: `${body.nbm}`,
 		car_year: body.car_year,
 		vehicle: body.vehicle,
 		ship_from: body.ship_from,
 		ship_to: body.ship_to,
 	};
+	console.log(body);
 	await actions.createLead(payload);
 	steps.value.end = false;
 	router.push("/thanks");
@@ -99,7 +100,7 @@ const createLead = async (body) => {
 
 <template>
 	<div
-		class="w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
+		class="max-w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
 		<QuoteWait v-if="steps.end" />
 		<QuoteForm-1 :func="firstStepFunc" v-if="steps.first" />
 		<QuoteForm-2 :func="secondStepFunc" v-if="steps.second" />
