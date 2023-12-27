@@ -2,7 +2,7 @@
 
 <template>
 	<UContainer>
-		<div class="flex items-center justify-between my-14">
+		<div class="flex items-start justify-between gap-20 my-14">
 			<ContactMainLeft class="w-1/2" />
 			<ContactMainRight class="w-1/2" />
 		</div>
