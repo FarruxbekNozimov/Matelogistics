@@ -1,39 +1,50 @@
-<script setup></script>
+<script setup>
+defineProps(["func"]);
+import { reactive } from "vue";
+
+const form = reactive({
+	email: "",
+	date: "",
+	nbm: "",
+});
+</script>
 
 <template>
 	<div class="text-[20px]">
 		<label class="font-[500]">Email to send a quote</label>
-		<input
-			type="number"
-			class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[20px] outline-none border border-gray-200"
-			placeholder="Your email" />
+		<UInput
+			type="email"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px]  outline-none cursor-pointer text-gray-500 "
+			placeholder="Your email"
+			v-model="form.email" />
 	</div>
 	<div class="text-[20px]">
 		<label class="font-[500]">First available date</label>
-		<input
+		<UInput
 			type="date"
-			class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[20px] outline-none border border-gray-200 text-gray-400"
-			placeholder="Toyota" />
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px]  outline-none cursor-pointer text-gray-500 "
+			placeholder="Date"
+			v-model="form.date" />
 	</div>
 	<div class="text-[20px]">
 		<label class="font-[500]">Phone number</label>
-		<input
-			type="text"
-			class="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[20px] outline-none border border-gray-200"
-			placeholder="Your phone" />
+		<UInput
+			type="number"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px]  outline-none cursor-pointer text-gray-500 "
+			placeholder="(___) ___ - ___"
+			v-model="form.nbm" />
 	</div>
 	<p class="text-[#012A44] text-[10px]">
 		By providing your phone number and email, you are agreeing to our
-		<router-link to="/privacy">Terms</router-link> ,
-		<router-link to="/privacy">Privacy Policy</router-link>, which allows us to
-		contact you via calls, texts, and emails. Agreeing to our terms is not a
-		requirement for purchasing products, goods, or services. You may opt out of
-		these communications at any time.
+		<router-link to="/terms" class="text-blue-400">Terms</router-link> ,
+		<router-link to="/privacy" class="text-blue-400">Privacy Policy</router-link
+		>, which allows us to contact you via calls, texts, and emails. Agreeing to
+		our terms is not a requirement for purchasing products, goods, or services.
+		You may opt out of these communications at any time.
 	</p>
-	<button
-		class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl px-5 py-2.5 mb-2 text-[20px]">
-		Request a quote
-	</button>
+	<RedButton
+		title="Request a quote"
+		:func="() => func(form.email, form.date, form.nbm)" />
 	<div class="">
 		<QuoteStepQuote num="3" />
 	</div>

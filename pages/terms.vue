@@ -7,9 +7,10 @@ import { privacy } from "@/data/privacy";
 	<div>
 		<SectionsBanner
 			title="Terms and Conditions"
-			text="At Mate Logistics, we are dedicated to provide you with comprehensive and reliable auto transport solutions. " />
+			text="At Mate Logistics, we are dedicated to provide you with comprehensive and reliable auto transport solutions. "
+			noForm="1" />
 		<br />
-		<Container>
+		<UContainer>
 			<div v-for="(el, i) in privacy" class="px-20 mb-10">
 				<h3 class="text-[#214690] text-[30px] font-[700] mb-5">{{ i }}</h3>
 				<p class="text-[#5D5D5F] text-[16px]">{{ el }}</p>
@@ -25,7 +26,7 @@ import { privacy } from "@/data/privacy";
 					This Agreement is effective as of December 15, 2023.
 				</p>
 			</div>
-		</Container>
+		</UContainer>
 		<SectionsLetWorkTransport />
 	</div>
 </template>

@@ -6,32 +6,27 @@ import { reactive, ref } from "vue";
 const models = ref();
 const makes = ref();
 
-const options = [{ label: "YES" }, { label: "NO" }];
 const form = reactive({
-	date: "",
-	makes: makes?.data?.results[0].name,
-	model: "",
+	car_year: "",
+	makes: "BMW",
+	model: "M5",
 	runs: "yes",
+	selected_makes: {},
 });
 
-const getMakes = async (val) => {
+const getMakes = async () => {
 	makes.value = await actions.getMakes();
+	return makes.value;
 };
 
-const searchModels = async () => {
-	models.value = await actions.getModels(form.makes);
+const searchModels = async (val) => {
+	models.value = await actions.getModels(val);
+	form.model = models.value.data?.results[0].name;
+	return models.value;
 };
-
-const people = [
-	{ id: 1, name: "Wade Cooper" },
-	{ id: 2, name: "Arlene Mccoy" },
-	{ id: 3, name: "Devon Webb" },
-	{ id: 4, name: "Tom Cook" },
-];
-const selected = ref(people[0].name);
 
 getMakes();
-// await searchModels();
+searchModels(4);
 </script>
 
 <template>
@@ -39,19 +34,26 @@ getMakes();
 		<label class="font-[500]">Vehicle year</label>
 		<UInput
 			type="number"
-			inputClass="p-2 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[17px] outline-none"
-			placeholder="2024" />
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px]  outline-none cursor-pointer text-gray-500 "
+			placeholder="2024"
+			v-model="form.car_year" />
 	</div>
 	<div class="text-[20px] relative">
 		<QuoteLabel title="Vehicle make" />
-		{{ makes?.data?.results[0].name }}
 		<USelectMenu
 			v-model="form.makes"
-			selectClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500 "
+			selectClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px]  outline-none cursor-pointer text-gray-500 "
 			:options="makes?.data?.results"
-			placeholder="Toyota"
+			placeholder="BMW"
 			value-attribute="name"
-			option-attribute="name" />
+			option-attribute="name"
+			@change="
+				(e) => {
+					console.log(e);
+					form.selected_makes = e.target;
+					searchModels(makes?.data?.results[0].id);
+				}
+			" />
 	</div>
 
 	<div class="text-[20px] relative">
@@ -60,7 +62,7 @@ getMakes();
 			v-model="form.model"
 			selectClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px] outline-none cursor-pointer text-gray-500 "
 			:options="models?.data?.results"
-			placeholder="Camry"
+			placeholder="M5"
 			value-attribute="name"
 			option-attribute="name" />
 	</div>
@@ -69,31 +71,17 @@ getMakes();
 		<label class="text-[#012A44] text-[20px] font-[500] mr-2">
 			Is it operable?
 		</label>
-		<div class="flex items-center">
-			<input
-				name="radio"
-				id="radio-1"
-				type="radio"
-				class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
-				checked />
-			<label for="radio-1" class="ms-2 text-[16px] font-medium text-[#9A999B]">
-				Yes
-			</label>
-		</div>
-		<div class="flex items-center">
-			<input
-				name="radio"
-				id="radio-2"
-				type="radio"
-				class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500" />
-			<label for="radio-2" class="ms-2 text-[16px] font-medium text-[#9A999B]">
-				No
-			</label>
-		</div>
-	</div>
+		<span class="text-[#012A44] text-[17px] font-[500] mr-2">NO</span>
+		<UToggle
+			:ui="{ inactive: 'bg-gray-400', active: 'bg-blue-500' }"
+			v-model="form.runs" />
+		<span class="text-[#012A44] text-[17px] font-[500] mr-2">YES</span>
+	</div>	
 	<RedButton
 		title="Confirmation details"
-		:func="() => func(form.name, `${form.makes} ${form.model}`)" />
+		:func="
+			() => func(form.car_year, `${form.makes} ${form.model}`, form.runs)
+		" />
 	<div class="">
 		<QuoteStepQuote num="2" />
 	</div>
