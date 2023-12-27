@@ -1,5 +1,8 @@
 <script setup>
 import { actions } from "@/store/contact";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 const toast = useToast();
 
 const subjects = [
@@ -34,6 +37,12 @@ const sendMessage = async () => {
 			comment: state.comment,
 		};
 		await actions.createContact(data);
+		state.name = "";
+		state.email = "";
+		state.nmb = "";
+		state.subject = subjects[0];
+		state.comment = "";
+		router.push("/thank-you");
 	} else {
 		toast.add({
 			title: "Please fill out the form",

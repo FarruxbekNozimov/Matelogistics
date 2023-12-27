@@ -11,7 +11,7 @@ import { privacy } from "@/data/privacy";
 			noForm="1" />
 		<br />
 		<UContainer>
-			<div v-for="(el, i) in privacy" class="px-20 mb-10">
+			<div v-for="(el, i) in privacy" class="lg:px-20 mb-10">
 				<h3 class="text-[#214690] text-[30px] font-[700] mb-5">{{ i }}</h3>
 				<p class="text-[#5D5D5F] text-[16px]">{{ el }}</p>
 			</div>
