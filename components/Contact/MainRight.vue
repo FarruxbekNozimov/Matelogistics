@@ -35,9 +35,9 @@ const workingTime = [
 
 <template>
 	<div>
-		<h3 class="text-[#214690] text-[25px] font-[400] mb-5">Contact details</h3>
+		<h3 class="text-[#214690] text-[25px] font-[500] mb-5">Contact details</h3>
 		<ContactDetailItem v-for="el in details" :data="el" />
-		<h3 class="text-[#214690] text-[26px] font-[400] mb-5">
+		<h3 class="text-[#214690] text-[26px] font-[500] mb-5 mt-10">
 			Working hours with Eastern Time Zone (EST)
 		</h3>
 		<ContactDetailItem v-for="el in workingTime" :data="el" noIcon="1" />
