@@ -12,11 +12,11 @@ export const navbar = {
 	},
 	"WE OFFER": {
 		Services: {
-			"Open trailer": ["Cost effective method", "/"],
-			"Enclosed trailer": ["Safest and secure method", "/enclosed-auto"],
-			"Expedited service": ["Guaranteed pick up", "/"],
-			Hawaii: ["Shipping from/to Hawaii", "/"],
-			Alaska: ["Shipping from/to Alaska", "/"],
+			"Open trailer": ["Cost effective method", "/service/open"],
+			"Enclosed trailer": ["Safest and secure method", "/service/enclosed"],
+			"Expedited service": ["Guaranteed pick up", "/service/enclosed"],
+			Hawaii: ["Shipping from/to Hawaii", "/service/hawaii"],
+			Alaska: ["Shipping from/to Alaska", "/service/alaska"],
 		},
 		"For individuals": {
 			"Individual relocation": ["Send your car before you leave", "/"],
