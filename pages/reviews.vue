@@ -26,10 +26,16 @@ import { reviews } from "@/data/reviews";
 				comprehensive overview.
 			</h3>
 
-			<div class="grid grid-rows-4 md:grid-cols-2 gap-4">
-				<CardsReviewOverviewCard :data="reviews[0]" class="row-span-4" />
+			<div class="grid md:grid-rows-2 md:grid-cols-2 gap-5">
+				<CardsReviewOverviewCardBig :data="reviews[0]" class="row-span-4" />
 				<CardsReviewOverviewCard :data="reviews[1]" class="row-span-2" />
 				<CardsReviewOverviewCard :data="reviews[2]" class="row-span-2" />
+				<CardsReviewOverviewCard :data="reviews[3]" class="row-span-2" />
+				<CardsReviewOverviewCardBig :data="reviews[4]" class="row-span-4" />
+				<CardsReviewOverviewCard :data="reviews[5]" class="row-span-2" />
+				<CardsReviewOverviewCardBig :data="reviews[6]" class="row-span-4" />
+				<CardsReviewOverviewCard :data="reviews[7]" class="row-span-2" />
+				<CardsReviewOverviewCard :data="reviews[8]" class="row-span-2" />
 			</div>
 		</UContainer>
 	</div>
