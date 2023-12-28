@@ -18,11 +18,10 @@
         debris, harsh weather conditions, and potential vandalism. This level of
         protection is particularly important for high-value vehicles, as even
         small scratches or dents can significantly reduce their value."
-			img="enclosed1.png"
-			firstImg="1" />
-		<SectionsTextImage
-			title="Benefits of Enclosed Auto Transport"
-			text="Enclosed auto transport provides numerous benefits that make it an
+    />
+    <SectionsInfoRow2
+      title="Benefits of Enclosed Auto Transport"
+      text="Enclosed auto transport provides numerous benefits that make it an
         attractive option for transporting your vehicle. One of the main
         advantages is the enhanced protection it offers. Unlike open-air
         transport, enclosed shipping ensures that your vehicle is fully
