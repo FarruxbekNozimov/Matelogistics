@@ -5,14 +5,14 @@ export const actions = {
 		return res.results;
 	},
 	async getCities() {
-		return await useFetch(`${base}/cities?page=3`);
+		return await useFetch(`${base}/cities`);
 	},
 	async getCurrentCity(payload) {
 		const res = await useFetch(`/city/${payload.currentCity}`);
 		return res;
 	},
 	async getSearchCities(payload) {
-		const res = await useFetch(`${base}/cities?page_size=100&q=${payload}`);
+		const res = await useFetch(`${base}/cities?page_size=50&q=${payload}`);
 		return res;
 	},
 	async getSearchStates(payload) {

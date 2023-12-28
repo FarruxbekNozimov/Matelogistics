@@ -13,6 +13,7 @@
 		<SectionsExperience />
 		<SectionsFormulaInfo />
 		<SectionsFAQ />
+		<SectionsMap />
 		<SectionsReviews />
 		<SectionsLatestStories title="The latest stories for you" />
 	</div>

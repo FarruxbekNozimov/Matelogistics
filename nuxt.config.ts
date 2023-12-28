@@ -1,15 +1,18 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "nuxt-swiper", "@nuxt/image"],
+	modules: ["@nuxt/ui", "nuxt-icon", "nuxt-swiper", "@nuxt/image"],
+	ui: {
+		notifications: {
+			position: "top-0 bottom-auto",
+		},
+	},
+	colorMode: { preference: "light" },
 	app: {
 		head: {
 			charset: "utf-8",
 			viewport: "width=device-width, initial-scale=1",
 			link: [
-				{
-					rel: "logo",
-					href: "@/public/logo.png",
-				},
+				{ rel: "logo", href: "@/public/logo.png" },
 				{
 					rel: "stylesheet",
 					href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css",

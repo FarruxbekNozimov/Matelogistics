@@ -9,7 +9,7 @@ const simple = {
 </script>
 
 <template>
-	<Container px="p-2 m-5">
+	<UContainer>
 		<div class="bg-white border border-gray-100 rounded-xl shadow-xl p-5">
 			<div class="flex justify-between gap-10">
 				<div class="w-[70%]">
@@ -38,7 +38,7 @@ const simple = {
 						</h3>
 						<div class="flex items-center gap-5">
 							<div
-								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC] rounded">
+								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC]">
 								<input
 									id="bordered-radio-1"
 									type="radio"
@@ -52,7 +52,7 @@ const simple = {
 								</label>
 							</div>
 							<div
-								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC] rounded">
+								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC]">
 								<input
 									checked
 									id="bordered-radio-2"
@@ -74,7 +74,7 @@ const simple = {
 						</h3>
 						<div class="flex items-center gap-5">
 							<div
-								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC] rounded">
+								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC]">
 								<input
 									id="bordered-radio-1"
 									type="radio"
@@ -88,7 +88,7 @@ const simple = {
 								</label>
 							</div>
 							<div
-								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC] rounded">
+								class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC]">
 								<input
 									checked
 									id="bordered-radio-2"
@@ -158,7 +158,7 @@ const simple = {
 				</div>
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

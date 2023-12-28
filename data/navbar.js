@@ -13,7 +13,7 @@ export const navbar = {
 	"WE OFFER": {
 		Services: {
 			"Open trailer": ["Cost effective method", "/"],
-			"Enclosed trailer": ["Safest and secure method", "/"],
+			"Enclosed trailer": ["Safest and secure method", "/enclosed-auto"],
 			"Expedited service": ["Guaranteed pick up", "/"],
 			Hawaii: ["Shipping from/to Hawaii", "/"],
 			Alaska: ["Shipping from/to Alaska", "/"],
@@ -32,8 +32,8 @@ export const navbar = {
 		},
 	},
 	"WHY MATE?": {
-		Reviews: ["Feel the excellence", "/"],
-		"About us": ["How we started", "/"],
+		Reviews: ["Feel the excellence", "/reviews"],
+		"About us": ["How we started", "/about"],
 		"Vision and mission": ["The reason for being", "/"],
 	},
 	BLOG: "/blog",

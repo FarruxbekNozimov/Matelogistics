@@ -2,10 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer utilities {
+}
+
 * {
 	font-family: "Mulish", sans-serif;
 	font-weight: 600;
 	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -14,7 +20,4 @@
 ::-webkit-scrollbar-thumb {
 	background: #056ac4;
 	border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: #b30000;
 }

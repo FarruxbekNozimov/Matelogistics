@@ -8,9 +8,9 @@
 			Logistics has shipped over 720 vehicles to all 50 states last 12 months.
 		</p>
 		<div class="lg:flex hidden items-center gap-3">
-			<router-link to="/contact" class="text-sm text-gray-500"
-				>Contact us</router-link
-			>
+			<router-link to="/contact" class="text-sm text-gray-500">
+				Contact us
+			</router-link>
 			<Icon name="ic:baseline-circle" class="text-blue-500" />
 			<router-link
 				to="/check-my-order"

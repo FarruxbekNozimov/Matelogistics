@@ -5,7 +5,7 @@ const { data } = await getArticles();
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="mb-10">
 			<TitleBar :title="title" class="mb-10" />
 			<!-- <div class="flex items-center justify-between mb-5">
@@ -53,7 +53,7 @@ const { data } = await getArticles();
 				</Swiper>
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

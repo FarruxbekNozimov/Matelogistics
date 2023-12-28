@@ -28,7 +28,7 @@ const services = ref([
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="mb-10 mt-5">
 			<TitleBar title="Effortless car shipping: " no="1" />
 			<TitleBar title="A 3-step process" class="mb-5" />
@@ -55,7 +55,7 @@ const services = ref([
 				</div>
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

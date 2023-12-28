@@ -10,7 +10,7 @@ const importImage = (imageName) => {
 </script>
 
 <template>
-	<Container :px="`p-2`">
+	<UContainer>
 		<div class="mb-10">
 			<TitleBar title="Experience the excellence:" no="1" />
 			<TitleBar title="What you get when you choose to work with us" />
@@ -22,7 +22,7 @@ const importImage = (imageName) => {
 					:text="el.text" />
 			</div>
 		</div>
-	</Container>
+	</UContainer>
 </template>
 
 <style scoped></style>

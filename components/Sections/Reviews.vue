@@ -9,7 +9,7 @@ const importImage = (imageName) => {
 
 <template>
 	<div>
-		<Container :px="`p-2`">
+		<UContainer>
 			<div class="md:flex space-y-5 items-center justify-evenly mb-10">
 				<CardsReviewCard
 					title="Google"
@@ -22,7 +22,7 @@ const importImage = (imageName) => {
 					number="4.6"
 					:img="importImage('bbb-review.png')" />
 			</div>
-		</Container>
+		</UContainer>
 	</div>
 </template>
 
