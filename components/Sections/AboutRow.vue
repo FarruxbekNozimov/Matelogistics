@@ -13,7 +13,7 @@ defineProps(["title", "text", "img"]);
     <div class="">
       <img
         class="lg:h-[250px] mt-5 w-[486px]"
-        src="@/assets/img/enclosed1.png"
+        src="@/assets/img/our-vision.png"
       />
     </div>
   </div>

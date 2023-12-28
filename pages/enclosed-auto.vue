@@ -19,6 +19,7 @@
         debris, harsh weather conditions, and potential vandalism. This level of
         protection is particularly important for high-value vehicles, as even
         small scratches or dents can significantly reduce their value."
+      img="enclosed1"
     />
     <SectionsInfoRow2
       title="Benefits of Enclosed Auto Transport"
