@@ -1,7 +1,7 @@
 // THERE ARE FOOTER LINKS
 export const footerLinks = {
 	SERVICES: {
-		Open: "/",
+		Open: "/open-car-shipping",
 		Enclosed: "/enclosed-auto",
 		Expedited: "/",
 		Hawaii: "/",
@@ -10,7 +10,7 @@ export const footerLinks = {
 	COMPANY: {
 		"About us": "/about",
 		"Terms & conditions": "/",
-		"Privacy policy": "/",
+		"Privacy policy": "/privacy",
 		Sitemap: "/",
 		"Contact us": "/",
 	},
@@ -18,7 +18,7 @@ export const footerLinks = {
 		"Live cost calculator": "/",
 		"How it works?": "/",
 		Blog: "/",
-		Help: "/",
+		Help: "/help",
 		"Check order status": "/",
 	},
 };

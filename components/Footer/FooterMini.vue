@@ -8,7 +8,7 @@ import { footerLinks } from "@/data/footerLinks";
 			<div class="">
 				<img src="@/assets/img/matelogo-footer.png" class="w-full mb-3" />
 				<div class="flex items-center justify-between gap-5 mb-2">
-					<a href="">
+					<a href="https://www.instagram.com/matelogistics/">
 						<Icon name="bi:instagram" class="text-2xl text-white" />
 					</a>
 					<a href="">
