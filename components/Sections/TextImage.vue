@@ -19,7 +19,9 @@ const importImage = (imageName) => {
 					<h3 class="text-[#214690] text-[24px] font-[600] mb-5">
 						{{ title }}
 					</h3>
-					<p class="text-[#5D5D5F] text-[16px] font-[400]">{{ text }}</p>
+					<div
+						class="text-[#5D5D5F] text-[16px] font-[400]"
+						v-html="text"></div>
 				</div>
 			</div>
 			<div>
