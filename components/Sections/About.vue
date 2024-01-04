@@ -2,12 +2,18 @@
 </script>
 
 <template>
-  <div class="mx-auto min-w-[300px] max-w-[1366px] h-full p-2 mt-10 mb-12 bg-[#9FFFFF] rounded-10">
+  <div
+    class="mx-auto min-w-[300px] max-w-[1366px] h-full p-2 mt-10 mb-12 bg-[#FFFFFF]"
+  >
     <div class="mx-auto mt-11 min-w-[300px] max-w-[1366px] h-full. p-2 flex">
       <div class="flex">
         <img class="" src="@/assets/img/about1.png" />
-        <img class="" src="@/assets/img/about2.png" />
-        <img class="" src="@/assets/img/about3.png" />
+        <img class="ml-[-30px]" src="@/assets/img/about2.png" />
+        <img
+          class="h-[330px] mt-[80px] ml-[-65px]"
+          src="@/assets/img/about3.png"
+          style="z-index: 10"
+        />
       </div>
       <div class="mx-auto mr-1 w-[600px] h-auto">
         <h2 class="lg:text-[24px] text-[18px] text-[#024E90]">
@@ -26,15 +32,15 @@
         <SectionsCountViewers />
       </div>
     </div>
-    <SectionsInfoRow
+    <SectionsAboutRow
       title="Our vision"
       text="The vision of Mate Logistics is to create a new standard in the auto transportation industry by providing a seamless customer journey. We are committed to revolutionizing the way vehicles are transported, setting the benchmark for excellence in service, reliability, and customer satisfaction. "
     />
-    <SectionsInfoRow2
-      title="Our vision"
-      text="The vision of Mate Logistics is to create a new standard in the auto transportation industry by providing a seamless customer journey. We are committed to revolutionizing the way vehicles are transported, setting the benchmark for excellence in service, reliability, and customer satisfaction. "
+    <SectionsAboutRow2
+      title="Our mission"
+      text="Our mission is to redefine the auto transportation experience, ensuring that every customer enjoys a smooth and hassle-free journey from start to finish. With a focus on innovation, efficiency, and customer-centric solutions, we aim to elevate the industry and exceed the expectations of our valued clients. "
     />
-    <SectionsInfoRow
+    <SectionsAboutRow3
       title="Our values"
       text="At Mate Logistics, we hold a set of core principles that guide our service delivery. Integrity is at the heart of everything we do, ensuring transparency, honesty, and ethical conduct in all our operations. We are dedicated to excellence in service, striving to exceed industry standards and deliver exceptional quality in every aspect of auto transportation with innovations. Additionally, our commitment to friendly customer service reflects the essence of our name, as we prioritize building strong, positive relationships with our customers, fostering trust and satisfaction at every touchpoint."
     />
