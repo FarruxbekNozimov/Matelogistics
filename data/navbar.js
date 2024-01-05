@@ -2,13 +2,22 @@
 export const navbar = {
 	HOME: "/",
 	"HOW IT WORKS?": {
-		"HOW AUTO TRANSPORTATION WORKS?": ["A simple 3-step process", "/"],
-		"HOW IS SHIPPING COST CALCULATED?": ["Unveiling the formula", "/"],
+		"HOW AUTO TRANSPORTATION WORKS?": [
+			"A simple 3-step process",
+			"/how-auto-transportation-works",
+		],
+		"HOW IS SHIPPING COST CALCULATED?": [
+			"Unveiling the formula",
+			"/how-us-shipping-calculated",
+		],
 		"CAR SHIPPING TO ANOTHER STATE?": [
 			"Car shipping from any state to any state",
-			"/",
+			"/car-shipping-to-another-state",
 		],
-		"HOW TO TRACK A SHIPMENT?": ["Stay updated with the process", "/"],
+		"HOW TO TRACK A SHIPMENT?": [
+			"Stay updated with the process",
+			"/how-to-track-shipment",
+		],
 	},
 	"WE OFFER": {
 		Services: {

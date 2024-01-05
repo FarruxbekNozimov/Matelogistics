@@ -24,7 +24,7 @@ const searchCities = async (val) => {
 </script>
 
 <template>
-	<h2 class="text-[#012A44] lg:text-2xl font-[600] text-xl mb-3 pr-6">
+	<h2 class="text-[#012A44] lg:text-2xl font-[600] text-xl mb-3">
 		Get an instant quote or call us now
 		<span class="text-[#008AFF]">(929) 592-3003</span>
 	</h2>
@@ -33,6 +33,7 @@ const searchCities = async (val) => {
 		<QuoteLabel title="Transport car FROM" />
 		<UInput
 			type="text"
+			color="blue"
 			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"
 			v-model="form.from"
@@ -62,6 +63,7 @@ const searchCities = async (val) => {
 	<div class="text-[20px] relative">
 		<QuoteLabel title="Transport car TO" />
 		<UInput
+			color="blue"
 			type="text"
 			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-500"
 			placeholder="Zip or city"

@@ -20,8 +20,9 @@ const importImage = (imageName) => {
 						{{ title }}
 					</h3>
 					<div
-						class="text-[#5D5D5F] text-[16px] font-[400]"
+						class="text-[#5D5D5F] text-[16px] font-[400] mb-10"
 						v-html="text"></div>
+					<RedButton v-if="!isButton" title="Use live cost calculator" to="/" />
 				</div>
 			</div>
 			<div>

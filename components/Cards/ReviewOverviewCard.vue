@@ -18,7 +18,7 @@ const importImage = (imageName) => {
 			name="fluent:open-12-regular"
 			class="absolute right-3 top-3 text-2xl text-[#008AFF]" />
 		<h3 class="text-[#024E90] font-[500] text-[20px]">{{ data.title }}</h3>
-		<div class="flex items-center gap-3 mb-5">
+		<div class="flex items-center gap-3">
 			<div class="flex items-center">
 				<Icon
 					name="material-symbols-light:kid-star"

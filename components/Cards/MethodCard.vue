@@ -4,7 +4,7 @@ defineProps(["img", "title", "text"]);
 
 <template>
 	<div
-		class="bg-[#056AC4] overflow-hidden rounded-3xl cursor-pointer hover:shadow-2xl duration-300 p-5 hover:scale-105">
+		class="bg-[#056AC4] overflow-hidden rounded-3xl cursor-pointer hover:shadow-2xl duration-300 p-5">
 		<img
 			:src="img"
 			class="w-full cursor-pointer hover:scale-105 duration-300" />

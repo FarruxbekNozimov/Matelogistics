@@ -94,13 +94,13 @@ const createLead = async (body) => {
 	console.log(body);
 	await actions.createLead(payload);
 	steps.value.end = false;
-	router.push("/thanks");
+	router.push("/thank-you");
 };
 </script>
 
 <template>
 	<div
-		class="max-w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
+		class="w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
 		<QuoteWait v-if="steps.end" />
 		<QuoteForm-1 :func="firstStepFunc" v-if="steps.first" />
 		<QuoteForm-2 :func="secondStepFunc" v-if="steps.second" />

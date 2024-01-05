@@ -1,14 +1,15 @@
 <script setup>
-defineProps(["title", "func"]);
+defineProps(["title", "func", "to"]);
 </script>
 
 <template>
-	<button
+	<router-link
+		:to="to ? to : ''"
 		@click="func"
-		class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl lg:py-2.5 py-2 mb-2 lg:text-[17px] text-[15px]">
+		class="block text-center w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl lg:py-2.5 py-2 mb-2 lg:text-[17px] text-[15px]">
 		{{ title }}
 		<Icon name="ic:outline-chevron-right" class="text-2xl" />
-	</button>
+	</router-link>
 </template>
 
 <style scoped></style>

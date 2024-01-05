@@ -8,8 +8,7 @@
 		<SectionsCustomerComments />
 		<SectionsTextImage
 			title="Understanding open trailer car shipping"
-			text="When it comes to transporting your vehicle, understanding the different methods available is crucial. Open trailer car shipping involves transporting vehicles on an open-air trailer, typically with multiple cars loaded onto the same trailer. This method is commonly used for standard vehicles, offering a cost-effective solution for vehicle transport needs.
-			Open trailer car shipping provides a practical and efficient way to move your vehicle from one location to another, whether it's across the state or across the country. While some may have concerns about the exposure of their vehicles to the elements, open trailer shipping is a safe and reliable option for standard vehicle transport."
+			text="When it comes to transporting your vehicle, understanding the different methods available is crucial. Open trailer car shipping involves transporting vehicles on an open-air trailer, typically with multiple cars loaded onto the same trailer. This method is commonly used for standard vehicles, offering a cost-effective solution for vehicle transport needs.<br/><br/>Open trailer car shipping provides a practical and efficient way to move your vehicle from one location to another, whether it's across the state or across the country. While some may have concerns about the exposure of their vehicles to the elements, open trailer shipping is a safe and reliable option for standard vehicle transport."
 			img="open-car.png"
 			firstImg="1" />
 		<SectionsTextImage
