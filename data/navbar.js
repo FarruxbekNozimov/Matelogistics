@@ -2,7 +2,7 @@
 export const navbar = {
 	HOME: "/",
 	"HOW IT WORKS?": {
-		"HOW AUTO TRANSPORTATION WORKS?": ["A simple 3-step process", "/"],
+		"HOW AUTO TRANSPORTATION WORKS?": ["A simple 3-step process", "/how-auto-transportation-works"],
 		"HOW IS SHIPPING COST CALCULATED?": ["Unveiling the formula", "/"],
 		"CAR SHIPPING TO ANOTHER STATE?": [
 			"Car shipping from any state to any state",
