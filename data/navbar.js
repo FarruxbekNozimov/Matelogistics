@@ -8,7 +8,7 @@ export const navbar = {
 		],
 		"HOW IS SHIPPING COST CALCULATED?": [
 			"Unveiling the formula",
-			"/how-us-shipping-calculated",
+			"/how-shipping-cost-calculated",
 		],
 		"CAR SHIPPING TO ANOTHER STATE?": [
 			"Car shipping from any state to any state",

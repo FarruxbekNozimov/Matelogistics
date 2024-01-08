@@ -22,7 +22,10 @@ const importImage = (imageName) => {
 					<div
 						class="text-[#5D5D5F] text-[16px] font-[400] mb-10"
 						v-html="text"></div>
-					<RedButton v-if="!isButton" title="Use live cost calculator" to="/" />
+					<RedButton
+						v-if="!isButton"
+						title="Use live cost calculator"
+						to="/calculator" />
 				</div>
 			</div>
 			<div>
