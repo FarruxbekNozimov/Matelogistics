@@ -12,6 +12,7 @@ useSeoMeta({ title: "MateLogistics" });
 				<NuxtLoadingIndicator color="#214690" :height="3" :duration="5000" />
 				<NuxtPage />
 			</div>
+			<UNotifications />
 			<!-- HEADER -->
 			<Footer class="md:block hidden" />
 			<FooterMini class="lg:hidden block" />

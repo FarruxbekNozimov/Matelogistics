@@ -4,7 +4,7 @@ defineProps(["title", "no"]);
 
 <template>
 	<div>
-		<h2 class="font-[500] text-[#214690] lg:text-[48px] text-[24px] font-bold">
+		<h2 class="text-[#214690] lg:text-[48px] text-[24px] font-bold">
 			{{ title }}
 		</h2>
 		<div

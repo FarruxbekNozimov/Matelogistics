@@ -20,8 +20,9 @@ import { comments } from "@/data/comments";
 					next: { translate: ['100%', 0, 0] },
 				}">
 				<SwiperSlide v-for="comment in comments" class="p-3" :key="slide">
-					<div class="bg-white rounded-xl shadow-xl h-[200px] p-3">
-						<div class="text-[#012A44] flex items-center justify-between">
+					<div
+						class="border border-[#ECF3FF] bg-white rounded-xl shadow-xl h-[200px] p-3">
+						<div class="text-[#012A44] flex items-center justify-between mb-3">
 							{{ comment.name }}
 							<div class="flex items-center gap-1">
 								<Icon
