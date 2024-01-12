@@ -41,7 +41,7 @@ const changeAcc = (num) => {
 							</div>
 							<Icon
 								name="ic:baseline-keyboard-arrow-down"
-								:class="faqOne == i ? '' : '-rotate-180'"
+								:class="faqOne == i ? '' : '-rotate-90'"
 								class="text-[#024E90] text-3xl duration-300" />
 						</div>
 					</div>
