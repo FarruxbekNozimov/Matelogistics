@@ -20,6 +20,7 @@ const importImage = (imageName) => {
 			<div
 				class="grid lg:grid-cols-5 md:grid-cols-2 mt-10 border border-[#0071ED80]/20 rounded-xl gap-1 bg-">
 				<CardsExperienceCardFlex
+					data-aos="flip-up"
 					v-for="el in experienceFlex"
 					:img="importImage(el.img)"
 					:title="el.title"

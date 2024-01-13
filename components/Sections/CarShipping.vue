@@ -33,7 +33,10 @@ const services = ref([
 			<TitleBar title="Effortless car shipping: " no="1" />
 			<TitleBar title="A 3-step process" class="mb-5" />
 			<div class="w-full text-start lg:flex items-center justify-between">
-				<img src="@/assets/img/car-shipping.png" class="" />
+				<img
+					data-aos="fade-right"
+					src="@/assets/img/car-shipping.png"
+					class="" />
 				<div class="space-y-14">
 					<div
 						v-for="el in services"

@@ -22,7 +22,9 @@ onMounted(() => {
 
 <template>
 	<UContainer>
-		<div class="md:flex items-center justify-around text-center md:pr-32 mb-5">
+		<div
+			data-aos="zoom-in"
+			class="md:flex items-center justify-around text-center md:pr-32 mb-5">
 			<div class="relative" v-for="(el, i) in counters">
 				<img src="@/assets/img/back-pattern.png" class="md:h-[145px]" alt="" />
 				<div
