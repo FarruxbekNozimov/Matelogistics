@@ -46,5 +46,4 @@ export const navbar = {
 		"Vision and mission": ["The reason for being", "/"],
 	},
 	BLOG: "/blog",
-	HELP: "/help",
 };
