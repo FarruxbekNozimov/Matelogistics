@@ -4,7 +4,7 @@ defineProps(["img", "title", "text"]);
 
 <template>
 	<div
-		class="rounded-2xl p-2 shadow hover:shadow-2xl lg:hover:scale-105 duration-300 ring- bg-white">
+		class="rounded-2xl p-2 drop-shadow-2xl lg:hover:scale-105 duration-300 ring- bg-white">
 		<div class="w-full flex items-center gap-5">
 			<div class="bg-[#E8F0FF] p-3 rounded-2xl">
 				<img :src="img" alt="img" class="" />
