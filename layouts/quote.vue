@@ -1,5 +1,5 @@
 <script setup>
-useSeoMeta({ title: "MateLogistics Quote" });
+useSeoMeta({ title: "Matelogistics Quote" });
 </script>
 
 <template>
