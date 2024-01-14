@@ -3,8 +3,7 @@ useSeoMeta({ title: "MateLogistics" });
 </script>
 
 <template>
-	<div
-		class="bg-[url('@/assets/img/back-road.png')] bg-no-repeat bg-cover bg-fixed bg-right">
+	<div>
 		<div class="bg-white/90">
 			<!-- HEADER -->
 			<Header />
