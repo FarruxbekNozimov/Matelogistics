@@ -7,8 +7,8 @@ definePageMeta({ layout: "survey" });
 		<img src="@/assets/img/logo.png" alt="" class="z-50 mx-auto py-5" />
 		<div
 			class="bg-white border border-[#ECF3FF] p-5 rounded-2xl shadow-xl space-y-3">
-			<!-- <SurveyFirstStep /> -->
-			<SurveySecondStep />
+			<SurveyFirstStep />
+			<!-- <SurveySecondStep /> -->
 		</div>
 	</div>
 </template>
