@@ -12,7 +12,6 @@ const data = reactive({
 		class="bg-white border border-[#ECF3FF] p-5 rounded-2xl shadow-xl space-y-3">
 		<h3 class="text-[#214690] font-[700] text-[20px]">
 			Do you love using our service?
-			{{ data }}
 		</h3>
 		<p class="text-[#868686] font-[600] text-[16px]">
 			We'd really appreciate hearing your thoughts on your recent experience
