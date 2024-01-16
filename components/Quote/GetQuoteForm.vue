@@ -28,7 +28,7 @@ const showError = (title) => {
 		title: title,
 		icon: "material-symbols:error",
 		color: "red",
-		timeout: 5000,
+		timeout: 3000,
 	});
 };
 

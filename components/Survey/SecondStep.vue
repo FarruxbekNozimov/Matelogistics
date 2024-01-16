@@ -10,7 +10,7 @@
 		We'd love to know who's behind this feedback! Please fill in the following
 		details.
 	</p>
-	<UForm class="flex items-center gap-5" @submit="onSubmit">
+	<div class="flex items-center gap-5 mb-5">
 		<UFormGroup required label="Fullname">
 			<UInput
 				variant="none"
@@ -23,7 +23,7 @@
 				inputClass="text-[16px] font-[600] text-gray-600 bg-[#E8F0FF]"
 				placeholder="your@example.com" />
 		</UFormGroup>
-	</UForm>
+	</div>
 	<button
 		class="bg-[#E52E2E] w-full rounded-2xl p-2.5 text-white text-[16px] font-[900]">
 		Done
