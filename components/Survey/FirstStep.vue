@@ -29,6 +29,7 @@ const data = reactive({
 		<UTextarea
 			v-model="data.text"
 			color="grey"
+			autoresize
 			textareaClass="text-[#868686] bg-[#E8F0FF] text-[16px] rounded-xl shadow mb-3"
 			rows="4"
 			placeholder="Write your comment here..." />

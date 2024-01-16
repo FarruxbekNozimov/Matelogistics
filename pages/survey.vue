@@ -1,6 +1,6 @@
 <script setup>
-const toast = useToast();
 definePageMeta({ layout: "survey" });
+const toast = useToast();
 import { reactive } from "vue";
 const comment = reactive({
 	rate: 0,
