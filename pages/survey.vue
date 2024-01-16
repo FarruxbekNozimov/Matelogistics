@@ -4,7 +4,7 @@ definePageMeta({ layout: "survey" });
 import { reactive } from "vue";
 const comment = reactive({
 	rate: 0,
-	text: "",
+	text: "We'd really appreciate hearing your thoughts on your recent experience with our service, what you like about it and why you'd recommend it. It means a lot to us! We'd really appreciate hearing your thoughts on your recent experience with our service, what you like about it and why you'd recommend it. It means a lot to us! We'd really appreciate hearing your thoughts on your recent experience with our service, what you like about it and why you'd recommend it. It means a lot to us! We'd really appreciate hearing your thoughts on your recent experience with our service, what you like about it and why you'd recommend it. It means a lot to us!",
 	fullname: "",
 	email: "",
 });
@@ -28,12 +28,9 @@ const firstStep = (data) => {
 <template>
 	<div class="z-50 w-[430px]">
 		<img src="/img/logo.png" alt="" class="z-50 mx-auto py-5" />
-		<div
-			class="bg-white border border-[#ECF3FF] p-5 rounded-2xl shadow-xl space-y-3">
-			<!-- <SurveyFirstStep :func="firstStep" v-if="steps.first" />
+		<!-- <SurveyFirstStep :func="firstStep" v-if="steps.first" />
 			<SurveySecondStep v-if="steps.second" /> -->
-			<SurveyThankyou />
-		</div>
+		<SurveyThankyou :data="comment" />
 	</div>
 </template>
 
