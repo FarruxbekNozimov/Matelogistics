@@ -1,14 +1,5 @@
 <script setup>
-import { ref } from "vue";
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
-
-const services = ref([
+const services = [
 	{
 		title: "Book your quote",
 		text: "Get a Free Quote: Book Your Car Shipping Service Now!",
@@ -24,29 +15,26 @@ const services = ref([
 		text: "Hit the Road: Enjoy Your Car After Seamless Delivery!",
 		img: "protection.png",
 	},
-]);
+];
 </script>
 
 <template>
 	<div
-		class="bg-[url('@/assets/img/back-road.png')] bg-no-repeat bg-cover bg-fixed bg-right">
+		class="bg-[url('/img/back-road.png')] bg-no-repeat bg-cover bg-fixed bg-right">
 		<div class="bg-white/90">
 			<UContainer class="">
 				<div class="mb-10 mt-5">
 					<TitleBar title="Effortless car shipping: " no="1" />
 					<TitleBar title="A 3-step process" class="mb-5" />
 					<div class="w-full text-start lg:flex items-center justify-between">
-						<img
-							data-aos="fade-right"
-							src="@/assets/img/car-shipping.png"
-							class="" />
+						<img data-aos="fade-right" src="/img/car-shipping.png" class="" />
 						<div class="space-y-14">
 							<div
 								v-for="el in services"
 								:key="el.title"
 								class="flex items-center justify-center gap-5">
 								<img
-									:src="importImage(el.img)"
+									:src="`/img/${el.img}`"
 									:alt="el.title"
 									class="lg:h-[64px] h-[38px]" />
 								<div class="">

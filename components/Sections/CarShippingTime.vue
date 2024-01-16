@@ -1,13 +1,6 @@
 <script setup>
 import { ref } from "vue";
 
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
-
 const services = ref([
 	{
 		title: "How long does pick-up take?",
@@ -34,7 +27,7 @@ const services = ref([
 						:key="el.title"
 						class="flex items-start justify-center gap-5">
 						<img
-							:src="importImage(el.img)"
+							:src="`/img/${el.img}`"
 							:alt="el.title"
 							class="lg:h-[64px] h-[30px]" />
 						<div class="">
@@ -47,7 +40,7 @@ const services = ref([
 				</div>
 				<div class="lg:w-auto w-full relative">
 					<img
-						src="@/assets/img/car-shipping-time-car.png"
+						src="/img/car-shipping-time-car.png"
 						class="lg:h-[480px] w-full" />
 					<router-link
 						to="/calculator"

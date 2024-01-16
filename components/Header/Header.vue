@@ -14,7 +14,7 @@ import { navbar } from "@/data/navbar.js";
 				<!-- LOGO-->
 				<div class="flex lg:flex-1">
 					<NuxtLink href="/">
-						<img class="h-12 w-auto" src="@/assets/img/logo.png" alt="" />
+						<img class="h-12 w-auto" src="/img/logo.png" alt="" />
 					</NuxtLink>
 				</div>
 				<!-- NAVBAR-->

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 			charset: "utf-8",
 			viewport: "width=device-width, initial-scale=1",
 			link: [
-				{ rel: "icon", type: "image/png", href: "@/assets/img/logo.png" },
+				{ rel: "icon", type: "image/png", href: "/img/logo.png" },
 				{
 					rel: "stylesheet",
 					href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css",

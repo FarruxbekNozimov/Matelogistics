@@ -4,7 +4,7 @@ useSeoMeta({ title: "Matelogistics Quote" });
 
 <template>
 	<div
-		class="bg-[url('@/assets/img/back-road.png')] bg-no-repeat bg-cover bg-fixed bg-right">
+		class="bg-[url('/img/back-road.png')] bg-no-repeat bg-cover bg-fixed bg-right">
 		<div class="bg-white/80 w-full h-screen">
 			<NuxtLoadingIndicator color="#214690" height="3" duration="5000" />
 			<NuxtPage class="bg-gray-500 font-['Mulish']" />

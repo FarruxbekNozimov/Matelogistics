@@ -3,10 +3,7 @@
 <template>
 	<NuxtLayout name="error">
 		<div class="flex items-center justify-center relative">
-			<img
-				src="@/assets/img/Ellipse.png"
-				class="absolute left-0 -top-5"
-				alt="" />
+			<img src="/img/Ellipse.png" class="absolute left-0 -top-5" alt="" />
 			<div class="text-center p-1">
 				<h3 class="h-[250px] md:text-[200px] text-[150px] font-[900] errorTxt">
 					404

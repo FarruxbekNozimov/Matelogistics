@@ -1,12 +1,5 @@
 <script setup>
 defineProps(["data"]);
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
 </script>
 
 <template>
@@ -26,10 +19,7 @@ const importImage = (imageName) => {
 		</div>
 		<p class="text-[#9A999B] text-[16px] mb-5">{{ data.date }}</p>
 		<p class="text-[#5D5D5F] text-[16px] mb-10">{{ data.content }}</p>
-		<img
-			:src="importImage(data.img)"
-			alt="logo"
-			class="absolute bottom-3 right-3" />
+		<img :src="`/img/${img}`" alt="logo" class="absolute bottom-3 right-3" />
 	</a>
 </template>
 

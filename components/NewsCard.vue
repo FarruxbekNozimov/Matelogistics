@@ -17,7 +17,7 @@ import { lastnews } from "@/data/lastnews";
 			}">
 			<SwiperSlide v-for="lastnew in lastnews" class="p-3" :key="slide">
 				<div class="rounded-xl shadow-xl h-[200px] p-3">
-					<img src="@/assets/img/lastnewsimg1.png" class="" />
+					<img src="/img/lastnewsimg1.png" class="" />
 					{{ lastnew.img }}
 				</div>
 				<div class="lg:grid-cols-4 mt-14 gap-12">

@@ -1,12 +1,5 @@
 <script setup>
 import { formulaInfo } from "@/data/formulaInfo";
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/formula/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
 </script>
 
 <template>
@@ -38,7 +31,7 @@ const importImage = (imageName) => {
 			<div class="md:w-1/2 space-y-5 py-5">
 				<CardsFormulaInfoCard
 					v-for="el in formulaInfo"
-					:img="importImage(el.img)"
+					:img="el.img"
 					:title="el.title"
 					:text="el.text" />
 			</div>

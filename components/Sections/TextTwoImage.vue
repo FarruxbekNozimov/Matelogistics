@@ -2,7 +2,7 @@
 defineProps(["title", "text", "img1", "img2", "order", "button"]);
 
 const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
+	const images = import.meta.globEager("/img/*");
 	const imageKeys = Object.keys(images);
 	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
 	return images[imageKey].default;

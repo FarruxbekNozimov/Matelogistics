@@ -7,7 +7,7 @@ defineProps(["img", "title", "text"]);
 		data-aos="flip-down"
 		class="bg-[#056AC4] overflow-hidden rounded-3xl cursor-pointer hover:shadow-2xl duration-300 p-5">
 		<img
-			:src="img"
+			:src="`/img/${img}`"
 			class="w-full cursor-pointer hover:scale-105 duration-300" />
 		<div>
 			<h2 class="text-[30px] text-white mb-3 font-bold">

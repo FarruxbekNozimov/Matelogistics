@@ -2,7 +2,7 @@
 import { experienceFlex } from "@/data/experienceFlex";
 
 const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/expF/*");
+	const images = import.meta.globEager("/img/expF/*");
 	const imageKeys = Object.keys(images);
 	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
 	if (imageKey && images[imageKey]) {

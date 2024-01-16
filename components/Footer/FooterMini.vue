@@ -6,7 +6,7 @@ import { footerLinks } from "@/data/footerLinks";
 	<div class="p-5">
 		<div class="flex items-center gap-10">
 			<div class="">
-				<img src="@/assets/img/matelogo-footer.png" class="w-full mb-3" />
+				<img src="/img/matelogo-footer.png" class="w-full mb-3" />
 				<div class="flex items-center justify-between gap-5 mb-2">
 					<a href="">
 						<Icon name="bi:instagram" class="text-2xl text-white" />
@@ -20,7 +20,7 @@ import { footerLinks } from "@/data/footerLinks";
 					</a>
 				</div>
 			</div>
-			<img src="@/assets/img/footer-logo2.png" alt="" />
+			<img src="/img/footer-logo2.png" alt="" />
 		</div>
 	</div>
 </template>

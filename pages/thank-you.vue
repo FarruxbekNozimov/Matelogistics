@@ -5,7 +5,7 @@
 		<UContainer>
 			<div class="text-center space-y-5 my-10">
 				<img
-					src="@/assets/img/check-img-1.png"
+					src="/img/check-img-1.png"
 					class="h-[130px] w-[130px] mx-auto object-cover"
 					alt="" />
 				<h3 class="text-[#024E90] text-[30px] font-[700]">
