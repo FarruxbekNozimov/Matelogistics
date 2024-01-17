@@ -5,19 +5,13 @@ definePageMeta({ layout: "calculator" });
 <template>
 	<UContainer>
 		<div
-			class="bg-white border border-[#E9EFFA] h-dvh rounded-2xl shadow p-5 flex items-center justify-between gap-20">
-			<div class="">
-				<h3 class="text-[#024E90] text-[24px] font-[700]"></h3>
-				<div class="bg-[#F4F8FF] p-5">
-					<div class="flex items-center justify-center">
-					<Icon name=""/>
-					</div>
-					<div class="flex items-center justify-center">
-					<Icon name=""/>
-					</div>
-				</div>
+			class="bg-white border border-[#E9EFFA] rounded-2xl shadow flex justify-between p-5 py-10 gap-20">
+			<div class="w-2/3">
+				<CalculatorStart />
 			</div>
-			<div class=""></div>
+			<div class="w-1/2">
+				<CalculatorLeftside />
+			</div>
 		</div>
 	</UContainer>
 </template>
