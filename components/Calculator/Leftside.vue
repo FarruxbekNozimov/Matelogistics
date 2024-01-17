@@ -27,10 +27,7 @@ const info =
 			<CalculatorOrderDetailItem title="Destination" isEdit="1">
 				<CalculatorText>California City, CA 93505</CalculatorText>
 			</CalculatorOrderDetailItem>
-			<CalculatorOrderDetailItem
-				title="Vehicle condition"
-				:info="info"
-				isEdit="1">
+			<CalculatorOrderDetailItem title="Vehicle condition" :info="info">
 				<URadioGroup
 					color="blue"
 					:options="[
@@ -39,7 +36,7 @@ const info =
 					]"
 					model-value="running" />
 			</CalculatorOrderDetailItem>
-			<CalculatorOrderDetailItem title="Transport type" :info="info" isEdit="1">
+			<CalculatorOrderDetailItem title="Transport type" :info="info">
 				<URadioGroup
 					color="blue"
 					:options="[
@@ -48,25 +45,35 @@ const info =
 					]"
 					model-value="open" />
 			</CalculatorOrderDetailItem>
-			<CalculatorOrderDetailItem title="Service type" :info="info" isEdit="1">
+			<CalculatorOrderDetailItem title="Service type" :info="info">
 				<CalculatorText>Door to door</CalculatorText>
 			</CalculatorOrderDetailItem>
-			<CalculatorOrderDetailItem title="Insurance" :info="info" isEdit="1">
+			<CalculatorOrderDetailItem title="Insurance" :info="info">
 				<CalculatorText>Included</CalculatorText>
 			</CalculatorOrderDetailItem>
-			<CalculatorOrderDetailItem title="Transit time" :info="info" isEdit="1">
+			<CalculatorOrderDetailItem title="Transit time" :info="info">
 				<CalculatorText>7-9 days</CalculatorText>
 			</CalculatorOrderDetailItem>
-			<CalculatorOrderDetailItem title="Due now" :info="info" isEdit="1">
+			<CalculatorOrderDetailItem title="Due now" :info="info">
 				<div class="flex items-center gap-5">
-					<span class="text-[24px] font-[700]">$0</span>
+					<span class="text-[28px] font-[700] dollar">$0</span>
+					<span class="text-[12px] font-[400] text-[#868686]">
+						You dont pay anything until we schedule a carrier to pick up your
+						vehicle.
+					</span>
 				</div>
 			</CalculatorOrderDetailItem>
-			<CalculatorOrderDetailItem title="Price option" isEdit="1">
+			<CalculatorOrderDetailItem title="Price option">
 				<CalculatorText>2020 Alfa Romeo Giulia Quadrifoglio</CalculatorText>
 			</CalculatorOrderDetailItem>
 		</div>
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.dollar {
+	background: -webkit-linear-gradient(#008aff, #005ba8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+</style>

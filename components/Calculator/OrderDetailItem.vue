@@ -9,7 +9,7 @@ defineProps(["title", "info", "isEdit"]);
 				{{ title }}
 			</span>
 			<div v-if="info">
-				<UPopover :popper="{ arrow: true }">
+				<UPopover :popper="{ arrow: true, placement: 'top' }">
 					<Icon name="ri:information-fill" class="text-[#9A999B] text-xl" />
 
 					<template #panel>
