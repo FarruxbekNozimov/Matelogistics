@@ -1,4 +1,5 @@
 <script setup>
+defineProps(["next"]);
 import { ref } from "vue";
 const cards = [
 	{
@@ -80,7 +81,7 @@ const checked = ref(1);
 			</label>
 		</div>
 	</div>
-	<CalculatorRedButton title="Start booking process" />
+	<CalculatorRedButton title="Start booking process" :func="next" />
 	<p class="text-[#868686] text-[16px] font-[400] mb-3">
 		Aren’t you sure about the date? No worries, you can change it at any time
 		with NO EXTRA COST.

@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+defineProps(["next"]);
+</script>
 
 <template>
 	<h3 class="text-[#024E90] text-[24px] font-[700] mb-3">Pickup details</h3>
@@ -39,7 +41,7 @@
 			textareaClass="block p-3 w-full rounded-xl bg-[#F4F8FF] border border-gray-300 outline-none text-[#024E90] text-[16px]"
 			placeholder="Type more about it here" />
 	</div>
-	<CalculatorRedButton title="Delivery info" />
+	<CalculatorRedButton title="Delivery info" :func="next" />
 	<br /><br />
 	<CalculatorPhone />
 </template>

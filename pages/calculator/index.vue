@@ -1,7 +1,18 @@
 <script setup>
 definePageMeta({ layout: "calculator" });
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
 const step = ref(0);
+
+const nextPage = () => {
+	console.log("next");
+	if (step.value == 4) {
+		router.push("/calculator/thank-you");
+	} else {
+		step.value++;
+	}
+};
 </script>
 
 <template>
@@ -21,11 +32,11 @@ const step = ref(0);
 			</div>
 			<div class="lg:flex justify-between gap-14">
 				<div class="lg:w-[65%] lg:m-0 mb-5">
-					<CalculatorStart v-if="step == 0" />
-					<CalculatorFirst v-if="step == 1" />
-					<CalculatorSecond v-if="step == 2" />
-					<CalculatorThird v-if="step == 3" />
-					<CalculatorThird v-if="step == 4" />
+					<CalculatorStart :next="nextPage" v-if="step == 0" />
+					<CalculatorFirst :next="nextPage" v-if="step == 1" />
+					<CalculatorSecond :next="nextPage" v-if="step == 2" />
+					<CalculatorThird :next="nextPage" v-if="step == 3" />
+					<CalculatorThird :next="nextPage" v-if="step == 4" />
 				</div>
 				<div class="lg:w-[35%]">
 					<CalculatorRightside />

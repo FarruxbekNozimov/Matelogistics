@@ -1,4 +1,5 @@
 <script setup>
+defineProps(["next"]);
 import { reactive } from "vue";
 
 const data = reactive({
@@ -66,7 +67,7 @@ const data = reactive({
 			</div>
 		</div>
 	</div>
-	<CalculatorRedButton title="Pickup info" />
+	<CalculatorRedButton title="Pickup info" :func="next" />
 	<br />
 	<p class="text-[#868686] text-[10px] font-[400] w-[485px]">
 		By submitting your details, you agree to our privacy policy and the receipt
