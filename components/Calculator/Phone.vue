@@ -2,7 +2,7 @@
 
 <template>
 	<div
-		class="w-[485px] bg-[#F4F8FF] rounded-2xl border border-[#008AFF] flex items-center gap-5 p-5">
+		class="max-w-[485px] bg-[#F4F8FF] rounded-2xl border border-[#008AFF] flex items-center gap-5 p-5">
 		<div class="bg-gradient-to-r from-[#008AFF] to-[#005BA8] rounded-full p-2">
 			<Icon
 				name="material-symbols:call"

@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-	<h3 class="text-[#024E90] text-[24px] font-[700] mb-3">Pickup details</h3>
+	<h3 class="text-[#024E90] text-[24px] font-[700] mb-3">Delivery details</h3>
 	<p class="text-[14px] text-[#96ADC1] font-[400]">
-		Where are we picking the vehicle up?
+		Where are we delivering the vehicle?
 	</p>
 	<div class="mt-3 mb-5 space-y-2">
 		<h3 required class="text-[#024E90] text-[18px]">
@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<CalculatorRadio
-		legend="California City, CA 93505 is"
+		legend="New York, NY 10025 is"
 		:options="[
 			{ value: 'residential', label: 'A residential address' },
 			{ value: 'business', label: 'A business address' },
@@ -39,7 +39,7 @@
 			textareaClass="block p-3 w-full rounded-xl bg-[#F4F8FF] border border-gray-300 outline-none text-[#024E90] text-[16px]"
 			placeholder="Type more about it here" />
 	</div>
-	<CalculatorRedButton title="Delivery info" />
+	<CalculatorRedButton title="Book shipment" />
 	<br /><br />
 	<CalculatorPhone />
 </template>

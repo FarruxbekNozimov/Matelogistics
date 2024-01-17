@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["legend", "options"]);
+defineProps(["legend", "options", "model"]);
 </script>
 
 <template>
@@ -10,15 +10,17 @@ defineProps(["legend", "options"]);
 		<div class="flex items-center gap-5">
 			<label
 				v-for="(el, i) in options"
-				:for="i"
-				class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border border-[#D2DBEC] cursor-pointer">
+				:for="legend + i"
+				class="flex items-center w-full p-4 px-5 bg-[#F4F8FF] rounded-xl border cursor-pointer checked:bg-black"
+				:class="el.value == model ? 'border-[#008AFF]' : 'border-[#D2DBEC]'">
 				<input
-					checked
-					:id="i"
+					:checked="el.value == model"
+					:id="legend + i"
 					type="radio"
 					value=""
 					:name="legend"
-					class="w-6 h-6 text-blue-600 checked:bg-black" />
+					class="w-6 h-6 text-blue-600 checked:bg-black"
+					@change="() => (model = el.value)" />
 				<span class="w-full ms-2 text-[#5D5D5F] text-[16px] font-[500]">
 					{{ el.label }}
 				</span>

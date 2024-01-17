@@ -30,14 +30,14 @@ const checked = ref(1);
 		</div>
 		<div class="flex items-center gap-1">
 			<Icon name="gravity-ui:shield-check" class="text-xl" />
-			<p class="text-[16px] text-nowrap">
+			<p class="text-[16px]">
 				Ready to book? Cheers! Choose one from pricing options to book it with
-				due now $0
+				<span class="uppercase font-[900]">due now $0</span>
 			</p>
 		</div>
 	</div>
 
-	<div class="grid w-full gap-6 md:grid-cols-3 mb-10">
+	<div class="md:flex items-center space-y-5 gap-7 mb-10">
 		<div v-for="(el, i) in cards">
 			<input
 				type="radio"
