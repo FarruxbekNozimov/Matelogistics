@@ -6,7 +6,7 @@ defineProps(["title", "func", "to"]);
 	<router-link
 		:to="to ? to : ''"
 		@click="func"
-		class="block text-center w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl lg:py-2.5 py-2 mb-2 lg:text-[17px] text-[15px]">
+		class="block text-center w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl lg:py-2.5 px-2 mb-2 lg:text-[17px] text-[15px]">
 		{{ title }}
 		<Icon name="ic:outline-chevron-right" class="text-2xl" />
 	</router-link>

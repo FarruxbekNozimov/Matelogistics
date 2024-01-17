@@ -64,7 +64,7 @@ const info =
 				</div>
 			</CalculatorOrderDetailItem>
 			<CalculatorOrderDetailItem title="Price option">
-				<CalculatorText>2020 Alfa Romeo Giulia Quadrifoglio</CalculatorText>
+				<CalculatorText>$197 Discounted cash price</CalculatorText>
 			</CalculatorOrderDetailItem>
 		</div>
 	</div>
