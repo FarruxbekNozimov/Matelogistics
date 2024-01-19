@@ -6,7 +6,7 @@ defineProps(["data"]);
 	<a
 		:href="data.link"
 		target="_blank"
-		class="bg-white font-[400] p-5 px-7 border border-gray-100 shadow cursor-pointer rounded-2xl relative hover:shadow-xl duration-300">
+		class="bg-white font-[400] p-5 px-7 border border-[#ECF3FF] shadow cursor-pointer rounded-2xl relative hover:shadow-xl duration-300">
 		<Icon
 			name="fluent:open-12-regular"
 			class="absolute right-3 top-3 text-2xl text-[#008AFF]" />

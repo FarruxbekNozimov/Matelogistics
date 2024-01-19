@@ -7,9 +7,9 @@ defineProps(["title", "text", "noForm"]);
 	<UContainer>
 		<div
 			data-aos="fade-down"
-			class="bg-[url('/img/banner-car.png')] bg-center bg-no-repeat bg-cover rounded-[30px] md:flex items-center justify-between lg:px-10 p-4 pt-5 lg:min-h-[355px] mb-5"
+			class="bg-[url('/img/banner-car.png')] bg-center bg-no-repeat bg-cover rounded-[30px] md:flex items-center justify-between p-5 lg:min-h-[355px] mb-5 gap-10"
 			v-lazy:background-image="'/img/banner-car.png'">
-			<div class="z-1 text-center lg:w-[80%] mx-auto">
+			<div class="z-1 lg:w-[80%] mx-auto" :class="noForm ? 'text-center' : ''">
 				<h3 class="lg:text-[50px] text-[28px] text-white font-semibold">
 					{{ title }}
 				</h3>

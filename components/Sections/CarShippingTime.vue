@@ -23,6 +23,7 @@ const services = ref([
 			<div class="w-full lg:flex items-start lg:gap-24 mt-10">
 				<div class="lg:w-2/5 w-full space-y-14 mb-5">
 					<div
+						data-aos="fade-right"
 						v-for="el in services"
 						:key="el.title"
 						class="flex items-start justify-center gap-5">
@@ -38,7 +39,7 @@ const services = ref([
 						</div>
 					</div>
 				</div>
-				<div class="lg:w-auto w-full relative">
+				<div data-aos="fade-down" class="lg:w-auto w-full relative">
 					<img
 						src="/img/car-shipping-time-car.png"
 						class="lg:h-[480px] w-full" />

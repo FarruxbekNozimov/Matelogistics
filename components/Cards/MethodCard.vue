@@ -3,7 +3,8 @@ defineProps(["img", "title", "text"]);
 </script>
 
 <template>
-	<div
+	<router-link
+		to="/service"
 		data-aos="flip-down"
 		class="bg-[#056AC4] overflow-hidden rounded-3xl cursor-pointer hover:shadow-2xl duration-300 p-5">
 		<img
@@ -19,7 +20,7 @@ defineProps(["img", "title", "text"]);
 				<Icon class="text-xl" name="material-symbols:chevron-right" />
 			</button>
 		</div>
-	</div>
+	</router-link>
 </template>
 
 <style scoped></style>

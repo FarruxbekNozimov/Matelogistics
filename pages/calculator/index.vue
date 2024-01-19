@@ -7,7 +7,7 @@ const step = ref(0);
 
 const nextPage = () => {
 	console.log("next");
-	if (step.value == 4) {
+	if (step.value == 3) {
 		router.push("/calculator/thank-you");
 	} else {
 		step.value++;

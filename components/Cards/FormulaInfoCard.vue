@@ -4,7 +4,8 @@ defineProps(["img", "title", "text"]);
 
 <template>
 	<div
-		class="rounded-2xl p-2 drop-shadow-2xl hover:scale-105 duration-300 bg-white">
+		data-aos="fade-down"
+		class="rounded-2xl p-2 border border-gray-100 hover:scale-105 duration-300 bg-white">
 		<div class="w-full flex items-center gap-5">
 			<div class="bg-[#E8F0FF] p-3 rounded-2xl">
 				<img :src="`/img/formula/${img}`" alt="img" class="" />
