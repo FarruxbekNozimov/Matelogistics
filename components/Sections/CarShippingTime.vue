@@ -39,13 +39,13 @@ const services = ref([
 						</div>
 					</div>
 				</div>
-				<div data-aos="fade-down" class="lg:w-auto w-full relative">
+				<div data-aos="fade-bottom" class="h-[480px] lg:w-auto w-full relative">
 					<img
 						src="/img/car-shipping-time-car.png"
-						class="lg:h-[480px] w-full" />
+						class="w-full h-full rounded-2xl" />
 					<router-link
 						to="/calculator"
-						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 w-[95%] bottom-3 left-3">
+						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 inset-x-2 bottom-2">
 						Use live cost calculator
 					</router-link>
 				</div>

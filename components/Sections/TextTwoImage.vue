@@ -22,7 +22,7 @@ defineProps(["title", "text", "img1", "img2", "order", "button"]);
 				</h2>
 				<router-link
 					to="/calculator"
-					class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 w-[95%] bottom-3 left-3">
+					class="text-[24px] font-[700] text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 px-4">
 					Use live cost calculator
 				</router-link>
 			</div>

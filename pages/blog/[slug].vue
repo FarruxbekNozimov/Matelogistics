@@ -57,7 +57,7 @@ const links = [
 						class="text-[#5D5D5F] mb-10 text-[16px] font-[400]"
 						v-html="data?.body"></div>
 					<div
-						class="flex items-center justify-between border-y broder-[#008AFF4D] py-5">
+						class="flex items-center justify-between border-y broder-[#008AFF4D] py-5 mb-5">
 						<span class="text-[#C2C2C3]">Share on social media:</span>
 						<div class="flex gap-4">
 							<a href="">
@@ -82,16 +82,16 @@ const links = [
 							</a>
 						</div>
 					</div>
-					<SectionsLatestStories />
+					<SectionsRelated title="Related" />
 				</div>
-				<div class="relative lg:block hidden">
+				<div class="h-[600px] relative lg:block hidden">
 					<h3 class="absolute p-2 py-3 text-white text-[24px] font-[600]">
 						Are you thinking of shipping your car?
 					</h3>
 					<img
 						src="/img/banner-car.png"
 						alt=""
-						class="h-[600px] object-cover rounded-2xl" />
+						class="w-full h-full object-cover rounded-2xl" />
 					<h3 class="text-white absolute bottom-12 p-2 font-[600] text-[16px]">
 						Our live cost calculator makes it easy
 					</h3>

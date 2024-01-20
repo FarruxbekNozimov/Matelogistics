@@ -24,11 +24,11 @@ onMounted(() => {
 	<UContainer>
 		<div
 			data-aos="zoom-in"
-			class="md:flex items-center justify-around text-center md:pr-32 mb-5">
+			class="flex items-center md:justify-around justify-between text-center md:pr-32 pr-20 mb-5">
 			<div class="relative" v-for="(el, i) in counters">
-				<img src="/img/back-pattern.png" class="md:h-[145px]" alt="" />
+				<img src="/img/back-pattern.png" class="md:h-[145px] h-[45px]" alt="" />
 				<div
-					class="bg-white absolute top-[30px] left-1/2 rounded-full text-center p-4 shadow-lg md:w-[224px] w-[113px]">
+					class="bg-white absolute lg:top-[30px] top-1 left-1/2 rounded-full text-center md:p-4 p-1 shadow-lg md:w-[224px] w-[110px]">
 					<p
 						class="md:text-[25px] text-[13px] space-between text-[#024E90] font-[700]">
 						{{ el[0] }}+

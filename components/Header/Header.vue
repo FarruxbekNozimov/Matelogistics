@@ -1,5 +1,6 @@
 <script setup>
 import { navbar } from "@/data/navbar.js";
+const isOpen = ref(false);
 </script>
 
 <template>
@@ -8,13 +9,66 @@ import { navbar } from "@/data/navbar.js";
 		<HeaderTop />
 		<nav class="flex items-center justify-between p-4 lg:px-0">
 			<div class="flex items-center justify-center md:gap-5">
-				<button class="lg:hidden text-[#008AFF]">
+				<UButton
+					class="lg:hidden text-[#008AFF]"
+					size="sm"
+					color="blue"
+					square
+					variant="soft"
+					@click="isOpen = true">
 					<Icon name="game-icons:hamburger-menu" class="text-xl" />
-				</button>
+				</UButton>
+				<USlideover side="left" v-model="isOpen">
+					<UCard
+						class="flex flex-col flex-1 transition"
+						:ui="{
+							body: { base: 'flex-1' },
+							ring: '',
+							divide: 'divide-y divide-gray-100',
+						}">
+						<template #header>
+							<div class="flex items-center justify-between">
+								<img src="/img/logo.png" class="h-10" alt="" />
+								<UButton
+									color="gray"
+									variant="ghost"
+									icon="i-heroicons-x-mark-20-solid"
+									class="-my-1"
+									@click="isOpen = false" />
+							</div>
+						</template>
+						<div v-for="(el, i) in navbar">
+							<div class="border-b">
+								<div
+									v-if="typeof el == 'object'"
+									class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
+									{{ i }}
+									<Icon name="ic:outline-chevron-right" class="text-2xl" />
+								</div>
+								<router-link
+									v-else
+									:to="el"
+									class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
+									{{ i }}
+								</router-link>
+							</div>
+						</div>
+						<router-link
+							to="/quote"
+							class="mt-5 block text-[20px] text-center bg-[#E52E2E] text-white rounded-2xl duration-300 font-[600] p-2 py-2.5">
+							Get an instant quote
+						</router-link>
+						<router-link
+							to="check-order"
+							class="mt-5 block text-[20px] text-center border border-[#008AFF] text-[#008AFF] p-2 px-4 rounded-2xl duration-300 font-[600]">
+							Check my order status
+						</router-link>
+					</UCard>
+				</USlideover>
 				<!-- LOGO-->
 				<div class="flex lg:flex-1">
 					<router-link to="/">
-						<img class="h-12 w-auto" src="/img/logo.png" alt="" />
+						<img class="md:h-12 h-10 w-auto" src="/img/logo.png" alt="" />
 					</router-link>
 				</div>
 				<!-- NAVBAR-->
@@ -81,10 +135,10 @@ import { navbar } from "@/data/navbar.js";
 			<!-- NAVBAR RIGHT BUTTONS-->
 			<router-link
 				to="/quote"
-				class="text-xs border border-[#E52E2E] border-r-0 p-2 text-[#E52E2E] rounded-2xl hover:bg-[#E52E2E] hover:text-white duration-300 font-bold md:mr-10 block lg:hidden">
+				class="text-[15px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 px-3 md:hidden block">
 				Get a quote
 			</router-link>
-			<div class="gap-5 px-2">
+			<div class="gap-5 px-2 hidden md:block">
 				<router-link
 					to="/quote"
 					class="text-[17px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 py-2.5">
