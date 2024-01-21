@@ -56,6 +56,7 @@ import { reviews } from "@/data/reviews";
 					class="row-span-2 col-span-5" />
 			</div>
 		</UContainer>
+		<SectionsLetWorkTransport />
 	</div>
 </template>
 

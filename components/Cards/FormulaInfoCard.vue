@@ -4,7 +4,7 @@ defineProps(["img", "title", "text"]);
 
 <template>
 	<div
-		data-aos="fade-down"
+		data-aos="fade-up"
 		class="rounded-2xl p-2 border border-gray-100 hover:scale-105 duration-300 bg-white">
 		<div class="w-full flex items-center gap-5">
 			<div class="bg-[#E8F0FF] p-3 rounded-2xl">
