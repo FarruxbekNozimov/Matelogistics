@@ -9,7 +9,7 @@ useSeoMeta({ title: "MateLogistics" });
 		<img src="/img/Ellipse-3.png" class="-z-10 absolute top-0 left-0" />
 		<img src="/img/Ellipse-3.png" class="-z-10 absolute bottom-0 left-0" />
 
-		<div class="h-screen overflow-y-auto flex justify-center pt-20 p-2">
+		<div class="h-screen overflow-y-auto flex justify-center pt-20 p-3">
 			<slot />
 		</div>
 	</div>
