@@ -10,14 +10,9 @@
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare"
 	},
-	"engines": {
-		"node": "16.x",
-		"npm": "~9.5.1"
-	},
 	"devDependencies": {
 		"@nuxt/devtools": "latest",
 		"@nuxt/image": "^1.1.0",
-		"husky": "^8.0.3",
 		"nuxt": "^3.8.2",
 		"nuxt-aos": "^1.2.2",
 		"nuxt-icon": "^0.6.6",
