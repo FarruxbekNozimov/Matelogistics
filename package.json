@@ -8,7 +8,11 @@
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"postinstall": "nuxt prepare",
+		"start": "node .output/server/index.mjs"
+	},
+	"engines": {
+		"node": "18.x"
 	},
 	"devDependencies": {
 		"@nuxt/devtools": "latest",
