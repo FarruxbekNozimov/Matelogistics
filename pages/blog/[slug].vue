@@ -32,11 +32,75 @@ const links = [
 				:src="data.image"
 				class="w-full mb-5 rounded-2xl shadow-lg"
 				loading="lazy" />
-			<div class="flex">
-				<div class="">
-					
+			<div class="grid md:grid-cols-5 sm:grid-cols-1 gap-5">
+				<div class="text-center space-y-3 md:block hidden">
+					<h3 class="text-[#024E90] text-[16px] font-[600]">Share on:</h3>
+					<a href="" class="block">
+						<Icon name="fa6-brands:x-twitter" class="text-2xl text-[#5D5D5F]" />
+					</a>
+					<a href="" class="block">
+						<Icon name="streamline:instagram" class="text-2xl text-[#5D5D5F]" />
+					</a>
+					<a href="" class="block">
+						<Icon
+							name="teenyicons:facebook-outline"
+							class="text-2xl text-[#5D5D5F]" />
+					</a>
+					<a href="" class="block">
+						<Icon
+							name="teenyicons:linkedin-outline"
+							class="text-2xl text-[#5D5D5F]" />
+					</a>
 				</div>
-				<div class="text-[#5D5D5F] mb-10" v-html="data?.body"></div>
+				<div class="lg:col-span-3 md:col-span-4">
+					<div
+						class="text-[#5D5D5F] mb-10 text-[16px] font-[400]"
+						v-html="data?.body"></div>
+					<div
+						class="flex items-center justify-between border-y broder-[#008AFF4D] py-5 mb-5">
+						<span class="text-[#C2C2C3]">Share on social media:</span>
+						<div class="flex gap-4">
+							<a href="">
+								<Icon
+									name="fa6-brands:x-twitter"
+									class="text-2xl text-[#5D5D5F]" />
+							</a>
+							<a href="">
+								<Icon
+									name="streamline:instagram"
+									class="text-2xl text-[#5D5D5F]" />
+							</a>
+							<a href="">
+								<Icon
+									name="teenyicons:facebook-outline"
+									class="text-2xl text-[#5D5D5F]" />
+							</a>
+							<a href="">
+								<Icon
+									name="teenyicons:linkedin-outline"
+									class="text-2xl text-[#5D5D5F]" />
+							</a>
+						</div>
+					</div>
+					<SectionsRelated title="Related" />
+				</div>
+				<div class="h-[600px] relative lg:block hidden">
+					<h3 class="absolute p-2 py-3 text-white text-[24px] font-[600]">
+						Are you thinking of shipping your car?
+					</h3>
+					<img
+						src="/img/banner-car.png"
+						alt=""
+						class="w-full h-full object-cover rounded-2xl" />
+					<h3 class="text-white absolute bottom-12 p-2 font-[600] text-[16px]">
+						Our live cost calculator makes it easy
+					</h3>
+					<router-link
+						to="/quote"
+						class="absolute bottom-1 w-[95%] text-[17px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 py-2.5 mx-1.5 text-center">
+						Get an instant quote
+					</router-link>
+				</div>
 			</div>
 		</div>
 	</UContainer>

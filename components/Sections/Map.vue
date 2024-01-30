@@ -37,9 +37,9 @@ onUnmounted(() => {
 
 <template>
 	<div>
-		<svg id="us-map">
+		<!-- <svg id="us-map"> -->
 			<!-- Your map paths go here -->
-		</svg>
+		<!-- </svg> -->
 		<div
 			id="details-box"
 			:style="{ top: tooltipTop, left: tooltipLeft, opacity: tooltipOpacity }">

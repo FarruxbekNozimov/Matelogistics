@@ -1,12 +1,5 @@
 <script setup>
 import { experience } from "@/data/experience";
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/exp/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
 </script>
 
 <template>
@@ -16,8 +9,9 @@ const importImage = (imageName) => {
 			<TitleBar title="What you get when you choose to work with us" />
 			<div class="grid lg:grid-cols-3 md:grid-cols-2 mt-10 gap-5">
 				<CardsExperienceCard
+					data-aos="flip-up"
 					v-for="el in experience"
-					:img="importImage(el.img)"
+					:img="el.img"
 					:title="el.title"
 					:text="el.text" />
 			</div>

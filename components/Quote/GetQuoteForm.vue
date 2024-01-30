@@ -28,7 +28,7 @@ const showError = (title) => {
 		title: title,
 		icon: "material-symbols:error",
 		color: "red",
-		timeout: 5000,
+		timeout: 3000,
 	});
 };
 
@@ -100,7 +100,7 @@ const createLead = async (body) => {
 
 <template>
 	<div
-		class="w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
+		class="max-w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
 		<QuoteWait v-if="steps.end" />
 		<QuoteForm-1 :func="firstStepFunc" v-if="steps.first" />
 		<QuoteForm-2 :func="secondStepFunc" v-if="steps.second" />

@@ -1,33 +1,87 @@
 <script setup>
 import { navbar } from "@/data/navbar.js";
+const isOpen = ref(false);
 </script>
 
 <template>
 	<header class="z-50 w-full bg-white/90 sticky top-0 left-0">
 		<!-- TOP GRAY HEADER -->
 		<HeaderTop />
-		<nav class="flex items-center justify-between p-4 lg:px-0">
+		<nav class="flex items-center justify-between p-4 lg:px-20">
 			<div class="flex items-center justify-center md:gap-5">
-				<button class="lg:hidden text-[#008AFF]">
+				<UButton
+					class="lg:hidden text-[#008AFF]"
+					size="sm"
+					color="blue"
+					square
+					variant="soft"
+					@click="isOpen = true">
 					<Icon name="game-icons:hamburger-menu" class="text-xl" />
-				</button>
+				</UButton>
+				<USlideover side="left" v-model="isOpen">
+					<UCard
+						class="flex flex-col flex-1 transition"
+						:ui="{
+							body: { base: 'flex-1' },
+							ring: '',
+							divide: 'divide-y divide-gray-100',
+						}">
+						<template #header>
+							<div class="flex items-center justify-between">
+								<img src="/img/logo.png" class="h-10" alt="" />
+								<UButton
+									color="gray"
+									variant="ghost"
+									icon="i-heroicons-x-mark-20-solid"
+									class="-my-1"
+									@click="isOpen = false" />
+							</div>
+						</template>
+						<div v-for="(el, i) in navbar">
+							<div class="border-b">
+								<div
+									v-if="typeof el == 'object'"
+									class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
+									{{ i }}
+									<Icon name="ic:outline-chevron-right" class="text-2xl" />
+								</div>
+								<router-link
+									v-else
+									:to="el"
+									class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
+									{{ i }}
+								</router-link>
+							</div>
+						</div>
+						<router-link
+							to="/quote"
+							class="mt-5 block text-[20px] text-center bg-[#E52E2E] text-white rounded-2xl duration-300 font-[600] p-2 py-2.5">
+							Get an instant quote
+						</router-link>
+						<router-link
+							to="check-order"
+							class="mt-5 block text-[20px] text-center border border-[#008AFF] text-[#008AFF] p-2 px-4 rounded-2xl duration-300 font-[600]">
+							Check my order status
+						</router-link>
+					</UCard>
+				</USlideover>
 				<!-- LOGO-->
 				<div class="flex lg:flex-1">
-					<NuxtLink href="/">
-						<img class="h-12 w-auto" src="@/assets/img/logo.png" alt="" />
-					</NuxtLink>
+					<router-link to="/">
+						<img class="md:h-12 h-10 w-auto" src="/img/logo.png" alt="" />
+					</router-link>
 				</div>
 				<!-- NAVBAR-->
 				<div class="hidden lg:flex gap-7">
 					<div class="relative group" v-for="(el, i) in navbar">
-						<NuxtLink
+						<router-link
 							:to="typeof el === 'object' ? '' : el"
 							class="relative flex items-center gap-x-1 text-[#214690] group-hover:text-[#008AFF]">
 							{{ i }}
 							<Icon name="ph:caret-down-bold" v-if="typeof el === 'object'" />
 							<span
 								class="absolute w-0 group-hover:w-full bg-[#008AFF] h-[4px] rounded-full -bottom-1 duration-300"></span>
-						</NuxtLink>
+						</router-link>
 						<div class="">
 							<div
 								v-if="typeof el === 'object'"
@@ -79,22 +133,22 @@ import { navbar } from "@/data/navbar.js";
 				</div>
 			</div>
 			<!-- NAVBAR RIGHT BUTTONS-->
-			<NuxtLink
+			<router-link
 				to="/quote"
-				class="text-xs border border-red-500 border-r-0 p-2 text-red-500 rounded-2xl hover:bg-red-500 hover:text-white duration-300 font-bold md:mr-10 block lg:hidden">
+				class="text-[15px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 px-3 md:hidden block">
 				Get a quote
-			</NuxtLink>
-			<div class="hidden lg:flex gap-5 lg:justify-end px-2">
-				<NuxtLink
+			</router-link>
+			<div class="gap-5 px-2 hidden md:block">
+				<router-link
 					to="/quote"
-					class="lg:text-sm text-xs border border-red-500 border-r-0 p-2 lg:px-4 text-red-500 rounded-2xl hover:bg-red-500 hover:text-white duration-300 font-bold">
+					class="text-[17px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 py-2.5">
 					Get an instant quote
-				</NuxtLink>
-				<NuxtLink
+				</router-link>
+				<router-link
 					to="tel:(929) 592-3003"
-					class="text-sm border border-blue-500 text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-bold">
+					class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-[600]">
 					(929) 592-3003
-				</NuxtLink>
+				</router-link>
 			</div>
 		</nav>
 	</header>

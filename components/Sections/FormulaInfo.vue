@@ -1,12 +1,5 @@
 <script setup>
 import { formulaInfo } from "@/data/formulaInfo";
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/formula/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
 </script>
 
 <template>
@@ -30,15 +23,16 @@ const importImage = (imageName) => {
 					Now it's time to take the next step. Let`s use our live cost
 					calculator for your shipment
 				</p>
-				<button
-					class="w-full outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl px-5 py-2.5 mb-2 text-[20px]">
+				<router-link
+					to="/calculator"
+					class="block text-center outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl px-5 py-2.5 mb-2 text-[20px]">
 					Use live cost calculator
-				</button>
+				</router-link>
 			</div>
 			<div class="md:w-1/2 space-y-5 py-5">
 				<CardsFormulaInfoCard
 					v-for="el in formulaInfo"
-					:img="importImage(el.img)"
+					:img="el.img"
 					:title="el.title"
 					:text="el.text" />
 			</div>

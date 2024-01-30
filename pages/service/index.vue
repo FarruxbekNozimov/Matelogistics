@@ -14,7 +14,7 @@ const items = [
 			base: 'text-center',
 			wrapper: 'relative space-y-10 text-center',
 			list: {
-				base: 'mx-auto',
+				base: 'mx-auto ',
 				width: 'max-w-4xl',
 				background: 'bg-[#EFF4FC] ',
 				rounded: 'rounded-full',

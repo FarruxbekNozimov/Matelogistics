@@ -21,7 +21,8 @@ import { comments } from "@/data/comments";
 				}">
 				<SwiperSlide v-for="comment in comments" class="p-3" :key="slide">
 					<div
-						class="border border-[#ECF3FF] bg-white rounded-xl shadow-xl h-[200px] p-3">
+						data-aos="flip-left"
+						class="border border-[#ECF3FF] bg-white rounded-xl shadow-md h-[200px] p-3">
 						<div class="text-[#012A44] flex items-center justify-between mb-3">
 							{{ comment.name }}
 							<div class="flex items-center gap-1">

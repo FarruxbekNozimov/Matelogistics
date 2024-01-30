@@ -1,13 +1,6 @@
 <script setup>
 import { ref } from "vue";
 
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
-
 const services = ref([
 	{
 		title: "How long does pick-up take?",
@@ -30,11 +23,12 @@ const services = ref([
 			<div class="w-full lg:flex items-start lg:gap-24 mt-10">
 				<div class="lg:w-2/5 w-full space-y-14 mb-5">
 					<div
+						data-aos="fade-right"
 						v-for="el in services"
 						:key="el.title"
 						class="flex items-start justify-center gap-5">
 						<img
-							:src="importImage(el.img)"
+							:src="`/img/${el.img}`"
 							:alt="el.title"
 							class="lg:h-[64px] h-[30px]" />
 						<div class="">
@@ -45,13 +39,13 @@ const services = ref([
 						</div>
 					</div>
 				</div>
-				<div class="lg:w-auto w-full relative">
+				<div data-aos="fade-bottom" class="h-[480px] lg:w-auto w-full relative">
 					<img
-						src="@/assets/img/car-shipping-time-car.png"
-						class="lg:h-[480px] w-full" />
+						src="/img/car-shipping-time-car.png"
+						class="w-full h-full rounded-2xl" />
 					<router-link
 						to="/calculator"
-						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 w-[95%] bottom-3 left-3">
+						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 inset-x-2 bottom-2">
 						Use live cost calculator
 					</router-link>
 				</div>

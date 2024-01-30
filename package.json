@@ -3,16 +3,22 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"build:digitalocean": "npm install --production=false && npm run build && npm ci",
 		"build": "nuxt build",
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"postinstall": "nuxt prepare",
+		"start": "node .output/server/index.mjs"
+	},
+	"engines": {
+		"node": "18.x"
 	},
 	"devDependencies": {
 		"@nuxt/devtools": "latest",
 		"@nuxt/image": "^1.1.0",
 		"nuxt": "^3.8.2",
+		"nuxt-aos": "^1.2.2",
 		"nuxt-icon": "^0.6.6",
 		"vue": "^3.3.8",
 		"vue-router": "^4.2.5"
@@ -20,6 +26,7 @@
 	"dependencies": {
 		"@nuxt/ui": "^2.11.1",
 		"@nuxtjs/axios": "^5.13.6",
+		"ipx": "^3.0.0",
 		"nuxt-swiper": "^1.2.2"
 	}
 }

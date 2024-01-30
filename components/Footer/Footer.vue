@@ -6,18 +6,24 @@ import { footerLinks } from "@/data/footerLinks";
 	<div class="pt-10 lg:pb-0 bg-[#214690]">
 		<Container class="grid grid-cols-5 gap-10 pb-5 px-2">
 			<div class="lg:text-[18px] text-[16px]">
-				<img src="@/assets/img/matelogo-footer.png" class="w-full mb-3" />
+				<img src="/img/matelogo-footer.png" class="w-full mb-3" />
 				<div class="text-white font-[400]">
 					<div class="flex items-center justify-between gap-5 mb-2">
 						<a href="">
-							<Icon name="bi:instagram" class="text-2xl text-white" />
+							<Icon name="streamline:instagram" class="text-2xl text-white" />
 						</a>
 						<a href="">
-							<Icon name="brandico:facebook-rect" class="text-2xl text-white" />
+							<Icon
+								name="teenyicons:facebook-outline"
+								class="text-2xl text-white" />
 						</a>
-						<a href=""><Icon name="bi:google" class="text-2xl text-white" /></a>
 						<a href="">
-							<Icon name="simple-icons:linkedin" class="text-2xl text-white" />
+							<Icon name="iconoir:google-circle" class="text-2xl text-white" />
+						</a>
+						<a href="">
+							<Icon
+								name="teenyicons:linkedin-outline"
+								class="text-2xl text-white" />
 						</a>
 					</div>
 					<p class="mb-2">6534 Myrtle Ave, Queens NY, 11385, USA</p>

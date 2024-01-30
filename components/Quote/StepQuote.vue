@@ -9,7 +9,7 @@ defineProps(["num"]);
 			v-for="el in 3">
 			<img
 				v-if="el < num"
-				src="@/assets/img/check-img-1.png"
+				src="/img/check-img-1.png"
 				alt="check"
 				class="w-full h-full" />
 			<span v-else class="text-[#024E90] text-[20px] font-[700]">{{ el }}</span>

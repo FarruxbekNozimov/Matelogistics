@@ -1,12 +1,5 @@
 <script setup>
 defineProps(["title", "text", "img1", "img2", "order", "button"]);
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
 </script>
 
 <template>
@@ -27,20 +20,19 @@ const importImage = (imageName) => {
 					Now it's time to take the next step. Let`s use our live cost
 					calculator for your shipment
 				</h2>
-				<RedButton
-					v-if="!button"
+				<router-link
 					to="/calculator"
-					class="text-center text-lg bg-[#E52E2E] text-white rounded-2xl p-2"
-					title="Use live cost calculator">
-				</RedButton>
+					class="text-[24px] font-[700] text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 px-4">
+					Use live cost calculator
+				</router-link>
 			</div>
 			<div class="text-center">
 				<img
 					class="shadow-xl hover:rotate-6 duration-300 lg:h-full mt-5 ml-16 lg:w-[486px] w-[85%] z-1"
-					:src="importImage(img1)" />
+					:src="`/img/${img1}`" />
 				<img
 					class="shadow-xl hover:rotate-6 duration-300 lg:h-full mt-[-50px] lg:w-[486px] w-[85%] z-0"
-					:src="importImage(img2)" />
+					:src="`/img/${img2}`" />
 			</div>
 		</div>
 	</UContainer>

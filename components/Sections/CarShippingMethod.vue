@@ -1,13 +1,4 @@
 <script setup>
-import { ref } from "vue";
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
-
 import { methods } from "@/data/methods";
 </script>
 
@@ -19,7 +10,7 @@ import { methods } from "@/data/methods";
 			<div class="grid lg:grid-cols-4 md:grid-cols-2 mt-10 gap-5">
 				<CardsMethodCard
 					v-for="el in methods"
-					:img="importImage(el.img)"
+					:img="el.img"
 					:title="el.title"
 					:text="el.text" />
 			</div>

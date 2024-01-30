@@ -23,6 +23,7 @@ const changeAcc = (num) => {
 				<div class="md:flex items-end justify-between gap-10">
 					<div class="md:w-1/2">
 						<div
+							data-aos="fade-up"
 							v-for="(el, i) in faq"
 							class="flex items-center justify-center bg-white p-3 rounded-xl mb-3 cursor-pointer shadow"
 							@click="changeAcc(i)">

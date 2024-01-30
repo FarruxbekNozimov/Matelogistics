@@ -14,7 +14,7 @@
 				</p>
 				<div class="sm:flex items-center gap-5">
 					<img
-						src="@/assets/img/check-img.png"
+						src="/img/check-img.png"
 						alt="img"
 						class="md:hidden sm:h-[118px] sm:mb-0 mb-5" />
 					<div class="md:flex items-center gap-5">
@@ -31,7 +31,7 @@
 			</div>
 
 			<img
-				src="@/assets/img/check-img.png"
+				src="/img/check-img.png"
 				alt="img"
 				class="absolute right-24 bottom-0 md:block hidden" />
 		</div>

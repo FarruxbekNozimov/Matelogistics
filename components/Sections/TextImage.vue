@@ -1,12 +1,5 @@
 <script setup>
 defineProps(["title", "text", "img", "firstImg", "isButton"]);
-
-const importImage = (imageName) => {
-	const images = import.meta.globEager("@/assets/img/*");
-	const imageKeys = Object.keys(images);
-	const imageKey = imageKeys.find((key) => key.endsWith(imageName));
-	return images[imageKey].default;
-};
 </script>
 
 <template>
@@ -30,7 +23,7 @@ const importImage = (imageName) => {
 			</div>
 			<div>
 				<img
-					:src="importImage(img)"
+					:src="`/img/${img}`"
 					class="shadow-xl rounded-2xl w-full h-full hover:scale-110 duration-300"
 					alt="" />
 			</div>

@@ -18,7 +18,7 @@ defineProps(["title", "reviews", "number", "img"]);
 			</div>
 			<div class="">
 				<h3 class="text-[40px] text-[#214690]">{{ number }}</h3>
-				<img :src="`${img}`" alt="" />
+				<img :src="`/img/${img}`" alt="" />
 			</div>
 		</div>
 	</div>

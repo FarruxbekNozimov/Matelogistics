@@ -7,7 +7,7 @@ definePageMeta({ layout: "quote" });
 		<HeaderTop />
 		<div class="w-full flex item-center justify-center p-5">
 			<router-link to="/">
-				<img src="@/assets/img/logo.png" alt="" />
+				<img src="/img/logo.png" alt="" />
 			</router-link>
 		</div>
 		<div class="flex items-center justify-center w-full md:px-20 py-10">
