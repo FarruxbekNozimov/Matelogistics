@@ -28,7 +28,7 @@ const services = [
 					<TitleBar title="A 3-step process" class="mb-5" />
 					<div class="w-full text-start lg:flex items-center justify-between">
 						<img data-aos="fade-right" src="/img/car-shipping.png" class="" />
-						<div data-aos="fade-left" class="space-y-14">
+						<div data-aos="fade-right" class="space-y-14">
 							<div
 								v-for="el in services"
 								:key="el.title"

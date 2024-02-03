@@ -1,14 +1,15 @@
 <script setup></script>
 
 <template>
-	<div class="">
-		<SectionsBanner
-			title="Enclosed Auto Transport"
-			text="Enclosed Auto Transport: Secure, Reliable Transport with Mate Logistics" />
-		<SectionsCustomerComments />
-		<SectionsTextImage
-			title="Understanding Enclosed Auto Transport"
-			text="Enclosed auto transport offers a superior level of security and
+  <div class="">
+    <SectionsBanner
+      title="Enclosed Auto Transport"
+      text="Enclosed Auto Transport: Secure, Reliable Transport with Mate Logistics"
+    />
+    <SectionsCustomerComments />
+    <SectionsInfoRow
+      title="Understanding Enclosed Auto Transport"
+      text="Enclosed auto transport offers a superior level of security and
         protection compared to open-air transportation. By placing your vehicle
         in an enclosed trailer, it is shielded from the elements and potential
         damage caused by debris. This transport method is perfect for classic

@@ -7,7 +7,7 @@ const isOpen = ref(false);
 	<header class="z-50 w-full bg-white/90 sticky top-0 left-0">
 		<!-- TOP GRAY HEADER -->
 		<HeaderTop />
-		<nav class="flex items-center justify-between p-4 lg:px-0">
+		<nav class="flex items-center justify-between p-4 lg:px-20">
 			<div class="flex items-center justify-center md:gap-5">
 				<UButton
 					class="lg:hidden text-[#008AFF]"
