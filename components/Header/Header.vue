@@ -20,7 +20,7 @@ const isOpen = ref(false);
 				</UButton>
 				<USlideover side="left" v-model="isOpen">
 					<UCard
-						class="flex flex-col flex-1 transition"
+						class="flex flex-col flex-1 transition overflow-y-auto scroll-m-0"
 						:ui="{
 							body: { base: 'flex-1' },
 							ring: '',
@@ -37,32 +37,49 @@ const isOpen = ref(false);
 									@click="isOpen = false" />
 							</div>
 						</template>
-						<div v-for="(el, i) in navbar">
-							<div class="border-b">
-								<div
-									v-if="typeof el == 'object'"
-									class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
-									{{ i }}
-									<Icon name="ic:outline-chevron-right" class="text-2xl" />
+						<div class="h-screen">
+							<div v-for="(el, i) in navbar">
+								<div class="border-b">
+									<div
+										v-if="typeof el == 'object'"
+										class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
+										{{ i }}
+										<Icon name="ic:outline-chevron-right" class="text-2xl" />
+									</div>
+									<router-link
+										v-else
+										:to="el"
+										class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
+										{{ i }}
+									</router-link>
 								</div>
-								<router-link
-									v-else
-									:to="el"
-									class="text-[#214690] text-[16px] font-[600] py-3 flex items-center justify-between">
-									{{ i }}
-								</router-link>
+							</div>
+							<router-link
+								to="/quote"
+								class="mt-5 block text-[20px] text-center bg-[#E52E2E] text-white rounded-2xl duration-300 font-[600] p-2 py-2.5">
+								Get an instant quote
+							</router-link>
+							<router-link
+								to="check-order"
+								class="mt-5 block text-[20px] text-center border border-[#008AFF] text-[#008AFF] p-2 px-4 rounded-2xl duration-300 font-[600]">
+								Check my order status
+							</router-link>
+							<a
+								href="tel:+1 (929) 592-3003"
+								class="flex items-center justify-center gap-3 text-center text-[#214690] mt-5">
+								<Icon name="material-symbols:call-outline" class="text-2xl" />
+								<span class="font-[600] text-[20px]"> +1 (929) 592-3003 </span>
+							</a>
+							<h3
+								class="text-[#214690] font-[600] text-[16px] text-center py-3">
+								Contact us
+							</h3>
+							<div class="flex items-center justify-center gap-5">
+								<a href="https://www.instagram.com/matelogistics/">
+									<img src="/img/Brands/bbb.png" alt="" class="h-4 w-4" />
+								</a>
 							</div>
 						</div>
-						<router-link
-							to="/quote"
-							class="mt-5 block text-[20px] text-center bg-[#E52E2E] text-white rounded-2xl duration-300 font-[600] p-2 py-2.5">
-							Get an instant quote
-						</router-link>
-						<router-link
-							to="check-order"
-							class="mt-5 block text-[20px] text-center border border-[#008AFF] text-[#008AFF] p-2 px-4 rounded-2xl duration-300 font-[600]">
-							Check my order status
-						</router-link>
 					</UCard>
 				</USlideover>
 				<!-- LOGO-->
