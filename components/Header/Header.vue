@@ -7,7 +7,7 @@ const isOpen = ref(false);
 	<header class="z-50 w-full bg-white/90 sticky top-0 left-0">
 		<!-- TOP GRAY HEADER -->
 		<HeaderTop />
-		<nav class="flex items-center justify-between p-4 lg:px-20">
+		<nav class="flex items-center justify-between p-4">
 			<div class="flex items-center justify-center md:gap-5">
 				<UButton
 					class="lg:hidden text-[#008AFF]"
@@ -85,7 +85,7 @@ const isOpen = ref(false);
 				<!-- LOGO-->
 				<div class="flex lg:flex-1">
 					<router-link to="/">
-						<img class="md:h-12 h-10 w-auto" src="/img/logo.png" alt="" />
+						<img class="md:h-12 h-10 object-cover" src="/img/logo.png" alt="" />
 					</router-link>
 				</div>
 				<!-- NAVBAR-->
@@ -155,7 +155,7 @@ const isOpen = ref(false);
 				class="text-[15px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 px-3 md:hidden block">
 				Get a quote
 			</router-link>
-			<div class="gap-5 px-2 hidden md:block">
+			<div class="gap-5 hidden md:block">
 				<router-link
 					to="/quote"
 					class="text-[17px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 py-2.5">
@@ -163,7 +163,7 @@ const isOpen = ref(false);
 				</router-link>
 				<router-link
 					to="tel:(929) 592-3003"
-					class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-[600]">
+					class="text-[17px] text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-[600]">
 					(929) 592-3003
 				</router-link>
 			</div>
