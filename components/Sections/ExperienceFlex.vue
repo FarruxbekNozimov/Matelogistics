@@ -7,7 +7,8 @@ import { experienceFlex } from "@/data/experienceFlex";
 		<div class="mb-10">
 			<TitleBar title="Experience the excellence at Mate Logistics:" no="1" />
 			<TitleBar title="What you get when you choose to work with us" />
-			<div class="grid lg:grid-cols-5 md:grid-cols-2 mt-10 rounded-4xl overflow-hidden bg-white">
+			<div
+				class="grid lg:grid-cols-5 md:grid-cols-2 mt-10 rounded-4xl overflow-hidden bg-white">
 				<CardsExperienceCardFlex
 					v-for="el in experienceFlex"
 					:img="`/${el.img}`"

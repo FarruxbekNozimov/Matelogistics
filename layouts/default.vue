@@ -8,7 +8,7 @@ useSeoMeta({
 
 <template>
 	<div>
-		<div class="bg-white/90">
+		<UContainer class="bg-white/90">
 			<!-- HEADER -->
 			<Header />
 			<div class="min-h-screen pb-5">
@@ -19,7 +19,7 @@ useSeoMeta({
 			<!-- HEADER -->
 			<Footer class="md:block hidden" />
 			<FooterMini class="lg:hidden block" />
-		</div>
+		</UContainer>
 	</div>
 </template>
 
