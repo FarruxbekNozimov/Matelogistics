@@ -24,7 +24,7 @@ import { footerLinks } from "@/data/footerLinks";
 		</Container>
 		<Container class="text-white font-[400]">
 			<div>
-				<p>(929) 592-3003</p>
+				<a href="tel:+19295923003">(929) 592-3003</a>
 				<p>MC: 1380151</p>
 				<p class="mb-2">6534 Myrtle Ave, Queens NY, 11385, USA</p>
 			</div>

@@ -3,10 +3,14 @@
 <template>
 	<div
 		class="bg-[#F5F5F5] h-[40px] overflow-hidden gap-5 p-2.5 flex justify-center items-center">
-		<p class="text-xs text-gray-500 whitespace-nowrap">
-			Ware open now! Try our first real time car shipping cost calculator. Mate
-			Logistics has shipped over 720 vehicles to all 50 states last 12 months.
-		</p>
+		<div class="w-[900px] lg:w-[900px]">
+			<NuxtMarquee>
+				<p class="text-xs text-gray-500 whitespace-nowrap">
+					Ware open now! Try our first real time car shipping cost calculator. Mate
+					Logistics has shipped over 720 vehicles to all 50 states last 12 months.
+				</p>
+			</NuxtMarquee>
+		</div>
 		<div class="lg:flex hidden items-center gap-3">
 			<router-link to="/contact" class="text-sm text-gray-500">
 				Contact us

@@ -10,11 +10,13 @@
 			title="Understanding open trailer car shipping"
 			text="When it comes to transporting your vehicle, understanding the different methods available is crucial. Open trailer car shipping involves transporting vehicles on an open-air trailer, typically with multiple cars loaded onto the same trailer. This method is commonly used for standard vehicles, offering a cost-effective solution for vehicle transport needs.<br/><br/>Open trailer car shipping provides a practical and efficient way to move your vehicle from one location to another, whether it's across the state or across the country. While some may have concerns about the exposure of their vehicles to the elements, open trailer shipping is a safe and reliable option for standard vehicle transport."
 			img="open-car.png"
-			firstImg="1" />
+			firstImg="1" 
+			isButton="0" />
 		<SectionsTextImage
 			title="Advantages of open trailer car shipping"
 			text="The advantages of open trailer car shipping are numerous, making it a preferred choice for many individuals and businesses. One of the primary advantages is the cost-effectiveness of this method. Compared to enclosed trailer shipping, open trailer car shipping is more affordable, making it an attractive option for those looking to transport their vehicles without exceeding their budget."
-			img="open-car-1.png" />
+			img="open-car-1.png"
+			isButton="0" />
 		<SectionsTextTwoImage
 			title="Cost comparison: open trailer vs. enclosed trailer car shipping"
 			text="When considering vehicle transport options, cost is often a significant factor in decision-making. Open trailer car shipping typically offers a more budget-friendly solution compared to enclosed trailer shipping. The open-air design of open trailer shipping allows for more vehicles to be transported simultaneously, reducing the overall cost per vehicle.
@@ -22,7 +24,8 @@
 			It's essential to weigh the cost considerations when choosing between open trailer and enclosed trailer car shipping. While both methods have their advantages, open trailer shipping stands out as the more economical choice for those seeking practical and efficient vehicle transport solutions."
 			img1="open-car-2.png"
 			img2="open-car-3.png"
-			order="1" />
+			order="1"
+			button="1" />
 		<SectionsEnclosedfourTypes />
 
 		<SectionsTextTwoImage

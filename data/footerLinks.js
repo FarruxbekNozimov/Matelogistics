@@ -18,7 +18,7 @@ export const footerLinks = {
 		"Live cost calculator": "/",
 		"How it works?": "/",
 		Blog: "/",
-		Help: "/help",
-		"Check order status": "/",
+		Help: "/",
+		"Check order status": "/check-my-order",
 	},
 };

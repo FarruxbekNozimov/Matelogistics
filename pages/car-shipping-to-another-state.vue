@@ -34,11 +34,12 @@
 			img="open-car-3.png" />
 
 		<SectionsTextTwoImage
-			title="Tips for a smooth car shipping experience"
+			title="Tips For A Smooth Car Shipping Experience"
 			text="To ensure a smooth and successful car shipping experience, consider the following tips and best practices:<br/><br/>1. Plan ahead and book your car shipping services well in advance to secure preferred dates and ensure availability.<br/>2. Communicate openly with the shipping company and provide accurate information about your vehicle to facilitate a seamless transport process.<br/>3. Prepare your vehicle for shipping by cleaning it, documenting its condition, and ensuring it's in good working order.<br/>4. Review and understand the insurance coverage provided by the shipping company, and consider any additional options for added protection.<br/>5. Stay informed and engaged throughout the shipping process, asking questions and seeking updates as needed.<br/>6. Upon delivery, thoroughly inspect your vehicle and document its condition before signing off on the delivery receipt.<br/>By following these tips and taking proactive steps, you can contribute to a positive and stress-free car shipping experience that prioritizes the safety and security of your vehicle."
 			img1="shipping-car.png"
 			img2="open-car-1.png"
-			order="1" />
+			order="1"
+			button="1" />
 
 		<SectionsExperienceFlex />
 		<SectionsLetWorkTransport />

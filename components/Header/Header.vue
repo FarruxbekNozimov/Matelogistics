@@ -4,7 +4,7 @@ const isOpen = ref(false);
 </script>
 
 <template>
-	<header class="z-50 w-full bg-white/90 sticky top-0 left-0">
+	<header class="z-50 w-full bg-white sticky top-0 left-0">
 		<!-- TOP GRAY HEADER -->
 		<HeaderTop />
 		<nav class="flex items-center justify-between p-4 lg:px-20">
@@ -85,7 +85,7 @@ const isOpen = ref(false);
 						<div class="">
 							<div
 								v-if="typeof el === 'object'"
-								class="absolute -left-8 z-10 mt-1 rounded-xl bg-white/90 shadow-xl ring-1 ring-gray-900/5 hidden group-hover:block w-max">
+								class="absolute -left-8 z-10 mt-1 rounded-xl bg-white shadow-xl ring-1 ring-gray-900/5 hidden group-hover:block w-max">
 								<div class="p-1">
 									<div class="relative rounded-lg p-2 leading-6">
 										<div
@@ -144,11 +144,11 @@ const isOpen = ref(false);
 					class="text-[17px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 py-2.5">
 					Get an instant quote
 				</router-link>
-				<router-link
-					to="tel:(929) 592-3003"
-					class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-[600]">
+				<a
+					href="tel:+19295923003"
+					class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl">
 					(929) 592-3003
-				</router-link>
+				</a>
 			</div>
 		</nav>
 	</header>

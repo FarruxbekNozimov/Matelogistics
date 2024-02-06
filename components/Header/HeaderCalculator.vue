@@ -16,11 +16,11 @@
 					</div>
 				</div>
 				<!-- NAVBAR RIGHT BUTTONS-->
-				<NuxtLink
-					to="tel:(929) 592-3003"
+				<a
+					href="tel:+19295923003"
 					class="text-[20px] font-[600] text-[#008AFF]">
 					(929) 592-3003
-				</NuxtLink>
+				</a>
 			</nav>
 		</UContainer>
 	</header>
