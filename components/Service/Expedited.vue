@@ -19,10 +19,11 @@
 		<SectionsTextImage
 			title="Benefits of Enclosed Auto Transport"
 			text="Opting for expedited car shipping offers several benefits that make it worth the investment. One of the primary advantages is the guarantee of prompt pick-up. With dedicated carriers and priority scheduling, your car gets the attention it deserves. Unlike standard shipping methods, expedited car shipping ensures that your vehicle is not left waiting for days or weeks before being loaded onto a carrier.<br/><br/>Not only does expedited car shipping save you time, but it also offers added protection for your vehicle. Many expedited car shipping companies provide enclosed carriers, which shield your car from external elements such as dust, debris, and harsh weather conditions. This ensures that your vehicle arrives at its destination in the same condition as when it was loaded onto the carrier."
-			img="enclosed2.png" />
+			img="enclosed2.png"
+			isButton="1" />
 		<SectionsTextTwoImage
 			title="Cost considerations for expedited car shipping"
-			text="While expedited car shipping offers numerous benefits, it is essential to consider the associated costs. Expedited shipping services typically come at a higher price compared to standard shipping methods. This is due to the prioritized scheduling, dedicated carriers, and additional protection provided during transit.<br/><br/>The cost of expedited car shipping depends on various factors, including the distance to be covered, the type of vehicle being transported, and the urgency of delivery. Mate Logistics is here to provide transparent pricing in every different situation. Call now <a href='tel:(929)592-3003' class='text-blue-500'>(929) 592-3003</a> or:"
+			text="While expedited car shipping offers numerous benefits, it is essential to consider the associated costs. Expedited shipping services typically come at a higher price compared to standard shipping methods. This is due to the prioritized scheduling, dedicated carriers, and additional protection provided during transit.<br/><br/>The cost of expedited car shipping depends on various factors, including the distance to be covered, the type of vehicle being transported, and the urgency of delivery. Mate Logistics is here to provide transparent pricing in every different situation. Call now <a href='tel:+19295923003' class='text-blue-500'>(929) 592-3003</a> or:"
 			img1="open-car.png"
 			img2="open-car-1.png"
 			order="1" />

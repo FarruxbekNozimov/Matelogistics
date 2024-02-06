@@ -10,7 +10,7 @@
 		">
 		<h2 class="text-[#012A44] lg:text-2xl font-[600] text-xl mb-3">
 			Check the order status online or call us now
-			<a href="tel:(929) 592-3003" class="text-[#008AFF]">(929) 592-3003</a>
+			<a href="tel:+19295923003" class="text-[#008AFF]">(929) 592-3003</a>
 		</h2>
 
 		<div class="text-[20px] relative">

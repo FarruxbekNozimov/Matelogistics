@@ -43,7 +43,7 @@ export const navbar = {
 	"WHY MATE?": {
 		Reviews: ["Feel the excellence", "/reviews"],
 		"About us": ["How we started", "/about"],
-		"Vision and mission": ["The reason for being", "/"],
+		// "Vision and mission": ["The reason for being", "/"],
 	},
 	BLOG: "/blog",
 };

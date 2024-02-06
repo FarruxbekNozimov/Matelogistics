@@ -9,10 +9,10 @@ import { footerLinks } from "@/data/footerLinks";
 				<img src="/img/matelogo-footer.png" class="w-full mb-3" />
 				<div class="text-white font-[400]">
 					<div class="flex items-center justify-between gap-5 mb-2">
-						<a href="">
+						<a href="https://www.instagram.com/matelogistics/">
 							<Icon name="streamline:instagram" class="text-2xl text-white" />
 						</a>
-						<a href="">
+						<a href="https://www.facebook.com/matelogistics">
 							<Icon
 								name="teenyicons:facebook-outline"
 								class="text-2xl text-white" />
@@ -20,14 +20,14 @@ import { footerLinks } from "@/data/footerLinks";
 						<a href="">
 							<Icon name="iconoir:google-circle" class="text-2xl text-white" />
 						</a>
-						<a href="">
+						<a href="https://www.linkedin.com/company/mate-logistics-inc/">
 							<Icon
 								name="teenyicons:linkedin-outline"
 								class="text-2xl text-white" />
 						</a>
 					</div>
 					<p class="mb-2">6534 Myrtle Ave, Queens NY, 11385, USA</p>
-					<p>(929) 592-3003</p>
+					<a href="tel:+19295923003">(929) 592-3003</a>
 					<p>MC: 1380151</p>
 				</div>
 			</div>

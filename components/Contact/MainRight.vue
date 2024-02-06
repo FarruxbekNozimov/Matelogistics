@@ -8,7 +8,7 @@ const details = [
 	{
 		icon: "material-symbols:phone-in-talk-outline-sharp",
 		title: "Mainline: ",
-		text: "<a href='tel:+(929)592-3003' class='text-blue-400'>+(929)592-3003</a>",
+		text: "<a href='tel:+19295923003' class='text-blue-400'>+(929)592-3003</a>",
 	},
 	{
 		icon: "material-symbols:alternate-email-rounded",

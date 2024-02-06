@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ["@nuxt/ui", "nuxt-icon", "nuxt-swiper", "@nuxt/image", "nuxt-aos"],
+	modules: ["@nuxt/ui", "nuxt-icon", "nuxt-swiper", "@nuxt/image", "nuxt-aos","nuxt-marquee"],
 	app: {
 		head: {
 			charset: "utf-8",
