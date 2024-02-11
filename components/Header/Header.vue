@@ -165,7 +165,7 @@ const isOpen = ref(false);
 					to="tel:(929) 592-3003"
 					class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-[600]">
 					(929) 592-3003
-				</a>
+				</router-link>
 			</div>
 		</nav>
 	</header>
