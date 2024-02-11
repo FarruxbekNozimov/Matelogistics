@@ -161,11 +161,11 @@ const isOpen = ref(false);
 					class="text-[17px] bg-[#E52E2E] text-white rounded-2xl hover:bg-red-700 hover:text-white duration-300 font-[600] p-2 py-2.5">
 					Get an instant quote
 				</router-link>
-				<router-link
-					to="tel:(929) 592-3003"
-					class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl hover:bg-blue-500 hover:text-white duration-300 font-[600]">
+				<a
+					href="tel:+19295923003"
+					class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl">
 					(929) 592-3003
-				</router-link>
+				</a>
 			</div>
 		</nav>
 	</header>
