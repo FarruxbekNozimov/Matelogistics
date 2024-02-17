@@ -29,6 +29,7 @@
 		"@nuxtjs/axios": "^5.13.6",
 		"esm": "^3.2.25",
 		"ipx": "^3.0.0",
-		"nuxt-swiper": "^1.2.2"
+		"nuxt-swiper": "^1.2.2",
+		"vue-phone-number-input": "^1.12.13"
 	}
 }

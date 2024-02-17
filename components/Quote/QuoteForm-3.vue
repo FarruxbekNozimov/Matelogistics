@@ -5,7 +5,7 @@ import { reactive } from "vue";
 const form = reactive({
 	email: "",
 	date: "",
-	nbm: "",
+	nbm: "(",
 });
 </script>
 
@@ -29,10 +29,13 @@ const form = reactive({
 	<div class="text-[20px]">
 		<label class="font-[500]">Phone number</label>
 		<UInput
-			type="number"
+			type="tel"
 			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px]  outline-none cursor-pointer text-gray-500 "
 			placeholder="(___) ___ - ___"
-			v-model="form.nbm" />
+			v-model="form.nbm"
+			pattern="\d*"
+			:maxlength="10"
+			/>
 	</div>
 	<p class="text-[#012A44] text-[10px]">
 		By providing your phone number and email, you are agreeing to our

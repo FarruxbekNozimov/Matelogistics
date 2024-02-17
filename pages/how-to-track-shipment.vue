@@ -4,7 +4,7 @@
 	<div>
 		<SectionsBanner
 			title="How to track a vehicle during the transportation"
-			text="Seamless Interstate Car Shipping with Mate Logistics: Your Trusted Transport Partner" />
+			text="Get an update from every step of your car shipping." />
 		<SectionsCustomerComments />
 		<SectionsTextImage
 			title="Check Order Status Online"

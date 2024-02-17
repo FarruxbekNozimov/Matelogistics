@@ -11,7 +11,7 @@ const changeAcc = (num) => {
 </script>
 
 <template>
-	<div class="shadow-xl bg-gradient-to-r from-[#008AFF] to-[#005BA8] mb-5 py-5">
+	<div class="shadow-xl bg-gradient-to-r from-[#008AFF] to-[#005BA8] mb-5 py-5 rounded-3xl">
 		<UContainer>
 			<div class="">
 				<div class="mb-10">

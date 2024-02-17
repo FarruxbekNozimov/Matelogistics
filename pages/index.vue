@@ -1,9 +1,9 @@
 <script setup>
 useSeoMeta({
-	title: "My Amazing Site",
-	ogTitle: "My Amazing Site",
-	description: "This is my amazing site, let me tell you all about it.",
-	ogDescription: "This is my amazing site, let me tell you all about it.",
+	title: "Transparent Auto Transport Company | Mate Logistics",
+	ogTitle: "Transparent Auto Transport Company | Mate Logistics",
+	description: "Transparent Pricing with No Hidden Fees for Your Auto Transportation Needs",
+	ogDescription: "At Mate Logistics, we are dedicated to provide you with comprehensive and reliable auto transport solutions.",
 	ogImage: "https://example.com/image.png",
 	twitterCard: "summary_large_image",
 });
@@ -31,14 +31,14 @@ useSeoMeta({
 			<img src="/img/Ellipse-2.png" class="absolute left-0 -top-5 z-0" alt="" />
 			<SectionsExperience />
 		</div>
-		<div class="relative">
+		<!-- <div class="relative">
 			<img
 				src="/img/Ellipse-3.png"
-				class="absolute -left-56 -top-5 -z-0"
+				class="absolute -left-56 -top-5 z-10"
 				alt="" />
 
-			<SectionsFormulaInfo class="z-10" />
-		</div>
+			</div> -->
+			<SectionsFormulaInfo class="z-0" />
 		<SectionsFAQ />
 		<SectionsMap />
 		<SectionsReviews />

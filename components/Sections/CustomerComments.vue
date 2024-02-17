@@ -43,6 +43,9 @@ import { comments } from "@/data/comments";
 				</SwiperSlide>
 			</Swiper>
 		</div>
+		<div class="lg:block show">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed et nesciunt qui ipsa quibusdam quisquam exercitationem magnam. Maxime saepe doloremque ad quasi qui velit inventore nisi eos? Aliquam, molestias.</p>
+		</div>
 	</UContainer>
 </template>
 
