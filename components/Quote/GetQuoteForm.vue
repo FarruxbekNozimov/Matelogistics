@@ -100,7 +100,7 @@ const createLead = async (body) => {
 
 <template>
 	<div
-		class="w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
+		class="md:w-[300px] lg:w-[400px] font-[500] space-y-3 shadow-xl bg-white p-4 rounded-3xl">
 		<QuoteWait v-if="steps.end" />
 		<QuoteForm-1 :func="firstStepFunc" v-if="steps.first" />
 		<QuoteForm-2 :func="secondStepFunc" v-if="steps.second" />

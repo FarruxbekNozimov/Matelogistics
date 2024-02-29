@@ -1,10 +1,10 @@
 <script setup>
-defineProps(["img", "title", "text"]);
+defineProps(["img", "title", "text","link"]);
 </script>
 
 <template>
 	<router-link
-		to="/service"
+		:to="`/${link}`"
 		data-aos="flip-down"
 		class="bg-[#056AC4] overflow-hidden rounded-3xl cursor-pointer hover:shadow-2xl duration-300 p-5 relative">
 		<img

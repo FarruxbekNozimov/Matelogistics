@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({ title: "MateLogistics" });
-import { privacy } from "@/data/privacy";
+import { privacy } from "@/data/terms";
 </script>
 
 <template>

@@ -12,7 +12,8 @@ import { methods } from "@/data/methods";
 					v-for="el in methods"
 					:img="el.img"
 					:title="el.title"
-					:text="el.text" />
+					:text="el.text"
+					:link="el.link" />
 			</div>
 		</div>
 	</UContainer>

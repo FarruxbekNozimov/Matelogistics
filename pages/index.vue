@@ -24,20 +24,13 @@ useSeoMeta({
 			<img src="/img/Ellipse-2.png" class="absolute left-0 -top-5 z-0" alt="" />
 			<SectionsCarShippingMethod />
 		</div>
-		<div class="bg-gradient-to-r from-[#008AFF]/20 to-[#005BA8]/20 pt-5 pb-1">
+		<div class="">
 			<SectionsCountViewers />
 		</div>
 		<div class="relative">
 			<img src="/img/Ellipse-2.png" class="absolute left-0 -top-5 z-0" alt="" />
 			<SectionsExperience />
 		</div>
-		<!-- <div class="relative">
-			<img
-				src="/img/Ellipse-3.png"
-				class="absolute -left-56 -top-5 z-10"
-				alt="" />
-
-			</div> -->
 			<SectionsFormulaInfo class="z-0" />
 		<SectionsFAQ />
 		<SectionsMap />

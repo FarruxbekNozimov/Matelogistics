@@ -2,7 +2,7 @@
 
 <template>
 	<div
-		class="bg-[#F5F5F5] h-[40px] overflow-hidden gap-5 p-2.5 flex justify-center items-center">
+		class="bg-[#F5F5F5] h-[40px] overflow-hidden gap-5 p-2.5 flex justify-center items-center rounded-lg">
 		<marquee class="text-xs text-gray-500 whitespace-nowrap">
 			We are open now! Try our first real time car shipping cost calculator. Mate
 			Logistics has shipped over 720 vehicles to all 50 states last 12 months.

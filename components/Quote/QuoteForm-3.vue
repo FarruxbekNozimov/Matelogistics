@@ -5,7 +5,7 @@ import { reactive } from "vue";
 const form = reactive({
 	email: "",
 	date: "",
-	nbm: "(",
+	nbm: "",
 });
 </script>
 
@@ -34,7 +34,8 @@ const form = reactive({
 			placeholder="(___) ___ - ___"
 			v-model="form.nbm"
 			pattern="\d*"
-			:maxlength="10"
+			:maxlength="13"
+			v-mask="'(###) ###-####'"
 			/>
 	</div>
 	<p class="text-[#012A44] text-[10px]">
