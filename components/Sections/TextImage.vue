@@ -17,7 +17,7 @@ defineProps(["title", "text", "img", "firstImg", "isButton"]);
 						v-html="text"></div>
 					<RedButton
 						v-if="!isButton"
-						title="Use live cost calculator"
+						title="Get an instant quote"
 						to="/calculator" />
 				</div>
 			</div>

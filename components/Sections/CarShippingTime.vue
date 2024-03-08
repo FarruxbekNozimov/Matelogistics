@@ -46,7 +46,7 @@ const services = ref([
 					<router-link
 						to="/calculator"
 						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 inset-x-2 bottom-2">
-						Use live cost calculator
+						Get an instant quote
 					</router-link>
 				</div>
 			</div>

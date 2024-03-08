@@ -11,8 +11,8 @@ const changeAcc = (num) => {
 </script>
 
 <template>
-  <UContainer>
-    <header class="z-50 w-full bg-white sticky top-0 left-0">
+  <UContainer class="z-50 sticky top-0">
+    <header class="w-full bg-white left-0 rounded-b-xl">
       <!-- TOP GRAY HEADER -->
       <HeaderTop />
       <nav class="flex items-center justify-between py-4">

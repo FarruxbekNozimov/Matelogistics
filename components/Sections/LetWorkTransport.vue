@@ -22,7 +22,7 @@
 						href="https://matelogisticss.com/quote"
 							
 							class="w-full whitespace-nowrap outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-medium duration-300 rounded-2xl px-5 py-2.5 mb-2">
-							Use live cost calculator
+							Get an instant quote
 						</a>
 						<a href="tel:+19295923003"
 							class="w-full whitespace-nowrap outline-none text-[#008AFF] bg-white hover:bg-white/80 duration-300 font-medium rounded-2xl px-5 py-2.5 mb-2">

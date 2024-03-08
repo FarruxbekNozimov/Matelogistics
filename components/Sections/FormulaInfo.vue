@@ -26,7 +26,7 @@ import { formulaInfo } from "@/data/formulaInfo";
 				<router-link
 					to="/calculator"
 					class="block text-center cursor-pointer outline-none text-white bg-[#E52E2E] hover:bg-red-700 font-[700] rounded-xl px-5 py-2.5  mb-2 text-[20px]">
-					Use live cost calculator
+					Get an instant quote
 				</router-link>
 			</div>
 			<div class="md:w-1/2 space-y-5 py-5">

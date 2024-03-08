@@ -13,6 +13,7 @@ const data = reactive({
 	nbm: "",
 	car_year: "",
 	vehicle: null,
+	vehicle_model: null,
 	ship_from: null,
 	ship_to: null,
 });
@@ -46,11 +47,12 @@ const firstStepFunc = (ship_from, ship_to, ship_via_id) => {
 		showError("These cities are not available");
 	}
 };
-const secondStepFunc = (car_year, vehicle, vehicle_runs) => {
-	console.log(car_year, vehicle, vehicle_runs);
-	if (car_year && vehicle && vehicle_runs) {
+const secondStepFunc = (car_year, vehicle, vehicle_model, vehicle_runs) => {
+	console.log(car_year, vehicle_runs);
+	if (car_year && vehicle && vehicle_model && vehicle_runs) {
 		data.car_year = car_year;
 		data.vehicle = vehicle;
+		data.vehicle_model = vehicle_model;
 		data.vehicle_runs = vehicle_runs ? "Yes" : "No";
 		steps.value.second = false;
 		steps.value.third = true;
@@ -59,11 +61,10 @@ const secondStepFunc = (car_year, vehicle, vehicle_runs) => {
 	}
 };
 const thirdStepFunc = async (email, date, nbm) => {
-	console.log(email, date, nbm);
+	console.log(email, date, nbm);	
 	if (email && date && nbm) {
-		var myPhoneRegex =
-			/(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]‌​)\s*)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)([2-9]1[02-9]‌​|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})\s*(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+)\s*)?$/i;
-		if (myPhoneRegex.test(nbm)) {
+			console.log(nbm)
+		if (nbm) {
 			data.email = email;
 			data.date = formatDate(date);
 			data.nbm = nbm;
@@ -88,6 +89,7 @@ const createLead = async (body) => {
 		nbm: `${body.nbm}`,
 		car_year: body.car_year,
 		vehicle: body.vehicle,
+		vehicle_model: body.vehicle_model,
 		ship_from: body.ship_from,
 		ship_to: body.ship_to,
 	};

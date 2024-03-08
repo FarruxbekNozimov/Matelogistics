@@ -34,13 +34,12 @@ const searchCities = async (val) => {
 		<UInput
 			type="text"
 			color="blue"
-			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-500"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-600"
 			placeholder="Zip or city"
 			v-model="form.from"
 			@input="(e) => searchCities(e.target.value)"
 			@focus="(form.from_active = true), (form.to_active = false)">
 			<template #trailing>
-				<span class="text-blue-400 text-xs">True City</span>
 			</template>
 		</UInput>
 		<QuoteList v-if="cities?.data?.results.length && form.from_active">
@@ -49,12 +48,12 @@ const searchCities = async (val) => {
 				<QuoteItem
 					@click="
 						() => {
-							form.from = `${el.name} ${el.zip}`;
+							form.from = `${el.name} ${el.state.name} ${el.zip}`;
 							data.ship_from = el.id;
 							form.from_active = false;
 						}
 					">
-					{{ el.name }} {{ el.zip }}
+					{{ el.name }} {{el.state.name}}  {{ el.zip }}
 				</QuoteItem>
 			</div>
 		</QuoteList>
@@ -65,13 +64,12 @@ const searchCities = async (val) => {
 		<UInput
 			color="blue"
 			type="text"
-			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-500"
+			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] md:text-[18px] text-[15px] outline-none cursor-pointer text-gray-600"
 			placeholder="Zip or city"
 			v-model="form.to"
 			@input="(e) => searchCities(e.target.value)"
 			@focus="(form.to_active = true), (form.from_active = false)">
 			<template #trailing>
-				<span class="text-blue-400 text-xs">True City</span>
 			</template>
 		</UInput>
 		<QuoteList v-if="cities?.data?.results.length && form.to_active">
@@ -80,13 +78,13 @@ const searchCities = async (val) => {
 				<QuoteItem
 					@click="
 						() => {
-							form.to = `${el.name} ${el.zip}`;
+							form.to = `${el.name} ${el.state.name}  ${el.zip}`;
 							data.ship_to = el.id;
 							form.to_active = false;
 						}
 					"
 					class="w-full px-3 pt-2 hover:bg-gray-200 duration-300 cursor-pointer text-[15px] text-[#024E90]">
-					{{ el.name }} {{ el.zip }}
+				{{ el.name }} {{el.state.name}} {{ el.zip }}
 				</QuoteItem>
 			</div>
 		</QuoteList>

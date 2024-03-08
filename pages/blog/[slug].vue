@@ -33,7 +33,7 @@ const links = [
 				class="w-full mb-5 rounded-2xl shadow-lg"
 				loading="lazy" />
 			<div class="grid md:grid-cols-5 sm:grid-cols-1 gap-5">
-				<div class="text-center space-y-3 md:block hidden">
+				<div class="text-center space-y-3 h-[200px] sticky top-28 md:block hidden">
 					<h3 class="text-[#024E90] text-[16px] font-[600]">Share on:</h3>
 					<a href="" class="block">
 						<Icon name="fa6-brands:x-twitter" class="text-2xl text-[#5D5D5F]" />
@@ -84,7 +84,7 @@ const links = [
 					</div>
 					<SectionsRelated title="Related" />
 				</div>
-				<div class="h-[600px] relative lg:block hidden">
+				<div class="h-[600px] relative sticky top-28 lg:block hidden">
 					<h3 class="absolute p-2 py-3 text-white text-[24px] font-[600]">
 						Are you thinking of shipping your car?
 					</h3>

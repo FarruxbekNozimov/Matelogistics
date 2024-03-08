@@ -1,27 +1,31 @@
 <script setup></script>
 
 <template>
-	<NuxtLayout name="error">
-		<div class="flex items-center justify-center relative">
-			<img src="/img/Ellipse.png" class="absolute left-0 -top-5" alt="" />
-			<div class="text-center p-1">
-				<h3 class="h-[250px] md:text-[200px] text-[150px] font-[900] errorTxt">
-					404
-				</h3>
-				<p class="text-[#5D5D5F] md:text-[40px] text-[24px] font-[1000]">
-					OOPS! PAGE NOT FOUND
-				</p>
-				<p class="text-[#5D5D5F80] md:text-[25px] text-[14px] font-[700] mb-5">
-					Sorry! the page you are looking for doesn’t exist
-				</p>
-				<router-link
-					to="/"
-					class="text-white text-[20px] font-[700] bg-gradient-to-r from-[#008AFF] to-[#005BA8] p-2.5 px-5 rounded-2xl">
-					Go to the Home page
-				</router-link>
+	<UContainer>
+		<!-- <NuxtLayout name="error"> -->
+			<Header/>
+			<div class="flex items-center justify-center relative py-6">
+				<div class="text-center p-1">
+					<h3 class="h-[250px] md:text-[200px] text-[150px] font-[900] errorTxt">
+						404
+					</h3>
+					<p class="text-[#5D5D5F] md:text-[40px] text-[24px] font-[1000]">
+						OOPS! PAGE NOT FOUND
+					</p>
+					<p class="text-[#5D5D5F80] md:text-[25px] text-[14px] font-[700] mb-5">
+						Sorry! the page you are looking for doesn’t exist
+					</p>
+					<router-link
+						to="/"
+						class="text-white text-[20px] font-[700] bg-gradient-to-r from-[#008AFF] to-[#005BA8] p-2.5 px-5 rounded-2xl">
+						Go to the Home page
+					</router-link>
+				</div>
 			</div>
-		</div>
-	</NuxtLayout>
+			<Footer class="md:block hidden" />
+			<FooterMini class="lg:hidden block" />
+		<!-- </NuxtLayout> -->
+	</UContainer>
 </template>
 
 <style scoped>

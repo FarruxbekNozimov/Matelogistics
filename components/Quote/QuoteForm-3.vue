@@ -31,11 +31,13 @@ const form = reactive({
 		<UInput
 			type="tel"
 			inputClass="py-2.5 px-4 bg-[#E8F0FF] w-full rounded-xl font-[400] text-[18px]  outline-none cursor-pointer text-gray-500 "
-			placeholder="(___) ___ - ___"
+			placeholder="(___) ___ - ____"
 			v-model="form.nbm"
 			pattern="\d*"
-			:maxlength="13"
-			v-mask="'(###) ###-####'"
+			v-maska
+			data-maska="(###) ###-####" 
+			:maxlength="15"
+			
 			/>
 	</div>
 	<p class="text-[#012A44] text-[10px]">

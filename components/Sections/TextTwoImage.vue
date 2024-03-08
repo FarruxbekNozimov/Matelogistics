@@ -24,7 +24,7 @@ defineProps(["title", "text", "img1", "img2", "order", "button"]);
 					v-if="!button"
 					to="/calculator"
 					class="text-[24px] font-[700] text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 px-4">
-					Use live cost calculator
+					Get an instant quote
 				</router-link>
 			</div>
 			<div class="text-center">
