@@ -6,7 +6,6 @@ const router = useRouter();
 const step = ref(0);
 
 const nextPage = () => {
-	console.log("next");
 	if (step.value == 3) {
 		router.push("/calculator/thank-you");
 	} else {

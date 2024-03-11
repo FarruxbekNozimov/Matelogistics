@@ -22,7 +22,6 @@ const getMakes = async () => {
     if (form.makes == makes.value.data.results[index].name) {
       if (index == 0) {
         index;
-		console.log("index +1");
       }
       searchModels( makes.value.data.results[index].id);
     }
@@ -31,7 +30,6 @@ const getMakes = async () => {
   return makes.value;
 };
 const searchModels = async (val) => {
-  console.log(val);
   models.value = await actions.getModels(val);
   form.model = models.value.data?.results[0].name;
   return models.value;

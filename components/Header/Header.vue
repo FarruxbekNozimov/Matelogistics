@@ -4,7 +4,6 @@ const isOpen = ref(false);
 const faqOne = ref(null);
 
 const changeAcc = (num) => {
-  console.log(faqOne.value);
   if (faqOne.value == num) faqOne.value = null;
   else faqOne.value = num;
 };

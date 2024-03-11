@@ -1,9 +1,7 @@
 <script setup>
 defineProps(["data"]);
 const cutter = (num, text) => {
-	console.log(text);
 	let res = text.slice(0, num);
-	console.log(text);
 	if (res.length != text.length) {
 		res += "...";
 	}

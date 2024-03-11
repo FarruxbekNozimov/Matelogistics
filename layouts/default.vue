@@ -7,25 +7,26 @@ useSeoMeta({
 </script>
 
 <template >
-	<div>
-		<!-- <script async src="https://www.googletagmanager.com/ns.html?id=GTM-WSFJR2KK"></script> -->
-		<!-- <script>
-      window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GTM-WSFJR2KK');
-    </script> -->
-			<!-- HEADER -->
-			<Header />
-			<div class="min-h-screen pb-5">
-				<NuxtLoadingIndicator color="#214690" :height="3" :duration="5000" />
-				<NuxtPage />
-			</div>
-			<UNotifications />
-			<!-- HEADER -->
-			<Footer class="md:block hidden" />
-			<FooterMini class="md:hidden block" />
-	</div>
+  <div>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WSFJR2KK"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- HEADER -->
+    <Header />
+    <div class="min-h-screen pb-5">
+      <NuxtLoadingIndicator color="#214690" :height="3" :duration="5000" />
+      <NuxtPage />
+    </div>
+    <UNotifications />
+    <!-- HEADER -->
+    <Footer class="md:block hidden" />
+    <FooterMini class="md:hidden block" />
+  </div>
 </template>
 
 <style scoped>

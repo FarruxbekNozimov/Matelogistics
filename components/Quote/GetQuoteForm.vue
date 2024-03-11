@@ -21,7 +21,6 @@ const data = reactive({
 const formatDate = (date) => {
 	var parts = date.split("-");
 	var formattedDate = [parts[1], parts[2], parts[0]].join("/");
-	console.log(formattedDate);
 	return formattedDate;
 };
 const showError = (title) => {
@@ -35,9 +34,7 @@ const showError = (title) => {
 
 const steps = ref({ first: true, second: false, third: false, end: false });
 const firstStepFunc = (ship_from, ship_to, ship_via_id) => {
-	console.log(ship_from && ship_to && ship_via_id);
 	if (ship_from && ship_to && ship_via_id) {
-		console.log(ship_from, ship_to, ship_via_id);
 		data.ship_from = ship_from;
 		data.ship_to = ship_to;
 		data.ship_via_id = ship_via_id;
@@ -48,7 +45,6 @@ const firstStepFunc = (ship_from, ship_to, ship_via_id) => {
 	}
 };
 const secondStepFunc = (car_year, vehicle, vehicle_model, vehicle_runs) => {
-	console.log(car_year, vehicle_runs);
 	if (car_year && vehicle && vehicle_model && vehicle_runs) {
 		data.car_year = car_year;
 		data.vehicle = vehicle;
@@ -61,9 +57,7 @@ const secondStepFunc = (car_year, vehicle, vehicle_model, vehicle_runs) => {
 	}
 };
 const thirdStepFunc = async (email, date, nbm) => {
-	console.log(email, date, nbm);	
 	if (email && date && nbm) {
-			console.log(nbm)
 		if (nbm) {
 			data.email = email;
 			data.date = formatDate(date);
@@ -80,7 +74,6 @@ const thirdStepFunc = async (email, date, nbm) => {
 };
 
 const createLead = async (body) => {
-	console.log(body, body.date);
 	const payload = {
 		date: body.date,
 		vehicle_runs: body.vehicle_runs,
@@ -93,7 +86,6 @@ const createLead = async (body) => {
 		ship_from: body.ship_from,
 		ship_to: body.ship_to,
 	};
-	console.log(body);
 	await actions.createLead(payload);
 	steps.value.end = false;
 	router.push("/thank-you");

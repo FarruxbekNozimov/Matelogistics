@@ -21,7 +21,6 @@ const state = reactive({
 });
 
 const sendMessage = async () => {
-	console.log(state.name, state.email, state.nmb, state.subject, state.comment);
 	if (
 		state.name &&
 		state.email &&
