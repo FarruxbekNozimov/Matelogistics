@@ -90,7 +90,7 @@ import { footerLinks } from "@/data/footerLinks";
           <span class="text-[18px] lg:block hidden">
             Mate Logistics 2023. All rights reserved
           </span>
-          <a  class="text-[18px] lg:block hidden" href="https://www.mominovmardon.uz/">Ceated by  Mardon Mo'minov</a>
+          <a  class="text-[18px] lg:block hidden" href="https://www.mominovmardon.uz/">Created by  Mardon Mo'minov</a>
           <span class="text-[17px]"
             >Copyright © 2022-2024 Mate Logistics Inc</span
           >
