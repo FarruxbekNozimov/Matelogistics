@@ -23,7 +23,7 @@
 			isButton="1" />
 		<SectionsTextTwoImage
 			title="Cost considerations for expedited car shipping"
-			text="While expedited car shipping offers numerous benefits, it is essential to consider the associated costs. Expedited shipping services typically come at a higher price compared to standard shipping methods. This is due to the prioritized scheduling, dedicated carriers, and additional protection provided during transit.<br/><br/>The cost of expedited car shipping depends on various factors, including the distance to be covered, the type of vehicle being transported, and the urgency of delivery. Mate Logistics is here to provide transparent pricing in every different situation. Call now <a href='tel:+19295923003' class='text-blue-500'>(929) 592-3003</a> or:"
+			text="While expedited car shipping offers numerous benefits, it is essential to consider the associated costs. Expedited shipping services typically come at a higher price compared to standard shipping methods. This is due to the prioritized scheduling, dedicated carriers, and additional protection provided during transit.<br/><br/>The cost of expedited car shipping depends on various factors, including the distance to be covered, the type of vehicle being transported, and the urgency of delivery. Mate Logistics is here to provide transparent pricing in every different situation. Call now <a href='tel:+19295622005' class='text-blue-500'>(929) 562-2005</a> or:"
 			img1="open-car.png"
 			img2="open-car-1.png"
 			order="1" />

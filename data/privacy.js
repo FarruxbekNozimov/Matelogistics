@@ -12,5 +12,5 @@ export const privacy = {
 	"Your Rights":
 		"You have the right to access, correct, or delete the personal information we hold about you. If you would like to exercise any of these rights, please contact us using the information provided below.",
 	"Contact Us":
-		"If you have any questions about our privacy practices, would like to access or update your personal information, or have any concerns about how we handle your data, please contact us at support@matelogisticss.com or call us (929) 592-3003.",
+		"If you have any questions about our privacy practices, would like to access or update your personal information, or have any concerns about how we handle your data, please contact us at support@matelogisticss.com or call us (929) 562-2005.",
 };

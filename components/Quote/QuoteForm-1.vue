@@ -26,7 +26,7 @@ const searchCities = async (val) => {
 <template>
 	<h2 class="text-[#012A44] lg:text-2xl font-[600] text-xl mb-3">
 		Get an instant quote or call us now
-		<span class="text-[#008AFF]">(929) 592-3003</span>
+		<a href="tel:+19295622005" class="text-[#008AFF]">(929) 562-2005</a>
 	</h2>
 
 	<div class="text-[20px] relative">

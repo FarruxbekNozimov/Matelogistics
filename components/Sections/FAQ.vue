@@ -54,7 +54,7 @@ const changeAcc = (num) => {
           </h3>
           <p class="md:text-[24px] text-[18px] font-[400] text-white mb-5">
             If you can not find answers to your questions, you can always
-            contact us. We are here to answer. Call (929) 592-3003
+            contact us. We are here to answer. Call (929) 562-2005
           </p>
           <router-link
             to="/contact"

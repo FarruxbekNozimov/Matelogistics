@@ -106,12 +106,12 @@ const changeAcc = (num) => {
                 </router-link>
                 <!-- phone number -->
                 <a
-                  href="tel:+1 (929) 592-3003"
+                  href="tel:+1 (929) 562-2005"
                   class="flex items-center justify-center gap-4 text-center text-[#214690] mt-5"
                 >
                   <Icon name="material-symbols:call-outline" class="text-2xl" />
                   <span class="font-[600] text-[23px]">
-                    +1 (929) 592-3003
+                    +1 (929) 562-2005
                   </span>
                 </a>
                 <div class="text-center mt-3">
@@ -259,10 +259,10 @@ const changeAcc = (num) => {
             Get an instant quote
           </router-link>
           <a
-            href="tel:+19295923003"
+            href="tel:+19295622005"
             class="text-[20px] text-blue-500 p-2 px-4 rounded-2xl"
           >
-            (929) 592-3003
+            (929) 562-2005
           </a>
         </div>
       </nav>

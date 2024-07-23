@@ -15,7 +15,7 @@
 			isButton="1" />
 		<SectionsTextImage
 			title="Receive Updates via Phone"
-			text="&quot;Receive Updates via Phone&quot; from Mate Logistics is a personalized and responsive service dedicated to keeping customers informed about the status of their vehicle's transportation journey. This option provides a direct and convenient means of receiving real-time updates and information about the progress and whereabouts of your shipped vehicle.<br/><br/>Simply call us at <a href='tel:+19295923003' class='text-blue-500'>(929) 592-3003</a> to get a real time update about your vehicle transportation."
+			text="&quot;Receive Updates via Phone&quot; from Mate Logistics is a personalized and responsive service dedicated to keeping customers informed about the status of their vehicle's transportation journey. This option provides a direct and convenient means of receiving real-time updates and information about the progress and whereabouts of your shipped vehicle.<br/><br/>Simply call us at <a href='tel:+19295622005' class='text-blue-500'>(929) 562-2005</a> to get a real time update about your vehicle transportation."
 			img="shipment-2.png"
 			isButton="1" />
 

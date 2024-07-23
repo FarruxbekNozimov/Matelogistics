@@ -39,7 +39,7 @@ import { footerLinks } from "@/data/footerLinks";
                 </a>
               </div>
               <p class="mb-2">6534 Myrtle Ave, Queens NY, 11385, USA</p>
-              <a href="tel:+19295923003">(929) 592-3003</a>
+              <a href="tel:+19295622005">(929) 562-2005</a>
               <p>MC: 1380151</p>
               <div class="flex pt-1 gap-3">
                 <a href="https://www.bbb.org/us/ny/glendale/profile/auto-transportation/mate-logistics-inc-0121-87159008/#sealclick">
@@ -90,7 +90,7 @@ import { footerLinks } from "@/data/footerLinks";
           <span class="text-[18px] lg:block hidden">
             Mate Logistics 2023. All rights reserved
           </span>
-          <a  class="text-[18px] lg:block hidden" href="https://www.mominovmardon.uz/">Created by  Mardon Mo'minov</a>
+          <a  class="text-[18px] lg:block hidden" href="https://mardondev.vercel.app/">Created by  Mardon Mo'minov</a>
           <span class="text-[17px]"
             >Copyright © 2022-2024 Mate Logistics Inc</span
           >
