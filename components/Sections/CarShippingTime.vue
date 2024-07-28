@@ -44,7 +44,7 @@ const services = ref([
 						src="/img/car-shipping-time-car.png"
 						class="w-full h-full rounded-2xl" />
 					<router-link
-						to="/calculator"
+						to="/quote"
 						class="absolute text-center text-lg bg-[#E52E2E] text-white rounded-xl p-2 inset-x-2 bottom-2">
 						Get an instant quote
 					</router-link>
