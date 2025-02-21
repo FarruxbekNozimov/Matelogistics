@@ -88,11 +88,11 @@ import { footerLinks } from "@/data/footerLinks";
           class="flex items-center justify-between py-5 text-white p-2"
         >
           <span class="text-[18px] lg:block hidden">
-            Mate Logistics 2023. All rights reserved
+            Mate Logistics 2025. All rights reserved
           </span>
-          <a  class="text-[18px] lg:block hidden" href="https://mardondev.vercel.app/">Created by  Mardon Mo'minov</a>
+          <a  class="text-[18px] lg:block hidden" href="https://mardonme.uz/">Created by  mardonme</a>
           <span class="text-[17px]"
-            >Copyright © 2022-2024 Mate Logistics Inc</span
+            >Copyright © 2022-2025 Mate Logistics Inc</span
           >
         </Container>
       </UContainer>
